@@ -4,7 +4,7 @@ Only install this if you are a beta tester of this game
 
 if you are a beta tester you can use and modify this but only for purposes that help me finish this game(check on github for what i need you to test)
 
-[Forcefully included end user LICENSE]
+[Yoyo games end user LICENSE]
 
 This Application was made using GameMaker. GameMaker is the intellectual property of YoYo Games Ltd, a company of the United Kingdom.
 

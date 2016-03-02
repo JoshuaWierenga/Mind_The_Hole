@@ -57,7 +57,6 @@
     <instance objName="Test_Player_Object" x="128" y="544" name="inst_06429D37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Control" x="64" y="192" name="inst_9386831A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="InvisWall_Object" x="1133" y="2" name="inst_414EEDB2" locked="0" code="" scaleX="0.469999998807907" scaleY="20.8387088775635" colour="4294967295" rotation="0"/>
-    <instance objName="Enemy_LeftWall_Object" x="640" y="512" name="inst_EF6386D8" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Grass_object" x="0" y="576" name="inst_11B627C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_object" x="0" y="608" name="inst_B02F2586" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_object" x="32" y="576" name="inst_8A808FC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
