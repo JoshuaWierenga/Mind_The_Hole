@@ -26,13 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>///Vars
-dir =-1;
+dir = -1;
 movespeed = 3;
 grav = 0.2;
 horspeed = 0;
 verspeed = 0;
 image_speed = 0;
-image_index = 0;
+image_index = 1;
 startx = x;
 starty = y;
 </string>
@@ -99,8 +99,8 @@ starty = y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dir =-1;
-image_index = 1;
+            <string>dir *= -1;
+image_index += 1;
 </string>
           </argument>
         </arguments>

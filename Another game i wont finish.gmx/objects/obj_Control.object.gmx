@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.hp = 3;
-enemy_movement = false;
+enemy_movement = true;
 </string>
           </argument>
         </arguments>

@@ -15,7 +15,6 @@
     <sprites name="Textures that need to be resized">
       <sprite>sprites\Gray_Blocks</sprite>
       <sprites name="Stuff that NEED's new textures">
-        <sprite>sprites\Test_Door</sprite>
         <sprite>sprites\Test_Heart</sprite>
         <sprite>sprites\Test_Tree</sprite>
         <sprite>sprites\Test_Key</sprite>
@@ -29,6 +28,7 @@
     </sprites>
     <sprites name="Stuff that NEED's new textures">
       <sprite>sprites\Test_Player</sprite>
+      <sprite>sprites\Test_Door</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -85,6 +85,7 @@
     <room>rooms\Level_Two</room>
     <room>rooms\Level_Three</room>
     <room>rooms\Level_Four</room>
+    <room>rooms\Old_Room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
