@@ -6,27 +6,29 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="Walls">
+      <sprite>sprites\invisWall</sprite>
+    </sprites>
     <sprites name="Floor">
       <sprite>sprites\Grass</sprite>
     </sprites>
     <sprites name="Textures that need to be resized">
       <sprite>sprites\Gray_Blocks</sprite>
-      <sprites name="Walls">
-        <sprite>sprites\InvisWall</sprite>
-      </sprites>
       <sprites name="Stuff that NEED's new textures">
         <sprite>sprites\Test_Door</sprite>
         <sprite>sprites\Test_Heart</sprite>
         <sprite>sprites\Test_Tree</sprite>
         <sprite>sprites\Test_Key</sprite>
         <sprite>sprites\Test_Floor</sprite>
-        <sprite>sprites\Test_Player</sprite>
         <sprite>sprites\Test_Touch_Arrow</sprite>
         <sprite>sprites\Test_enemy</sprite>
         <sprites name="Menu">
           <sprite>sprites\Spr_Start_Game</sprite>
         </sprites>
       </sprites>
+    </sprites>
+    <sprites name="Stuff that NEED's new textures">
+      <sprite>sprites\Test_Player</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">

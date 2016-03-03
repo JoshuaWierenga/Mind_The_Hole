@@ -29,7 +29,7 @@
 grav = 0.2;
 horspeed = 0;
 verspeed = 0;
-jumpspeed = 8;
+jumpspeed = 6;
 movespeed = 4;
 image_speed = 0;
 hurt = 0;
