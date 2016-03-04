@@ -26,13 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>///Vars
-dir =-1;
+dir = -1;
 movespeed = 3;
 grav = 0.2;
 horspeed = 0;
 verspeed = 0;
 image_speed = 0;
-image_index = 0;
+image_index = 1;
 startx = x;
 starty = y;
 </string>
@@ -82,7 +82,7 @@ starty = y;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="Enemy_LeftWall_Object">
+    <event eventtype="4" ename="Enemy_Wall_Object">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -99,32 +99,8 @@ starty = y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dir = 1;
-image_index = 0;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="Enemy_RightWall_Object">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>dir =-1;
-image_index = 1;
+            <string>dir *= -1;
+image_index += 1;
 </string>
           </argument>
         </arguments>

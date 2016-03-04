@@ -6,25 +6,30 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprites name="Stuff that NEED's new textures">
-      <sprite>sprites\Test_Door</sprite>
-      <sprite>sprites\Test_Heart</sprite>
-      <sprite>sprites\Test_Tree</sprite>
-      <sprite>sprites\Test_Key</sprite>
-      <sprite>sprites\Test_Floor</sprite>
-      <sprite>sprites\Test_Player</sprite>
-      <sprite>sprites\Test_Touch_Arrow</sprite>
-      <sprite>sprites\Test_enemy</sprite>
-      <sprites name="Menu">
-        <sprite>sprites\Spr_Start_Game</sprite>
-      </sprites>
+    <sprites name="Walls">
+      <sprite>sprites\invisWall</sprite>
     </sprites>
     <sprites name="Floor">
       <sprite>sprites\Grass</sprite>
-      <sprite>sprites\Gray_Blocks</sprite>
     </sprites>
-    <sprites name="Walls">
-      <sprite>sprites\InvisWall</sprite>
+    <sprites name="Textures that need to be resized">
+      <sprite>sprites\Gray_Blocks</sprite>
+      <sprites name="Stuff that NEED's new textures">
+        <sprite>sprites\Test_Heart</sprite>
+        <sprite>sprites\Test_Overlays</sprite>
+        <sprite>sprites\Test_Tree</sprite>
+        <sprite>sprites\Test_Key</sprite>
+        <sprite>sprites\Test_Floor</sprite>
+        <sprite>sprites\Test_Touch_Arrow</sprite>
+        <sprite>sprites\Test_enemy</sprite>
+        <sprites name="Menu">
+          <sprite>sprites\Spr_Start_Game</sprite>
+        </sprites>
+      </sprites>
+    </sprites>
+    <sprites name="Stuff that NEED's new textures">
+      <sprite>sprites\Test_Player</sprite>
+      <sprite>sprites\Test_Door</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -39,6 +44,7 @@
     <scripts name="Gui">
       <script>scripts\Draw_Dpad.gml</script>
       <script>scripts\Draw_Touch_Buttons.gml</script>
+      <script>scripts\Draw_Overlay.gml</script>
     </scripts>
     <scripts name="Movement">
       <script>scripts\Player_Movement.gml</script>
@@ -71,8 +77,7 @@
       <object>objects\Gray_Blocks_Object</object>
     </objects>
     <objects name="Walls">
-      <object>objects\Enemy_RightWall_Object</object>
-      <object>objects\Enemy_LeftWall_Object</object>
+      <object>objects\Enemy_Wall_Object</object>
       <object>objects\InvisWall_Object</object>
     </objects>
   </objects>
@@ -82,6 +87,7 @@
     <room>rooms\Level_Two</room>
     <room>rooms\Level_Three</room>
     <room>rooms\Level_Four</room>
+    <room>rooms\Old_Room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
