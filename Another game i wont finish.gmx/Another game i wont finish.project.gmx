@@ -16,6 +16,7 @@
       <sprite>sprites\Gray_Blocks</sprite>
       <sprites name="Stuff that NEED's new textures">
         <sprite>sprites\Test_Heart</sprite>
+        <sprite>sprites\Test_Overlays</sprite>
         <sprite>sprites\Test_Tree</sprite>
         <sprite>sprites\Test_Key</sprite>
         <sprite>sprites\Test_Floor</sprite>
@@ -43,6 +44,7 @@
     <scripts name="Gui">
       <script>scripts\Draw_Dpad.gml</script>
       <script>scripts\Draw_Touch_Buttons.gml</script>
+      <script>scripts\Draw_Overlay.gml</script>
     </scripts>
     <scripts name="Movement">
       <script>scripts\Player_Movement.gml</script>
