@@ -2,7 +2,7 @@
 
 Only install this if you are a beta tester of this game
 
-if you are a beta tester you can use and modify this but only for purposes that help me finish this game(check on github for what i need you to test)
+if you are a beta tester you can use and modify this but only for purposes that help me finish this game(check on github or ask me for what i need you to test)
 
 [Yoyo games end user LICENSE]
 
