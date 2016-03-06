@@ -59,6 +59,7 @@
     <scripts name="Other">
       <script>scripts\Game_end.gml</script>
       <script>scripts\Other_Controls.gml</script>
+      <script>scripts\Transition.gml</script>
     </scripts>
     <scripts name="Pause Extension">
       <script>scripts\game_pause.gml</script>
@@ -70,6 +71,7 @@
     <objects name="Control Objects">
       <object>objects\obj_Menu</object>
       <object>objects\obj_Control</object>
+      <object>objects\obj_transition</object>
       <object>objects\obj_pause</object>
       <object>objects\parent_dont_pause</object>
     </objects>
