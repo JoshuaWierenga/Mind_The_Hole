@@ -3,6 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
@@ -31,6 +32,7 @@
       <sprite>sprites\Test_Player</sprite>
       <sprite>sprites\Test_Door</sprite>
     </sprites>
+    <sprite>sprites\pause_Icon</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Gray</background>
@@ -58,11 +60,18 @@
       <script>scripts\Game_end.gml</script>
       <script>scripts\Other_Controls.gml</script>
     </scripts>
+    <scripts name="Pause Extension">
+      <script>scripts\game_pause.gml</script>
+      <script>scripts\game_resume.gml</script>
+      <script>scripts\game_is_paused.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="Control Objects">
       <object>objects\obj_Menu</object>
       <object>objects\obj_Control</object>
+      <object>objects\obj_pause</object>
+      <object>objects\parent_dont_pause</object>
     </objects>
     <objects name="Stuff that NEED's new textures">
       <object>objects\Test_Door_Object</object>
