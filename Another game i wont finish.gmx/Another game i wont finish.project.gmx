@@ -87,6 +87,7 @@
     <room>rooms\Level_Two</room>
     <room>rooms\Level_Three</room>
     <room>rooms\Level_Four</room>
+    <room>rooms\Level_Five</room>
     <room>rooms\Old_Room</room>
   </rooms>
   <help>
