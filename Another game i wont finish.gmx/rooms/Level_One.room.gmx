@@ -84,6 +84,7 @@
     <instance objName="InvisWall_Object" x="512" y="160" name="inst_375B6799" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="InvisWall_Object" x="512" y="192" name="inst_498BB6D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Test_Door_Object" x="480" y="160" name="inst_BA1FFC04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pause" x="448" y="0" name="inst_D0CDE22E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
