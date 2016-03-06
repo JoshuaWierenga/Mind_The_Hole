@@ -57,12 +57,14 @@
     <scripts name="Other">
       <script>scripts\Game_end.gml</script>
       <script>scripts\Other_Controls.gml</script>
+      <script>scripts\Transition.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
     <objects name="Control Objects">
       <object>objects\obj_Menu</object>
       <object>objects\obj_Control</object>
+      <object>objects\obj_transition</object>
     </objects>
     <objects name="Stuff that NEED's new textures">
       <object>objects\Test_Door_Object</object>
