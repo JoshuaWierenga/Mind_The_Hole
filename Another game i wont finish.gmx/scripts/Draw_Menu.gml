@@ -1,10 +1,28 @@
-if point_in_rectangle(mouse_x, mouse_y, 384, 320, 736, 416)
+var base_width = 512;
+var base_height = 256;
+var aspect = display_get_width() / display_get_height();
+
+display_set_gui_size(base_height * aspect, base_height);
+
+x1
+y1
+x2
+y2
+x3
+y3
+x4
+y4
+
+if point_in_rectangle(mouse_x, mouse_y, display_get_gui_width()/2-display_get_gui_width()/8, display_get_gui_height()/2-display_get_gui_height()/8, display_get_gui_width()/2+display_get_gui_width()/8, display_get_gui_height()/2-display_get_gui_height()/8);
 {
-    draw_sprite_ext(Spr_Start_Game,1,384,320,1.48,0.90,0.00,c_white,1);
+    draw_sprite_pos(Spr_Start_Game, 0, display_get_gui_width()/2-display_get_gui_width()/8, display_get_gui_height()/2-display_get_gui_height()/8, display_get_gui_width()/2+display_get_gui_width()/8, display_get_gui_height()/2-display_get_gui_height()/8,display_get_gui_width()/2+display_get_gui_width()/8, display_get_gui_height()/2+display_get_gui_height()/8,display_get_gui_width()/2-display_get_gui_width()/8, display_get_gui_height()/2-display_get_gui_height()/8, 1);
+
 }
 else 
 {
-    draw_sprite_ext(Spr_Start_Game,0,384,320,1.48,0.90,0.00,c_white,1);    
+    //draw_sprite_ext(Spr_Start_Game,0,36,48,1,0.90,0.00,c_white,1);   
+    //draw_sprite_general(Spr_Start_Game, 0, display_get_gui_width()/4, 320, display_get_gui_width()/2, 509.44, ); 
+    draw_sprite_pos(Spr_Start_Game, 0, display_get_gui_width()/2-display_get_gui_width()/8, display_get_gui_height()/2-display_get_gui_height()/8, display_get_gui_width()/2+display_get_gui_width()/8, display_get_gui_height()/2-display_get_gui_height()/8,display_get_gui_width()/2+display_get_gui_width()/8, display_get_gui_height()/2+display_get_gui_height()/8,display_get_gui_width()/2-display_get_gui_width()/8, display_get_gui_height()/2-display_get_gui_height()/8, 1);
 }
 
 if file_exists("Save.sav")

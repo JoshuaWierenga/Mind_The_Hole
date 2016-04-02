@@ -90,6 +90,7 @@ if(game_is_paused()) {
 
 //the image_index code below is optional, it's to change the sprite of the pause button.
 image_index = game_is_paused();
+
 </string>
           </argument>
         </arguments>
