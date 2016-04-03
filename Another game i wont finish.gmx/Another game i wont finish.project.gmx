@@ -44,9 +44,10 @@
       <script>scripts\Touch_Menu.gml</script>
     </scripts>
     <scripts name="Gui">
-      <script>scripts\Draw_Dpad.gml</script>
       <script>scripts\Draw_Touch_Buttons.gml</script>
       <script>scripts\Draw_Overlay.gml</script>
+      <script>scripts\Draw_Dpad.gml</script>
+      <script>scripts\Fix_Gui_Size.gml</script>
     </scripts>
     <scripts name="Movement">
       <script>scripts\Player_Movement.gml</script>
@@ -67,6 +68,7 @@
       <script>scripts\game_is_paused.gml</script>
     </scripts>
   </scripts>
+  <fonts name="fonts"/>
   <objects name="objects">
     <objects name="Control Objects">
       <object>objects\obj_Menu</object>
@@ -74,6 +76,7 @@
       <object>objects\obj_transition</object>
       <object>objects\obj_pause</object>
       <object>objects\parent_dont_pause</object>
+      <object>objects\object15</object>
     </objects>
     <objects name="Stuff that NEED's new textures">
       <object>objects\Test_Door_Object</object>
