@@ -5,9 +5,26 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\Player_Texture</sprite>
+    <sprites name="Floor">
+      <sprite>sprites\Grass_Floor_Texture</sprite>
+    </sprites>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\Player_Movement.gml</script>
+  </scripts>
+  <objects name="objects">
+    <object>objects\Player_Object</object>
+    <objects name="Floor">
+      <object>objects\Grass_Floor_Object</object>
+    </objects>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\First_Room</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
