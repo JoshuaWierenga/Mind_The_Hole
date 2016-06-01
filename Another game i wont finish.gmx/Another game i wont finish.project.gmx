@@ -68,7 +68,6 @@
       <script>scripts\game_is_paused.gml</script>
     </scripts>
   </scripts>
-  <fonts name="fonts"/>
   <objects name="objects">
     <objects name="Control Objects">
       <object>objects\obj_Menu</object>
