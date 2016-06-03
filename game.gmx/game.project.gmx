@@ -11,6 +11,9 @@
         <sprites name="Room 1">
           <sprite>sprites\Arrow_Texture</sprite>
         </sprites>
+        <sprites name="Room 2">
+          <sprite>sprites\Detector_Texture</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Objects">
@@ -35,6 +38,7 @@
     <objects name="Levels">
       <object>objects\Control_Object</object>
       <objects name="Level 1">
+        <object>objects\L1_Control_Object</object>
         <objects name="Room 1">
           <object>objects\L1R1_Control_Object</object>
           <object>objects\L1R1_First_Arrow</object>
@@ -47,6 +51,10 @@
           <object>objects\L1R2_Opening_Text</object>
           <object>objects\L1R2_Gap_Detector</object>
           <object>objects\L1R2_Gap_Text</object>
+        </objects>
+        <objects name="Room 3">
+          <object>objects\L1R3_Control_Object</object>
+          <object>objects\L1R3</object>
         </objects>
       </objects>
     </objects>
