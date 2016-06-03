@@ -11,24 +11,33 @@
       <sprite>sprites\Grass_Floor_Texture</sprite>
       <sprite>sprites\Grass_Left_Floor_Texture</sprite>
       <sprite>sprites\Grass_Right_Floor_Texture</sprite>
+      <sprite>sprites\Floating_Blocks_Texture</sprite>
     </sprites>
+    <sprite>sprites\Clear</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\Player_Movement.gml</script>
-    <script>scripts\Gravity_Control.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\Player_Object</object>
     <objects name="Floor">
-      <object>objects\Grass_Floor_Object</object>
-      <object>objects\Grass_Left_Floor_Object</object>
-      <object>objects\Grass_Right_Floor_Object</object>
+      <object>objects\base_floor</object>
+      <object>objects\Floating_Blocks_Object</object>
+      <objects name="Grass">
+        <object>objects\Grass_Right_Floor_Object</object>
+        <object>objects\Grass_Floor_Object</object>
+        <object>objects\Grass_Left_Floor_Object</object>
+      </objects>
     </objects>
+    <object>objects\room_exit</object>
+    <object>objects\Control_Object</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Third_Room</room>
     <room>rooms\First_Room</room>
+    <room>rooms\Second_Room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
