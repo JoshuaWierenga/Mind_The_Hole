@@ -134,6 +134,7 @@
     <instance objName="Grass_Floor_Object" x="736" y="704" name="inst_FB8F4246" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="1152" y="672" name="inst_04209A91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Room_Exit_Object" x="1120" y="667" name="inst_BAF67728" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Control_Object" x="64" y="32" name="inst_4E001B7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
