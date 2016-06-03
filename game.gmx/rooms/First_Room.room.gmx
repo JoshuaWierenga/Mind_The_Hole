@@ -77,7 +77,6 @@
     <instance objName="Grass_Floor_Object" x="1088" y="672" name="inst_A1D43890" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="1120" y="672" name="inst_003618BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="1184" y="672" name="inst_51ADEB8D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Grass_Floor_Object" x="1152" y="672" name="inst_CBD6BF3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="1216" y="672" name="inst_75A55EE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="1248" y="672" name="inst_371F1BDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="0" y="672" name="inst_DBC0498E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -124,10 +123,17 @@
     <instance objName="Grass_Floor_Object" x="1216" y="704" name="inst_2C35C6E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="1248" y="704" name="inst_AB342F23" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Player_Object" x="64" y="608" name="inst_572894FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Grass_Left_Floor_Object" x="768" y="672" name="inst_C87F29B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Grass_Right_Floor_Object" x="640" y="672" name="inst_51C06B65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="room_exit" x="1152" y="544" name="inst_6DC5A6E1" locked="0" code="" scaleX="4.12903213500977" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="Control_Object" x="32" y="32" name="inst_FA23CFF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="736" y="672" name="inst_D7B6EBE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="640" y="672" name="inst_F2112E9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="672" y="672" name="inst_B9B366A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="672" y="704" name="inst_FE9BD54F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="704" y="704" name="inst_9D44F12B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="704" y="672" name="inst_6D99DE82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="768" y="672" name="inst_513E6A7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="736" y="704" name="inst_FB8F4246" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="1152" y="672" name="inst_04209A91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Room_Exit_Object" x="1120" y="667" name="inst_BAF67728" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

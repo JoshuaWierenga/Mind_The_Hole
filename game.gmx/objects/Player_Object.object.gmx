@@ -107,7 +107,7 @@ player_level = 0;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="room_exit">
+    <event eventtype="4" ename="Room_Exit_Object">
       <action>
         <libid>1</libid>
         <id>603</id>

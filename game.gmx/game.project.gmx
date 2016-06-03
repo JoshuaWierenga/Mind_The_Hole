@@ -13,7 +13,14 @@
       <sprite>sprites\Grass_Right_Floor_Texture</sprite>
       <sprite>sprites\Floating_Blocks_Texture</sprite>
     </sprites>
-    <sprite>sprites\Clear</sprite>
+    <sprite>sprites\Room_Exit_Texture</sprite>
+    <sprites name="Levels">
+      <sprites name="Level 1">
+        <sprites name="Room 1">
+          <sprite>sprites\Arrow_Texture</sprite>
+        </sprites>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -31,13 +38,22 @@
         <object>objects\Grass_Left_Floor_Object</object>
       </objects>
     </objects>
-    <object>objects\room_exit</object>
+    <object>objects\Room_Exit_Object</object>
     <object>objects\Control_Object</object>
+    <objects name="Levels">
+      <objects name="Level 1">
+        <objects name="Room 1">
+          <object>objects\Intro_Object</object>
+          <object>objects\Intro_Arrow_Object</object>
+        </objects>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Third_Room</room>
     <room>rooms\First_Room</room>
     <room>rooms\Second_Room</room>
+    <room>rooms\Third_Room</room>
+    <room>rooms\Forth_Room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
