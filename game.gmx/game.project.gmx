@@ -6,20 +6,24 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\Player_Texture</sprite>
-    <sprites name="Floor">
-      <sprite>sprites\Grass_Floor_Texture</sprite>
-      <sprite>sprites\Grass_Left_Floor_Texture</sprite>
-      <sprite>sprites\Grass_Right_Floor_Texture</sprite>
-      <sprite>sprites\Floating_Blocks_Texture</sprite>
-    </sprites>
-    <sprite>sprites\Room_Exit_Texture</sprite>
     <sprites name="Levels">
       <sprites name="Level 1">
         <sprites name="Room 1">
           <sprite>sprites\Arrow_Texture</sprite>
         </sprites>
       </sprites>
+    </sprites>
+    <sprites name="Objects">
+      <sprites name="Floors">
+        <sprite>sprites\Floating_Blocks_Texture</sprite>
+        <sprites name="Grass">
+          <sprite>sprites\Grass_Floor_Texture</sprite>
+          <sprite>sprites\Grass_Left_Floor_Texture</sprite>
+          <sprite>sprites\Grass_Right_Floor_Texture</sprite>
+        </sprites>
+      </sprites>
+      <sprite>sprites\Player_Texture</sprite>
+      <sprite>sprites\Room_Exit_Texture</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -40,17 +44,20 @@
         </objects>
         <objects name="Room 2">
           <object>objects\L1R2_Control_Object</object>
+          <object>objects\L1R2_Opening_Text</object>
+          <object>objects\L1R2_Gap_Detector</object>
+          <object>objects\L1R2_Gap_Text</object>
         </objects>
       </objects>
     </objects>
     <objects name="Objects">
-      <objects name="Floor">
+      <objects name="Floors">
         <object>objects\base_floor</object>
         <object>objects\Floating_Blocks_Object</object>
         <objects name="Grass">
-          <object>objects\Grass_Right_Floor_Object</object>
           <object>objects\Grass_Floor_Object</object>
           <object>objects\Grass_Left_Floor_Object</object>
+          <object>objects\Grass_Right_Floor_Object</object>
         </objects>
       </objects>
       <object>objects\Player_Object</object>

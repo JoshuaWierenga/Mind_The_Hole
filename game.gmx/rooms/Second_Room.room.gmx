@@ -128,6 +128,7 @@
     <instance objName="Grass_Right_Floor_Object" x="640" y="672" name="inst_51C06B65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Room_Exit_Object" x="0" y="667" name="inst_D5D23685" locked="0" code="" scaleX="4.12903213500977" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Control_Object" x="64" y="32" name="inst_7C8CCF89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R2_Control_Object" x="96" y="32" name="inst_C74D4C00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
