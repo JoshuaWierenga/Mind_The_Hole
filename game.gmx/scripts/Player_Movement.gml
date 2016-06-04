@@ -24,7 +24,6 @@ if (place_meeting(x, y+verspeed, base_floor))
     verspeed = 0;
 }
 
-
 //X movement on base_floor
 if (place_meeting(x+horspeed, y, base_floor))
 {

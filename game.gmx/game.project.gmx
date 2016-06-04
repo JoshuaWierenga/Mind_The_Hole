@@ -28,14 +28,15 @@
     <sprites name="Map">
       <sprite>sprites\Invisible_Wall_Texture</sprite>
       <sprite>sprites\Detector_Texture</sprite>
+      <sprite>sprites\Falling_Sprite</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\Player_Movement.gml</script>
+    <script>scripts\Gravity.gml</script>
   </scripts>
-  <fonts name="fonts"/>
   <objects name="objects">
     <objects name="Levels">
       <object>objects\Control_Object</object>
@@ -69,7 +70,6 @@
           <object>objects\TUTR5_Second_Wall_Text</object>
           <object>objects\TUTR5_No_Exit_Text</object>
           <object>objects\TUTR5_New_Exit_Text</object>
-          <object>objects\TUTR5_Hole_Detector</object>
           <object>objects\TUTR5_Falling_Dectector</object>
           <object>objects\TUTR5_Falling_Text</object>
         </objects>
@@ -81,6 +81,24 @@
           <object>objects\TUT_END_Where_Exit_3_Text</object>
           <object>objects\TUT_END_Where_Exit_4_Text</object>
           <object>objects\TUT_END_Where_Exit_5_Text</object>
+          <object>objects\TUT_END_Hole_Detector</object>
+          <objects name="Exit">
+            <objects name="Falling Blocks">
+              <object>objects\TUT_END_Falling_Blocks_Top_1</object>
+              <object>objects\TUT_END_Falling_Blocks_Top_2</object>
+              <object>objects\TUT_END_Falling_Blocks_Top_3</object>
+              <object>objects\TUT_END_Falling_Blocks_Top_4</object>
+              <object>objects\TUT_END_Falling_Blocks_Middle</object>
+            </objects>
+            <objects name="Middle Blocks">
+              <object>objects\TUT_END_Ground_Block_Middle_1</object>
+              <object>objects\TUT_END_Ground_Block_Middle_2</object>
+              <object>objects\TUT_END_Ground_Block_Middle_3</object>
+              <object>objects\TUT_END_Ground_Block_Middle_4</object>
+              <object>objects\TUT_END_Ground_Block_Middle_5</object>
+            </objects>
+            <object>objects\TUT_END_Ground_Block_Bottom</object>
+          </objects>
         </objects>
       </objects>
     </objects>
@@ -96,6 +114,9 @@
       </objects>
       <object>objects\Player_Object</object>
       <object>objects\Room_Exit_Object</object>
+    </objects>
+    <objects name="Map">
+      <object>objects\Hole_Detector</object>
     </objects>
   </objects>
   <rooms name="rooms">

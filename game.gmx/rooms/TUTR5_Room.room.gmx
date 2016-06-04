@@ -141,7 +141,7 @@
     <instance objName="TUTR5_Second_Wall_Text" x="96" y="64" name="inst_C0002844" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TUTR5_No_Exit_Text" x="128" y="64" name="inst_18D4C2D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TUTR5_New_Exit_Text" x="160" y="64" name="inst_E7FFF56A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUTR5_Hole_Detector" x="672" y="704" name="inst_BAC21D54" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hole_Detector" x="672" y="704" name="inst_BAC21D54" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TUTR5_Falling_Dectector" x="576" y="192" name="inst_ABAD5A09" locked="0" code="" scaleX="9" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TUTR5_Falling_Text" x="192" y="64" name="inst_BCC0218F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
