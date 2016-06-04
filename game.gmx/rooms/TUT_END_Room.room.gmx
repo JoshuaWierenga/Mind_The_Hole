@@ -128,22 +128,32 @@
     <instance objName="Floating_Blocks_Object" x="352" y="544" name="inst_76762D87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="320" y="544" name="inst_1A1556BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="384" y="544" name="inst_9841F306" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floating_Blocks_Object" x="416" y="544" name="inst_945C801F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="416" y="480" name="inst_945C801F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="384" y="576" name="inst_9601AFA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="384" y="608" name="inst_146562D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="384" y="640" name="inst_66711ABF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Room_Exit_Object" x="1152" y="667" name="inst_D5D23685" locked="0" code="" scaleX="4.12903213500977" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Control_Object" x="64" y="32" name="inst_7C8CCF89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Tutorial_Control_Object" x="96" y="32" name="inst_0E4A71B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUTR5_First_Wall_Detector" x="416" y="384" name="inst_C50B97F9" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="TUTR5_Second_Wall_Detector" x="1120" y="512" name="inst_3E5A6C36" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="TUTR5_First_Wall_Text" x="64" y="64" name="inst_63FB693B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUTR5_Second_Wall_Text" x="96" y="64" name="inst_C0002844" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUTR5_No_Exit_Text" x="128" y="64" name="inst_18D4C2D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUTR5_New_Exit_Text" x="160" y="64" name="inst_E7FFF56A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TUTR5_Hole_Detector" x="672" y="704" name="inst_BAC21D54" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUTR5_Falling_Dectector" x="576" y="192" name="inst_ABAD5A09" locked="0" code="" scaleX="9" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUTR5_Falling_Text" x="192" y="64" name="inst_BCC0218F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="416" y="512" name="inst_FAF726E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="416" y="544" name="inst_3F2004C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="1120" y="576" name="inst_32C8E0E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="1120" y="544" name="inst_676FF954" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="1120" y="512" name="inst_AEFE277E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="960" y="640" name="inst_2A52C226" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="800" y="640" name="inst_F307A16C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TUT_END_Control_Object" x="128" y="32" name="inst_8428A3B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TUT_END_Intro_Text" x="64" y="64" name="inst_210E95AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="832" y="256" name="inst_1FA43578" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="864" y="256" name="inst_80476705" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="896" y="256" name="inst_41A7688B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="928" y="256" name="inst_4A3A7B55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="96" y="64" name="inst_8876F69A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TUT_END_Where_Exit_1_Text" x="96" y="64" name="inst_64292B98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TUT_END_Where_Exit_2_Text" x="128" y="64" name="inst_4A4FFD2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TUT_END_Where_Exit_3_Text" x="160" y="64" name="inst_3E4BDD18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TUT_END_Where_Exit_4_Text" x="192" y="64" name="inst_626AE05A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TUT_END_Where_Exit_5_Text" x="224" y="64" name="inst_078A3C2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -73,6 +73,15 @@
           <object>objects\TUTR5_Falling_Dectector</object>
           <object>objects\TUTR5_Falling_Text</object>
         </objects>
+        <objects name="End Room">
+          <object>objects\TUT_END_Control_Object</object>
+          <object>objects\TUT_END_Intro_Text</object>
+          <object>objects\TUT_END_Where_Exit_1_Text</object>
+          <object>objects\TUT_END_Where_Exit_2_Text</object>
+          <object>objects\TUT_END_Where_Exit_3_Text</object>
+          <object>objects\TUT_END_Where_Exit_4_Text</object>
+          <object>objects\TUT_END_Where_Exit_5_Text</object>
+        </objects>
       </objects>
     </objects>
     <objects name="Objects">
@@ -97,6 +106,7 @@
         <room>rooms\TUTR3_Room</room>
         <room>rooms\TUTR4_Room</room>
         <room>rooms\TUTR5_Room</room>
+        <room>rooms\TUT_END_Room</room>
       </rooms>
     </rooms>
   </rooms>
