@@ -14,6 +14,9 @@
         <sprites name="Room 2">
           <sprite>sprites\Detector_Texture</sprite>
         </sprites>
+        <sprites name="Room 4">
+          <sprite>sprites\Invisible_Wall_Texture</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Objects">
@@ -53,8 +56,13 @@
           <object>objects\TUTR2_Gap_Text</object>
         </objects>
         <objects name="Room 3">
-          <object>objects\L1R3_Control_Object</object>
-          <object>objects\L1R3_Opening_Text</object>
+          <object>objects\TUTR3_Control_Object</object>
+          <object>objects\TUTR3_Opening_Text</object>
+        </objects>
+        <objects name="Room 4">
+          <object>objects\TUTR4_Wall</object>
+          <object>objects\TUTR4_Wall_Detector</object>
+          <object>objects\TUTR4_Wall_Text</object>
         </objects>
       </objects>
     </objects>
@@ -77,10 +85,10 @@
       <rooms name="Tutorial">
         <room>rooms\TUTR1_Room</room>
         <room>rooms\TUTR2_Room</room>
+        <room>rooms\TUTR3_Room</room>
+        <room>rooms\TUTR4_Room</room>
       </rooms>
     </rooms>
-    <room>rooms\Third_Room</room>
-    <room>rooms\Forth_Room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
