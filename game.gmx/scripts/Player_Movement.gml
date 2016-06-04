@@ -9,22 +9,6 @@ horspeed = move * movespeed;
 
 if (verspeed < 10) verspeed += grav;
 
-//X movement on base_floor
-if (place_meeting(x+horspeed, y, base_floor))
-{
-    while(!place_meeting(x+sign(horspeed), y, base_floor))
-    {
-        x += sign(horspeed);
-    }
-    horspeed = 0;
-}
-
-
-if (Control_Object.allow_move)
-{
-    x += horspeed;
-}
-
 //Y movement on base_floor
 if (place_meeting(x, y+1, base_floor))
 {
@@ -40,7 +24,19 @@ if (place_meeting(x, y+verspeed, base_floor))
     verspeed = 0;
 }
 
+
+//X movement on base_floor
+if (place_meeting(x+horspeed, y, base_floor))
+{
+    while(!place_meeting(x+sign(horspeed), y, base_floor))
+    {
+        x += sign(horspeed);
+    }
+    horspeed = 0;
+}
+
 if (Control_Object.allow_move)
 {
+    x += horspeed;
     y += verspeed;
 }
