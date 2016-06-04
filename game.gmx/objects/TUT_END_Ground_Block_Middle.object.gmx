@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>base_floor</parentName>
+  <parentName>gravity_Object</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -26,7 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>sprite_index = Grass_Floor_Texture;
-fallen = 0;
 </string>
           </argument>
         </arguments>
@@ -49,8 +48,9 @@ fallen = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (fallen = 1)
+            <string>if (place_meeting(x, y-1, TUT_END_Falling_Blocks))
 {
+    TUT_END_Hole_Detector.fallen++;
     instance_destroy()
 }
 </string>

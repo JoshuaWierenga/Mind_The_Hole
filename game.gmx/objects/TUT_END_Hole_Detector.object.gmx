@@ -51,12 +51,9 @@
             <string>Player_Object.x = 704;
 Player_Object.y = 0;
 
-if (fallen == 4)
+if (fallen == 6)
 {
-    TUT_END_Falling_Blocks_Top_1.contact = 2;
-    TUT_END_Falling_Blocks_Top_2.contact = 2;
-    TUT_END_Falling_Blocks_Top_3.contact = 2;
-    TUT_END_Falling_Blocks_Top_4.contact = 2;
+    TUT_END_Falling_Blocks.contact = 2;
 }
 </string>
           </argument>

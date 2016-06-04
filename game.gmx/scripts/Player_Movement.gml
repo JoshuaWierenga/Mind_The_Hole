@@ -9,25 +9,25 @@ horspeed = move * movespeed;
 
 if (verspeed < 10) verspeed += grav;
 
-//Y movement on base_floor
-if (place_meeting(x, y+1, base_floor))
+//Y movement on gravity_Object
+if (place_meeting(x, y+1, gravity_Object))
 {
     verspeed = up_key * -jumpspeed;
 }
 
-if (place_meeting(x, y+verspeed, base_floor))
+if (place_meeting(x, y+verspeed, gravity_Object))
 {
-    while(!place_meeting(x, y+sign(verspeed), base_floor))
+    while(!place_meeting(x, y+sign(verspeed), gravity_Object))
     {
         y += sign(verspeed);
     }
     verspeed = 0;
 }
 
-//X movement on base_floor
-if (place_meeting(x+horspeed, y, base_floor))
+//X movement on gravity_Object
+if (place_meeting(x+horspeed, y, gravity_Object))
 {
-    while(!place_meeting(x+sign(horspeed), y, base_floor))
+    while(!place_meeting(x+sign(horspeed), y, gravity_Object))
     {
         x += sign(horspeed);
     }

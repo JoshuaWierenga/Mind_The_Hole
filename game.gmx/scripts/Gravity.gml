@@ -1,8 +1,8 @@
 if (verspeed < 10) verspeed += grav;
 
-if (place_meeting(x, y+verspeed, base_floor))
+if (place_meeting(x, y+verspeed, gravity_Object))
 {
-    while(!place_meeting(x, y+sign(verspeed), base_floor))
+    while(!place_meeting(x, y+sign(verspeed), gravity_Object))
     {
         y += sign(verspeed);
     }

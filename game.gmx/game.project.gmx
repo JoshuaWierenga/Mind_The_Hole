@@ -82,29 +82,14 @@
           <object>objects\TUT_END_Where_Exit_4_Text</object>
           <object>objects\TUT_END_Where_Exit_5_Text</object>
           <object>objects\TUT_END_Hole_Detector</object>
-          <objects name="Exit">
-            <objects name="Falling Blocks">
-              <object>objects\TUT_END_Falling_Blocks_Top_1</object>
-              <object>objects\TUT_END_Falling_Blocks_Top_2</object>
-              <object>objects\TUT_END_Falling_Blocks_Top_3</object>
-              <object>objects\TUT_END_Falling_Blocks_Top_4</object>
-              <object>objects\TUT_END_Falling_Blocks_Middle</object>
-            </objects>
-            <objects name="Middle Blocks">
-              <object>objects\TUT_END_Ground_Block_Middle_1</object>
-              <object>objects\TUT_END_Ground_Block_Middle_2</object>
-              <object>objects\TUT_END_Ground_Block_Middle_3</object>
-              <object>objects\TUT_END_Ground_Block_Middle_4</object>
-              <object>objects\TUT_END_Ground_Block_Middle_5</object>
-            </objects>
-            <object>objects\TUT_END_Ground_Block_Bottom</object>
-          </objects>
+          <object>objects\TUT_END_Falling_Blocks</object>
+          <object>objects\TUT_END_Ground_Block_Middle</object>
+          <object>objects\TUT_END_Ground_Block_Bottom</object>
         </objects>
       </objects>
     </objects>
     <objects name="Objects">
       <objects name="Floors">
-        <object>objects\base_floor</object>
         <object>objects\Floating_Blocks_Object</object>
         <objects name="Grass">
           <object>objects\Grass_Floor_Object</object>
@@ -114,6 +99,7 @@
       </objects>
       <object>objects\Player_Object</object>
       <object>objects\Room_Exit_Object</object>
+      <object>objects\gravity_Object</object>
     </objects>
     <objects name="Map">
       <object>objects\Hole_Detector</object>
