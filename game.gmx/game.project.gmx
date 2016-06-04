@@ -37,9 +37,7 @@
   <scripts name="scripts">
     <script>scripts\Player_Movement.gml</script>
   </scripts>
-  <fonts name="fonts">
-    <font>fonts\Coders_Crux</font>
-  </fonts>
+  <fonts name="fonts"/>
   <objects name="objects">
     <objects name="Levels">
       <object>objects\Control_Object</object>
