@@ -25,6 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>draw_text(384, 448, "Sorry about that :)");
 </string>
           </argument>
         </arguments>
