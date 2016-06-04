@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(0,0, L1R2_Opening_Text);
+            <string>instance_create(0,0, L1R3_Opening_Text);
 </string>
           </argument>
         </arguments>

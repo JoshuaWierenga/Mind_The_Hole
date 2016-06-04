@@ -1,10 +1,7 @@
 //Check movement buttons
-if (Control_Object.allow_move)
-{
-    right_key = keyboard_check(vk_right);
-    left_key = -keyboard_check(vk_left);
-    up_key = keyboard_check_pressed(vk_space);
-}
+right_key = keyboard_check(vk_right);
+left_key = -keyboard_check(vk_left);
+up_key = keyboard_check_pressed(vk_space);
 
 //Move
 move = right_key + left_key;
@@ -38,5 +35,8 @@ if (place_meeting(x+horspeed, y, base_floor))
     horspeed = 0;
 }
 
-x += horspeed;
-y += verspeed;
+if (Control_Object.allow_move)
+{
+    x += horspeed;
+    y += verspeed;
+}

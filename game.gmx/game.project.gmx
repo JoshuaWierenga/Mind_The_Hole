@@ -37,24 +37,24 @@
   <objects name="objects">
     <objects name="Levels">
       <object>objects\Control_Object</object>
-      <objects name="Level 1">
-        <object>objects\L1_Control_Object</object>
+      <objects name="Tutorial">
+        <object>objects\Tutorial_Control_Object</object>
         <objects name="Room 1">
-          <object>objects\L1R1_Control_Object</object>
-          <object>objects\L1R1_First_Arrow</object>
-          <object>objects\L1R1_Second_Arrow</object>
-          <object>objects\L1R1_Third_Arrow</object>
-          <object>objects\L1R1_Intro_Text</object>
+          <object>objects\TUTR1_Control_Object</object>
+          <object>objects\TUTR1_First_Arrow</object>
+          <object>objects\TUTR1_Second_Arrow</object>
+          <object>objects\TUTR1_Third_Arrow</object>
+          <object>objects\TUTR1_Intro_Text</object>
         </objects>
         <objects name="Room 2">
-          <object>objects\L1R2_Control_Object</object>
-          <object>objects\L1R2_Opening_Text</object>
-          <object>objects\L1R2_Gap_Detector</object>
-          <object>objects\L1R2_Gap_Text</object>
+          <object>objects\TUTR2_Control_Object</object>
+          <object>objects\TUTR2_Opening_Text</object>
+          <object>objects\TUTR2_Gap_Detector</object>
+          <object>objects\TUTR2_Gap_Text</object>
         </objects>
         <objects name="Room 3">
           <object>objects\L1R3_Control_Object</object>
-          <object>objects\L1R3</object>
+          <object>objects\L1R3_Opening_Text</object>
         </objects>
       </objects>
     </objects>
@@ -73,8 +73,12 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\First_Room</room>
-    <room>rooms\Second_Room</room>
+    <rooms name="Levels">
+      <rooms name="Tutorial">
+        <room>rooms\TUTR1_Room</room>
+        <room>rooms\TUTR2_Room</room>
+      </rooms>
+    </rooms>
     <room>rooms\Third_Room</room>
     <room>rooms\Forth_Room</room>
   </rooms>

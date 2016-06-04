@@ -51,7 +51,7 @@ alarm[3] = 192.5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(0,0, L1R1_Intro_Text);
+            <string>instance_create(0,0, TUTR1_Intro_Text);
 </string>
           </argument>
         </arguments>
@@ -74,7 +74,7 @@ alarm[3] = 192.5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(0,0, L1R1_Third_Arrow);
+            <string>instance_create(0,0, TUTR1_Third_Arrow);
 </string>
           </argument>
         </arguments>
@@ -97,7 +97,7 @@ alarm[3] = 192.5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(0,0, L1R1_Second_Arrow);
+            <string>instance_create(0,0, TUTR1_Second_Arrow);
 </string>
           </argument>
         </arguments>
@@ -120,7 +120,7 @@ alarm[3] = 192.5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(0,0, L1R1_First_Arrow);
+            <string>instance_create(0,0, TUTR1_First_Arrow);
 </string>
           </argument>
         </arguments>
