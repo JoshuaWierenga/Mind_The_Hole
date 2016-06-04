@@ -68,6 +68,8 @@
           <object>objects\TUTR5_Second_Wall_Detector</object>
           <object>objects\TUTR5_First_Wall_Text</object>
           <object>objects\TUTR5_Second_Wall_Text</object>
+          <object>objects\TUTR5_No_Exit_Text</object>
+          <object>objects\TUTR5_New_Exit_Text</object>
         </objects>
       </objects>
     </objects>

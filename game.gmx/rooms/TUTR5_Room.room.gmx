@@ -139,6 +139,8 @@
     <instance objName="TUTR5_Second_Wall_Detector" x="1120" y="608" name="inst_3E5A6C36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TUTR5_First_Wall_Text" x="64" y="64" name="inst_63FB693B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TUTR5_Second_Wall_Text" x="96" y="64" name="inst_C0002844" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TUTR5_No_Exit_Text" x="128" y="64" name="inst_18D4C2D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TUTR5_New_Exit_Text" x="160" y="64" name="inst_E7FFF56A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
