@@ -60,9 +60,14 @@
           <object>objects\TUTR3_Opening_Text</object>
         </objects>
         <objects name="Room 4">
-          <object>objects\TUTR4_Wall</object>
           <object>objects\TUTR4_Wall_Detector</object>
           <object>objects\TUTR4_Wall_Text</object>
+        </objects>
+        <objects name="Room 5">
+          <object>objects\TUTR5_First_Wall_Detector</object>
+          <object>objects\TUTR5_Second_Wall_Detector</object>
+          <object>objects\TUTR5_First_Wall_Text</object>
+          <object>objects\TUTR5_Second_Wall_Text</object>
         </objects>
       </objects>
     </objects>
@@ -87,6 +92,7 @@
         <room>rooms\TUTR2_Room</room>
         <room>rooms\TUTR3_Room</room>
         <room>rooms\TUTR4_Room</room>
+        <room>rooms\TUTR5_Room</room>
       </rooms>
     </rooms>
   </rooms>
