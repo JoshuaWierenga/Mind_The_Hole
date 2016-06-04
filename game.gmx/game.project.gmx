@@ -99,6 +99,7 @@
       </objects>
       <object>objects\Player_Object</object>
       <object>objects\Room_Exit_Object</object>
+      <object>objects\End_Exit_Object</object>
       <object>objects\gravity_Object</object>
     </objects>
     <objects name="Map">
@@ -116,6 +117,7 @@
         <room>rooms\TUT_END_Room</room>
       </rooms>
     </rooms>
+    <room>rooms\WIN_END</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
