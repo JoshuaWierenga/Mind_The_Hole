@@ -9,9 +9,6 @@ horspeed = move * movespeed;
 
 if (verspeed < 10) verspeed += grav;
 
-
-
-
 //X movement on base_floor
 if (place_meeting(x+horspeed, y, base_floor))
 {

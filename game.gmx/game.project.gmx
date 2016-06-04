@@ -11,12 +11,6 @@
         <sprites name="Room 1">
           <sprite>sprites\Arrow_Texture</sprite>
         </sprites>
-        <sprites name="Room 2">
-          <sprite>sprites\Detector_Texture</sprite>
-        </sprites>
-        <sprites name="Room 4">
-          <sprite>sprites\Invisible_Wall_Texture</sprite>
-        </sprites>
       </sprites>
     </sprites>
     <sprites name="Objects">
@@ -30,6 +24,10 @@
       </sprites>
       <sprite>sprites\Player_Texture</sprite>
       <sprite>sprites\Room_Exit_Texture</sprite>
+    </sprites>
+    <sprites name="Map">
+      <sprite>sprites\Invisible_Wall_Texture</sprite>
+      <sprite>sprites\Detector_Texture</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -71,6 +69,9 @@
           <object>objects\TUTR5_Second_Wall_Text</object>
           <object>objects\TUTR5_No_Exit_Text</object>
           <object>objects\TUTR5_New_Exit_Text</object>
+          <object>objects\TUTR5_Hole_Detector</object>
+          <object>objects\TUTR5_Falling_Dectector</object>
+          <object>objects\TUTR5_Falling_Text</object>
         </objects>
       </objects>
     </objects>
