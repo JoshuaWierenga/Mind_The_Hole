@@ -70,21 +70,24 @@
           <object>objects\TUTR5_Second_Wall_Text</object>
           <object>objects\TUTR5_No_Exit_Text</object>
           <object>objects\TUTR5_New_Exit_Text</object>
-          <object>objects\TUTR5_Falling_Dectector</object>
+          <object>objects\TUTR5_Falling_Detector</object>
           <object>objects\TUTR5_Falling_Text</object>
         </objects>
         <objects name="End Room">
           <object>objects\TUT_END_Control_Object</object>
-          <object>objects\TUT_END_Intro_Text</object>
           <object>objects\TUT_END_Where_Exit_1_Text</object>
           <object>objects\TUT_END_Where_Exit_2_Text</object>
           <object>objects\TUT_END_Where_Exit_3_Text</object>
           <object>objects\TUT_END_Where_Exit_4_Text</object>
           <object>objects\TUT_END_Where_Exit_5_Text</object>
+          <object>objects\TUT_END_Stop_Text</object>
+          <object>objects\TUT_END_Exit_Text</object>
           <object>objects\TUT_END_Hole_Detector</object>
+          <object>objects\TUT_END_Falling_Blocks_Detector</object>
           <object>objects\TUT_END_Falling_Blocks</object>
           <object>objects\TUT_END_Ground_Block_Middle</object>
           <object>objects\TUT_END_Ground_Block_Bottom</object>
+          <object>objects\TUT_END_Exit</object>
         </objects>
       </objects>
     </objects>
@@ -99,7 +102,6 @@
       </objects>
       <object>objects\Player_Object</object>
       <object>objects\Room_Exit_Object</object>
-      <object>objects\End_Exit_Object</object>
       <object>objects\gravity_Object</object>
     </objects>
     <objects name="Map">

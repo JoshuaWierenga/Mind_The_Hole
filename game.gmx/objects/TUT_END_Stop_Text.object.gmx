@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(1132, 448, "get");
+            <string>draw_text(736, 464, "What do you think your doing?");
 </string>
           </argument>
         </arguments>
