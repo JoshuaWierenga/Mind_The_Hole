@@ -45,6 +45,7 @@
     <scripts name="GUI">
       <script>scripts\Arrows.gml</script>
     </scripts>
+    <script>scripts\Health.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Levels">
@@ -128,7 +129,6 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\L1R1_Room</room>
     <rooms name="Levels">
       <rooms name="Tutorial">
         <room>rooms\TUTR1_Room</room>
@@ -137,6 +137,9 @@
         <room>rooms\TUTR4_Room</room>
         <room>rooms\TUTR5_Room</room>
         <room>rooms\TUT_END_Room</room>
+      </rooms>
+      <rooms name="Level 1">
+        <room>rooms\L1R1_Room</room>
       </rooms>
     </rooms>
     <room>rooms\WIN_END</room>

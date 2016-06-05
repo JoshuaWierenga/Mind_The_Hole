@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Movement
+            <string>///Player Vars
+//Movement
 grav = 0.2;
 horspeed = 0;
 verspeed = 0;
@@ -35,6 +36,34 @@ movespeed = 5.75;
 //Sprites
 image_speed = 0;
 player_level = 0;
+
+//Health
+hurt = 0;
+hp = 3;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Reset Damage
+hurt = 0;
 </string>
           </argument>
         </arguments>
@@ -57,12 +86,23 @@ player_level = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (player_level != 0)
+            <string>//Sprites
+if (player_level != 0)
 {
     image_index = player_level;
     player_level = 0;
 }
 
+//Health
+if hurt = 1
+    {
+        image_alpha = 0.5;
+    }
+else
+    {
+        image_alpha = 1;
+    }
+if hp &lt;1 room_restart();
 </string>
           </argument>
         </arguments>
@@ -125,7 +165,8 @@ player_level = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Control_Object.allow_move = false;
+            <string>///Stop Movement
+Control_Object.allow_move = false;
 </string>
           </argument>
         </arguments>
@@ -143,6 +184,29 @@ player_level = 0;
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="8" enumb="73">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text(0,64, string(hurt) + " : " + string(hp))
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
   </events>

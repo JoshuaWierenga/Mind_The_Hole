@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sprite_index = Floating_Blocks_Texture;
+            <string>sprite_index = Grass_Floor_Texture;
 
 use_gravity = 0;
 grav = 0.2;

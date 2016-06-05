@@ -7,27 +7,17 @@ up_key = keyboard_check_pressed(vk_space);
 move = right_key + left_key;
 horspeed = move * movespeed;
 
-if (verspeed < 10) verspeed += grav;
-
-//Y movement on gravity_Object
-if (place_meeting(x, y+1, gravity_Object))
-{
-    verspeed = up_key * -jumpspeed;
-}
-
-if (place_meeting(x, y+verspeed, gravity_Object))
-{
-    while(!place_meeting(x, y+sign(verspeed), gravity_Object))
-    {
-        y += sign(verspeed);
-    }
-    verspeed = 0;
-}
+verspeed += grav;
 
 //X movement on gravity_Object
-if (place_meeting(x+horspeed, y, gravity_Object))
+if (place_meeting(x, y+1, gravity_Object))
 {
-    while(!place_meeting(x+sign(horspeed), y, gravity_Object))
+    if (up_key) verspeed = -jumpspeed;
+}
+    
+if (place_meeting(round(x+horspeed), round(y), gravity_Object))
+{
+    while(!place_meeting(round(x+sign(horspeed)), round(y), gravity_Object))
     {
         x += sign(horspeed);
     }
@@ -37,5 +27,19 @@ if (place_meeting(x+horspeed, y, gravity_Object))
 if (Control_Object.allow_move)
 {
     x += horspeed;
+}
+
+//Y movement on gravity_Object
+if (place_meeting(round(x), round(y+verspeed), gravity_Object))
+{
+    while(!place_meeting(round(x), round(y+verspeed), gravity_Object))
+    {
+        x += sign(verspeed);
+    }
+    verspeed = 0;
+}
+
+if (Control_Object.allow_move)
+{   
     y += verspeed;
 }
