@@ -130,7 +130,6 @@
     <instance objName="Floating_Blocks_Object" x="1120" y="544" name="inst_676FF954" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="1120" y="512" name="inst_AEFE277E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TUT_END_Control_Object" x="128" y="32" name="inst_8428A3B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="64" y="64" name="inst_210E95AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TUT_END_Where_Exit_1_Text" x="64" y="64" name="inst_64292B98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TUT_END_Where_Exit_2_Text" x="96" y="64" name="inst_4A4FFD2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TUT_END_Where_Exit_3_Text" x="128" y="64" name="inst_3E4BDD18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -157,6 +156,8 @@
     <instance objName="TUT_END_Stop_Text" x="224" y="64" name="inst_5E65BF44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TUT_END_Falling_Blocks_Detector" x="864" y="480" name="inst_B5C8EF4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TUT_END_Exit_Text" x="256" y="64" name="inst_48FBC80C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="-64" y="0" name="inst_997762E4" locked="0" code="" scaleX="1" scaleY="22" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="1312" y="0" name="inst_2213174C" locked="0" code="" scaleX="1" scaleY="22" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

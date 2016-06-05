@@ -132,6 +132,8 @@
     <instance objName="TUTR2_Control_Object" x="128" y="32" name="inst_C74D4C00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TUTR2_Gap_Text" x="64" y="64" name="inst_F88CFBB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Hole_Detector" x="672" y="704" name="inst_44DF02F4" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="-64" y="0" name="inst_C116293D" locked="0" code="" scaleX="1" scaleY="23" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="1312" y="0" name="inst_C2CF8B75" locked="0" code="" scaleX="1" scaleY="22" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

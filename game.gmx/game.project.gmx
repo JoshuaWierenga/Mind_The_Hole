@@ -24,6 +24,10 @@
       </sprites>
       <sprite>sprites\Player_Texture</sprite>
       <sprite>sprites\Room_Exit_Texture</sprite>
+      <sprites name="GUI">
+        <sprite>sprites\Left_Arrow</sprite>
+        <sprite>sprites\Right_Arrow</sprite>
+      </sprites>
     </sprites>
     <sprites name="Map">
       <sprite>sprites\Invisible_Wall_Texture</sprite>
@@ -34,8 +38,13 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\Player_Movement.gml</script>
-    <script>scripts\Gravity.gml</script>
+    <scripts name="Movement">
+      <script>scripts\Player_Movement.gml</script>
+      <script>scripts\Gravity.gml</script>
+    </scripts>
+    <scripts name="GUI">
+      <script>scripts\Arrows.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="Levels">

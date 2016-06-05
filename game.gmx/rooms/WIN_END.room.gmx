@@ -133,6 +133,9 @@
     <instance objName="Player_Object" x="256" y="224" name="inst_304CBD5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Control_Object" x="32" y="32" name="inst_53625E97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Tutorial_Control_Object" x="64" y="32" name="inst_9CA84DEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="-64" y="0" name="inst_63FCFB51" locked="0" code="" scaleX="1" scaleY="24" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="1056" y="0" name="inst_8D2B1624" locked="0" code="" scaleX="1" scaleY="24" colour="4294967295" rotation="0"/>
+    <instance objName="Hole_Detector" x="0" y="768" name="inst_651E9B4C" locked="0" code="" scaleX="32" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
