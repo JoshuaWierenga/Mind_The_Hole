@@ -1,6 +1,3 @@
-draw_text(0,0, string(mouse_x) + " " + string(mouse_y));
-
-
 left_x = 50;
 left_y = 637;
 right_x = left_x + 89;
