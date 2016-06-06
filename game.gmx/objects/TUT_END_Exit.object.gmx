@@ -64,7 +64,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (Player_Object) instance_destroy();
+            <string>Player_Object.persistent = 0;
 alarm[0] = 15;
 alarm[1] = 120;
 </string>

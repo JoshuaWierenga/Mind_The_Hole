@@ -21,6 +21,7 @@
           <sprite>sprites\Grass_Left_Floor_Texture</sprite>
           <sprite>sprites\Grass_Right_Floor_Texture</sprite>
         </sprites>
+        <sprite>sprites\Dark_Blocks_Texture</sprite>
       </sprites>
       <sprite>sprites\Player_Texture</sprite>
       <sprite>sprites\Room_Exit_Texture</sprite>
@@ -102,6 +103,7 @@
         </objects>
       </objects>
       <objects name="Level 1">
+        <object>objects\Level_1_Control_Object</object>
         <objects name="Room 1">
           <object>objects\L1R1_Falling_Blocks</object>
           <object>objects\L1R1_Falling_Grass</object>
@@ -112,7 +114,11 @@
           <object>objects\L1R1_No_Exit_Text</object>
           <object>objects\L1R1_Exit_Slow_Falling_Grass</object>
           <object>objects\L1R1_Exit_Fast_Falling_Grass</object>
+          <object>objects\L1R1_Exit_Text</object>
           <object>objects\L1R1_Exit_Object</object>
+          <object>objects\L1R1_Falling_Dark_Blocks</object>
+          <object>objects\L1R1_Grass</object>
+          <object>objects\L1R1_Falling_Dark_Blocks_Detector</object>
         </objects>
       </objects>
     </objects>
@@ -134,6 +140,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\L1R1_Room</room>
     <rooms name="Levels">
       <rooms name="Tutorial">
         <room>rooms\TUTR1_Room</room>
@@ -142,9 +149,6 @@
         <room>rooms\TUTR4_Room</room>
         <room>rooms\TUTR5_Room</room>
         <room>rooms\TUT_END_Room</room>
-      </rooms>
-      <rooms name="Level 1">
-        <room>rooms\L1R1_Room</room>
       </rooms>
     </rooms>
     <room>rooms\WIN_END</room>

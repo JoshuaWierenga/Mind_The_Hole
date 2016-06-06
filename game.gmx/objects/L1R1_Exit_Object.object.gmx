@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>Room_Exit_Object</parentName>
+  <parentName>gravity_Object</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -32,6 +32,29 @@ verspeed = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_create(64, 448, L1R1_Falling_Dark_Blocks_Detector);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -51,10 +74,10 @@ verspeed = 0;
             <kind>1</kind>
             <string>Gravity();
 
-if (place_meeting(x, y+1, Player_Object))
+if (place_meeting(x, y-1, Player_Object))
 {
-       Control_Object.allow_move = false;
-       room_goto_next();
+    L1R1_Falling_Dark_Blocks.use_gravity = 1;
+    alarm[0] = 5;
 }
 </string>
           </argument>

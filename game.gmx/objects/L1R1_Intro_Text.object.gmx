@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(736, 448, "NOW LOOK WHAT YOU HAVE DONE!!");
+            <string>draw_text(736, 448, "NOW LOOK AT WHAT YOU HAVE DONE!!");
 </string>
           </argument>
         </arguments>

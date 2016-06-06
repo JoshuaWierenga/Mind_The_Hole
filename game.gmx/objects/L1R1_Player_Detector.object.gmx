@@ -31,6 +31,29 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="6">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>L1R1_Exit_Text.visible = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="5">
       <action>
         <libid>1</libid>
@@ -50,7 +73,7 @@
             <kind>1</kind>
             <string>L1R1_Exit_Slow_Falling_Grass.use_gravity = 1;
 L1R1_Exit_Fast_Falling_Grass.use_gravity = 1;
-L1R1_Exit_Fast_Falling_Grass.alarm[0] = 90;
+L1R1_Exit_Fast_Falling_Grass.alarm[0] = 95;
 </string>
           </argument>
         </arguments>
@@ -202,6 +225,7 @@ L1R1_Exit_Fast_Falling_Grass.alarm[0] = 90;
     alarm[3] = 75;
     alarm[4] = 300;
     alarm[5] = 600;
+    alarm[6] = 710;
 }
 </string>
           </argument>
