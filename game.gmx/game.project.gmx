@@ -25,8 +25,9 @@
       <sprite>sprites\Player_Texture</sprite>
       <sprite>sprites\Room_Exit_Texture</sprite>
       <sprites name="GUI">
-        <sprite>sprites\Left_Arrow</sprite>
-        <sprite>sprites\Right_Arrow</sprite>
+        <sprite>sprites\Left_Arrow_Texture</sprite>
+        <sprite>sprites\Right_Arrow_Texture</sprite>
+        <sprite>sprites\Health_Bar_Texture</sprite>
       </sprites>
     </sprites>
     <sprites name="Map">
@@ -44,8 +45,8 @@
     </scripts>
     <scripts name="GUI">
       <script>scripts\Arrows.gml</script>
+      <script>scripts\Health.gml</script>
     </scripts>
-    <script>scripts\Health.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Levels">

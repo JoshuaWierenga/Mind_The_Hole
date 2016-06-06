@@ -20,6 +20,6 @@
   <width>89</width>
   <height>70</height>
   <frames>
-    <frame index="0">images\Left_Arrow_0.png</frame>
+    <frame index="0">images\Left_Arrow_Texture_0.png</frame>
   </frames>
 </sprite>
