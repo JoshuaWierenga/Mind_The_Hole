@@ -203,7 +203,7 @@ Control_Object.allow_move = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(0,64, string(hurt) + " : " + string(hp))
+            <string>draw_text(0,64, string(hurt) + " : " + string(hp));
 </string>
           </argument>
         </arguments>

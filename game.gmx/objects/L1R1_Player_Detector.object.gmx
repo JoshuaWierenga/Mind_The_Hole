@@ -200,7 +200,7 @@ L1R1_Exit_Fast_Falling_Grass.alarm[0] = 90;
     alarm[1] = 15;
     alarm[2] = 45;
     alarm[3] = 75;
-    alarm[4] = 240;
+    alarm[4] = 300;
     alarm[5] = 600;
 }
 </string>
