@@ -112,8 +112,7 @@
           <object>objects\L1R1_Delayed_2_Falling_Grass</object>
           <object>objects\L1R1_Intro_Text</object>
           <object>objects\L1R1_No_Exit_Text</object>
-          <object>objects\L1R1_Exit_Slow_Falling_Grass</object>
-          <object>objects\L1R1_Exit_Fast_Falling_Grass</object>
+          <object>objects\L1R1_Exit_Falling_Grass</object>
           <object>objects\L1R1_Exit_Text</object>
           <object>objects\L1R1_Exit_Object</object>
           <object>objects\L1R1_Falling_Dark_Blocks</object>
@@ -130,6 +129,7 @@
           <object>objects\Grass_Left_Floor_Object</object>
           <object>objects\Grass_Right_Floor_Object</object>
         </objects>
+        <object>objects\Dark_Blocks_Object</object>
       </objects>
       <object>objects\Player_Object</object>
       <object>objects\Room_Exit_Object</object>

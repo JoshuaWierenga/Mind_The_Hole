@@ -27,29 +27,8 @@
             <kind>1</kind>
             <string>grav = 0.3;
 verspeed = 0;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>instance_create(64, 448, L1R1_Falling_Dark_Blocks_Detector);
+
+contact = 0;
 </string>
           </argument>
         </arguments>
@@ -74,10 +53,10 @@ verspeed = 0;
             <kind>1</kind>
             <string>Gravity();
 
-if (place_meeting(x, y-1, Player_Object))
+if (place_meeting(x, y-1, Player_Object) &amp;&amp; contact == 0) 
 {
-    L1R1_Falling_Dark_Blocks.use_gravity = 1;
-    alarm[0] = 5;
+    contact = 1;
+    L1R1_Falling_Dark_Blocks.use_gravity = 1;   
 }
 </string>
           </argument>

@@ -7,8 +7,6 @@ up_key = keyboard_check_pressed(vk_space);
 move = right_key + left_key;
 horspeed = move * movespeed;
 
-verspeed += grav;
-
 //X movement on gravity_Object
 if (place_meeting(x, y+1, gravity_Object))
 {
@@ -30,16 +28,4 @@ if (Control_Object.allow_move)
 }
 
 //Y movement on gravity_Object
-if (place_meeting(round(x), round(y+verspeed), gravity_Object))
-{
-    while(!place_meeting(round(x), round(y+verspeed), gravity_Object))
-    {
-        x += sign(verspeed);
-    }
-    verspeed = 0;
-}
-
-if (Control_Object.allow_move)
-{   
-    y += verspeed;
-}
+Gravity();

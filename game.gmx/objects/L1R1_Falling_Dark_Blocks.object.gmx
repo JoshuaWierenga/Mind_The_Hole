@@ -28,7 +28,7 @@
             <string>sprite_index = Dark_Blocks_Texture;
 
 use_gravity = 0;
-grav = 0.2;
+grav = 0.05;
 verspeed = 0;
 </string>
           </argument>
@@ -52,33 +52,19 @@ verspeed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (use_gravity == 1)
+            <string>if (use_gravity == 1 &amp;&amp; !place_meeting(x, y+1, L1R1_Falling_Dark_Blocks_Detector))
 {
+    grav = 0.05;
     Gravity();
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="L1R1_Falling_Dark_Blocks_Detector">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>use_gravity = 0;
+else if (place_meeting(x, y+1, L1R1_Falling_Dark_Blocks_Detector))
+{
+    with (L1R1_Falling_Dark_Blocks)
+    {
+        use_gravity = 0;
+        instance_change(Dark_Blocks_Object, false);
+    }
+}
 </string>
           </argument>
         </arguments>

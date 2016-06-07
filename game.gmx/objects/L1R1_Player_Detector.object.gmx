@@ -71,9 +71,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>L1R1_Exit_Slow_Falling_Grass.use_gravity = 1;
-L1R1_Exit_Fast_Falling_Grass.use_gravity = 1;
-L1R1_Exit_Fast_Falling_Grass.alarm[0] = 95;
+            <string>L1R1_Exit_Falling_Grass.use_gravity = 1;
 </string>
           </argument>
         </arguments>
