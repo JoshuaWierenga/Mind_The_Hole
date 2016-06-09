@@ -48,6 +48,7 @@
       <script>scripts\Arrows.gml</script>
       <script>scripts\Health.gml</script>
     </scripts>
+    <script>scripts\make_blocks.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Levels">
@@ -130,6 +131,7 @@
           <object>objects\Grass_Right_Floor_Object</object>
         </objects>
         <object>objects\Dark_Blocks_Object</object>
+        <object>objects\Gravity_Floor_Object</object>
       </objects>
       <object>objects\Player_Object</object>
       <object>objects\Room_Exit_Object</object>
@@ -140,7 +142,6 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\L1R1_Room</room>
     <rooms name="Levels">
       <rooms name="Tutorial">
         <room>rooms\TUTR1_Room</room>
@@ -150,6 +151,7 @@
         <room>rooms\TUTR5_Room</room>
         <room>rooms\TUT_END_Room</room>
       </rooms>
+      <room>rooms\L1R1_Room</room>
     </rooms>
     <room>rooms\WIN_END</room>
   </rooms>
