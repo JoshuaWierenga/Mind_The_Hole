@@ -27,10 +27,10 @@
             <kind>1</kind>
             <string>TUTR5_First_Wall_Text.alarm[0] = 10;
 
-if (instance_place(x-1, y, Player_Object)) Player_Object.x += 1; 
-if (instance_place(x+1, y, Player_Object)) Player_Object.x -= 1;
+if (instance_place(x-1, y, Player_Object)) Player_Object.x -= 1; 
+if (instance_place(x+1, y, Player_Object)) Player_Object.x += 1;
     
-for (i = 482; i &lt;= 512; i += 32)
+for (i = 480; i &lt;= 512; i += 32)
 {
     make_blocks(416, i, 0, 0, 0, Floating_Blocks_Texture, 0);   
 }

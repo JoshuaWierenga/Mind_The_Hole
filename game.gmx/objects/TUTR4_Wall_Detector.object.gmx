@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>TUTR4_Wall_Text.alarm[0] = 10;
     
-if (instance_place(x-1, y, Player_Object)) Player_Object.x += 1; 
-if (instance_place(x+1, y, Player_Object)) Player_Object.x -= 1;
+if (instance_place(x-1, y, Player_Object)) Player_Object.x -= 1; 
+if (instance_place(x+1, y, Player_Object)) Player_Object.x += 1;
     
 for (i = 576; i &lt;= 640; i += 32)
 {
