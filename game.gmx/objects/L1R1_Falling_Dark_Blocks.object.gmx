@@ -65,6 +65,15 @@ else if (place_meeting(x, y+1, L1R1_Falling_Dark_Blocks_Detector))
         instance_change(Dark_Blocks_Object, false);
     }
 }
+
+if (place_meeting(x, y+10, Gravity_Floor_Object))
+{  
+    with (Gravity_Floor_Object) y+=100;
+    if (place_meeting(x, y+1, Gravity_Floor_Object).object == 0) 
+    {
+        //with (gravity_Object) if (object == 0) use_gravity = 0;
+    }
+}
 </string>
           </argument>
         </arguments>

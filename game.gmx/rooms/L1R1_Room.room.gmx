@@ -127,15 +127,7 @@
     <instance objName="Floating_Blocks_Object" x="1312" y="0" name="inst_2EABC977" locked="0" code="" scaleX="1" scaleY="22" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="0" y="704" name="inst_9231F54E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="32" y="704" name="inst_D9B2096E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floating_Blocks_Object" x="64" y="704" name="inst_120C08DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floating_Blocks_Object" x="96" y="704" name="inst_4A8B6434" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floating_Blocks_Object" x="128" y="704" name="inst_53AD05DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floating_Blocks_Object" x="160" y="704" name="inst_00852160" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floating_Blocks_Object" x="192" y="704" name="inst_4B61B4A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floating_Blocks_Object" x="224" y="704" name="inst_5E7A41D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floating_Blocks_Object" x="256" y="704" name="inst_7FE6FE0C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floating_Blocks_Object" x="288" y="704" name="inst_18AFF166" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floating_Blocks_Object" x="320" y="704" name="inst_A66CACAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="320" y="704" name="inst_18AFF166" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="352" y="704" name="inst_A32FDBC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="384" y="704" name="inst_BA6B0AD1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="416" y="704" name="inst_669E8732" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -194,15 +186,13 @@
     <instance objName="Floating_Blocks_Object" x="416" y="672" name="inst_097D285D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="384" y="672" name="inst_3AF29F4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="352" y="672" name="inst_9EA3713A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floating_Blocks_Object" x="320" y="672" name="inst_6B9774FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floating_Blocks_Object" x="288" y="672" name="inst_1FEF5456" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="320" y="672" name="inst_1FEF5456" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="256" y="672" name="inst_0F4BBE7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="224" y="672" name="inst_5C80E05C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="192" y="672" name="inst_AEB7E800" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="160" y="672" name="inst_48496CD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="128" y="672" name="inst_87F8981B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="96" y="672" name="inst_98E7F177" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floating_Blocks_Object" x="64" y="672" name="inst_9CCBC7C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="32" y="672" name="inst_B1B73CCE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="0" y="672" name="inst_A922D8D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Falling_Blocks" x="832" y="0" name="inst_28653987" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -243,13 +233,12 @@
     <instance objName="L1R1_Falling_Dark_Blocks" x="224" y="-128" name="inst_036B4238" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Falling_Dark_Blocks" x="256" y="-128" name="inst_53849DC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Falling_Dark_Blocks" x="288" y="-128" name="inst_513DBD2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Falling_Dark_Blocks" x="320" y="-128" name="inst_27E18D19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Falling_Dark_Blocks" x="192" y="-160" name="inst_D8C7396D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Falling_Dark_Blocks" x="192" y="-192" name="inst_7B13ACF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Falling_Dark_Blocks" x="192" y="-224" name="inst_5C6B8F65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Falling_Dark_Blocks" x="192" y="-256" name="inst_83DC47F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Falling_Dark_Blocks" x="192" y="-288" name="inst_9F7779F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Falling_Dark_Blocks" x="192" y="-320" name="inst_A4E5B4CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Falling_Dark_Blocks" x="176" y="-160" name="inst_D8C7396D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Falling_Dark_Blocks" x="176" y="-192" name="inst_7B13ACF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Falling_Dark_Blocks" x="176" y="-224" name="inst_5C6B8F65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Falling_Dark_Blocks" x="176" y="-256" name="inst_83DC47F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Falling_Dark_Blocks" x="176" y="-288" name="inst_9F7779F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Falling_Dark_Blocks" x="176" y="-320" name="inst_A4E5B4CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Grass" x="320" y="64" name="inst_841191BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Grass" x="288" y="64" name="inst_BCFDD2FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Grass" x="288" y="32" name="inst_890EBE87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -260,7 +249,7 @@
     <instance objName="L1R1_Grass" x="64" y="32" name="inst_3D70257F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Grass" x="64" y="64" name="inst_7737C559" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_No_Exit_Text" x="64" y="64" name="inst_B8AC574E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Falling_Dark_Blocks_Detector" x="64" y="448" name="inst_C6890E00" locked="0" code="" scaleX="9" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Falling_Dark_Blocks_Detector" x="64" y="480" name="inst_C6890E00" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Exit_Falling_Grass" x="96" y="32" name="inst_D5634314" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Exit_Falling_Grass" x="128" y="32" name="inst_C667CFB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Exit_Falling_Grass" x="128" y="0" name="inst_890A7FA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -271,14 +260,21 @@
     <instance objName="L1R1_Exit_Falling_Grass" x="256" y="32" name="inst_82586134" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Exit_Falling_Grass" x="256" y="0" name="inst_E99387CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Exit_Falling_Grass" x="224" y="0" name="inst_085CF2B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Falling_Dark_Blocks" x="192" y="-352" name="inst_F0F8A21F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Falling_Dark_Blocks" x="192" y="-384" name="inst_13AF0E65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Falling_Dark_Blocks" x="192" y="-416" name="inst_48DDB1FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Falling_Dark_Blocks" x="192" y="-448" name="inst_2B230D15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Falling_Dark_Blocks" x="192" y="-480" name="inst_7E118DE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Falling_Dark_Blocks" x="192" y="-512" name="inst_EB65C1DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Falling_Dark_Blocks" x="192" y="-544" name="inst_3F33E425" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Falling_Dark_Blocks" x="192" y="-576" name="inst_E8900D95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Falling_Dark_Blocks" x="176" y="-352" name="inst_F0F8A21F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Falling_Dark_Blocks" x="176" y="-384" name="inst_13AF0E65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Falling_Dark_Blocks" x="176" y="-416" name="inst_48DDB1FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Falling_Dark_Blocks" x="176" y="-448" name="inst_2B230D15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Falling_Dark_Blocks" x="176" y="-480" name="inst_7E118DE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Falling_Dark_Blocks" x="176" y="-512" name="inst_EB65C1DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Falling_Dark_Blocks" x="176" y="-544" name="inst_3F33E425" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Falling_Dark_Blocks" x="176" y="-576" name="inst_E8900D95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="96" y="704" name="inst_5A193566" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="128" y="704" name="inst_8631E6A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="160" y="704" name="inst_4BD68B88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="192" y="704" name="inst_5E4D11BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="224" y="704" name="inst_F6ED2C6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="256" y="704" name="inst_D9AC27D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Falling_Dark_Blocks" x="176" y="-608" name="inst_D5AE53BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

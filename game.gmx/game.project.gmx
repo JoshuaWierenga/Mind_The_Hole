@@ -143,6 +143,9 @@
   </objects>
   <rooms name="rooms">
     <rooms name="Levels">
+      <rooms name="Level 1">
+        <room>rooms\L1R1_Room</room>
+      </rooms>
       <rooms name="Tutorial">
         <room>rooms\TUTR1_Room</room>
         <room>rooms\TUTR2_Room</room>
@@ -150,9 +153,6 @@
         <room>rooms\TUTR4_Room</room>
         <room>rooms\TUTR5_Room</room>
         <room>rooms\TUT_END_Room</room>
-      </rooms>
-      <rooms name="Level 1">
-        <room>rooms\L1R1_Room</room>
       </rooms>
     </rooms>
     <room>rooms\WIN_END</room>
