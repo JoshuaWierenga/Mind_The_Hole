@@ -140,7 +140,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>L1R1_Delayed_2_Falling_Grass.use_gravity = 1;
+            <string>Level_1_Control_Object.alarm_2 = 1;
+Level_1_Control_Object.alarm_2_obj = instance_place(799.5, 32, Grass_Floor_Object);
+//&amp;&amp; instance_place(960, 64, Grass_Floor_Object)
+with (Level_1_Control_Object.alarm_2_obj)
+{
+    sprite_index = Dark_Blocks_Texture;   
+    verspeed = 0;
+    grav = 0.2;   
+}
 </string>
           </argument>
         </arguments>
@@ -163,7 +171,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>L1R1_Delayed_1_Falling_Grass.use_gravity = 1;
+            <string>Level_1_Control_Object.alarm_1 = 1;
+Level_1_Control_Object.alarm_1_obj = instance_place(800, 64, Grass_Floor_Object);
+with (Level_1_Control_Object.alarm_1_obj)
+{
+    verspeed = 0;
+    grav = 0.2;
+}
 </string>
           </argument>
         </arguments>

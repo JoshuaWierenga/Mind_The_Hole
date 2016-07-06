@@ -51,6 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
+    <instance objName="Grass_Floor_Object" x="800" y="64" name="inst_114A070E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="0" y="0" name="inst_3EBC624B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="32" y="0" name="inst_6D35472E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="352" y="0" name="inst_AF95E07E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -205,9 +206,6 @@
     <instance objName="L1R1_Falling_Grass" x="864" y="160" name="inst_663E4701" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Falling_Grass" x="896" y="224" name="inst_18965AD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Falling_Grass" x="928" y="160" name="inst_71BA874E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Delayed_1_Falling_Grass" x="800" y="64" name="inst_582A4359" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Delayed_2_Falling_Grass" x="800" y="32" name="inst_6C90EA34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Delayed_2_Falling_Grass" x="960" y="64" name="inst_7D851C4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Player_Detector" x="800" y="256" name="inst_DFED1090" locked="0" code="" scaleX="6.19354820251465" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="928" y="640" name="inst_CDD7C95D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="896" y="640" name="inst_26FF3027" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -275,6 +273,8 @@
     <instance objName="Floating_Blocks_Object" x="224" y="704" name="inst_F6ED2C6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="256" y="704" name="inst_D9AC27D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Falling_Dark_Blocks" x="176" y="-608" name="inst_D5AE53BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="800" y="32" name="inst_0DFE2A55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="960" y="64" name="inst_C290087D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
