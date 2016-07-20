@@ -104,12 +104,9 @@
         </objects>
       </objects>
       <objects name="Level 1">
-        <object>objects\Level_1_Control_Object</object>
         <objects name="Room 1">
-          <object>objects\L1R1_Falling_Blocks</object>
-          <object>objects\L1R1_Falling_Grass</object>
+          <object>objects\Room_1_Control_Object</object>
           <object>objects\L1R1_Player_Detector</object>
-          <object>objects\L1R1_Delayed_2_Falling_Grass</object>
           <object>objects\L1R1_Intro_Text</object>
           <object>objects\L1R1_No_Exit_Text</object>
           <object>objects\L1R1_Exit_Falling_Grass</object>
@@ -123,13 +120,16 @@
     </objects>
     <objects name="Objects">
       <objects name="Floors">
-        <object>objects\Floating_Blocks_Object</object>
         <objects name="Grass">
           <object>objects\Grass_Floor_Object</object>
+          <object>objects\Grass_Floor_Falling_Object</object>
           <object>objects\Grass_Left_Floor_Object</object>
           <object>objects\Grass_Right_Floor_Object</object>
         </objects>
+        <object>objects\Floating_Blocks_Object</object>
+        <object>objects\Falling_Blocks_Object</object>
         <object>objects\Dark_Blocks_Object</object>
+        <object>objects\Dark_Blocks_Falling_Object</object>
         <object>objects\Gravity_Floor_Object</object>
       </objects>
       <object>objects\Player_Object</object>

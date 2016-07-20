@@ -30,6 +30,7 @@ alarm_1_obj = 0;
 
 alarm_2 = 0;
 alarm_2_obj = 0;
+alarm_2_obj_2 = 0;
 </string>
           </argument>
         </arguments>
@@ -63,6 +64,10 @@ alarm_2_obj = 0;
 if (alarm_2)
 {
     with (alarm_2_obj)
+    {
+        Gravity();
+    }
+    with (alarm_2_obj_2)
     {
         Gravity();
     }

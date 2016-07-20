@@ -140,14 +140,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Level_1_Control_Object.alarm_2 = 1;
-Level_1_Control_Object.alarm_2_obj = instance_place(799.5, 32, Grass_Floor_Object);
-//&amp;&amp; instance_place(960, 64, Grass_Floor_Object)
-with (Level_1_Control_Object.alarm_2_obj)
-{
-    sprite_index = Dark_Blocks_Texture;   
+            <string>Room_1_Control_Object.alarm_2 = 1;
+Room_1_Control_Object.alarm_2_obj = instance_position(800, 32, Grass_Floor_Object);
+Room_1_Control_Object.alarm_2_obj_2 = instance_position(960, 64, Grass_Floor_Object);
+with (Room_1_Control_Object.alarm_2_obj)
+{  
     verspeed = 0;
     grav = 0.2;   
+}
+with (Room_1_Control_Object.alarm_2_obj_2)
+{
+    verspeed = 0;
+    grav = 0.2;  
 }
 </string>
           </argument>
@@ -171,9 +175,9 @@ with (Level_1_Control_Object.alarm_2_obj)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Level_1_Control_Object.alarm_1 = 1;
-Level_1_Control_Object.alarm_1_obj = instance_place(800, 64, Grass_Floor_Object);
-with (Level_1_Control_Object.alarm_1_obj)
+            <string>Room_1_Control_Object.alarm_1 = 1;
+Room_1_Control_Object.alarm_1_obj = instance_position(800, 64, Grass_Floor_Object);
+with (Room_1_Control_Object.alarm_1_obj)
 {
     verspeed = 0;
     grav = 0.2;
