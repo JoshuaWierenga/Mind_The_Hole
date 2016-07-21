@@ -109,7 +109,6 @@
           <object>objects\L1R1_Player_Detector</object>
           <object>objects\L1R1_Intro_Text</object>
           <object>objects\L1R1_No_Exit_Text</object>
-          <object>objects\L1R1_Exit_Falling_Grass</object>
           <object>objects\L1R1_Exit_Text</object>
           <object>objects\L1R1_Exit_Object</object>
           <object>objects\L1R1_Falling_Dark_Blocks</object>

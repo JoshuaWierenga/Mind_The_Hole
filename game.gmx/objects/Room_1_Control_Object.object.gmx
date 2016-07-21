@@ -31,6 +31,9 @@ alarm_1_obj = 0;
 alarm_2 = 0;
 alarm_2_obj = 0;
 alarm_2_obj_2 = 0;
+
+alarm_5 = 0;
+alarm_5_objs = 0;
 </string>
           </argument>
         </arguments>
@@ -72,6 +75,18 @@ if (alarm_2)
         Gravity();
     }
 }
+
+if (alarm_5)
+{
+    for (i = 0; i &gt;= array_length_1d(alarm_5_objs); i++)
+    {
+        with (alarm_5_objs[i])
+        {
+            Gravity;
+        }
+    }   
+}
+
 </string>
           </argument>
         </arguments>

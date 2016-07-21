@@ -71,7 +71,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>L1R1_Exit_Falling_Grass.use_gravity = 1;
+            <string>i = 0;
+for (i = 64; i &gt;= 0; i-=32)
+{
+    for (j = 64; j &lt;= 288; j+=32)
+    {
+        i++;
+        Room_1_Control_Object.alarm_5_objs[i] = instance_position(j, i, Grass_Floor_Object);
+        with(Room_1_Control_Object.alarm_5_objs[i])
+        {
+              verspeed = 0;
+              grav = 0.2;
+        }
+    }
+}
 </string>
           </argument>
         </arguments>
