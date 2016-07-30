@@ -104,16 +104,14 @@
         </objects>
       </objects>
       <objects name="Level 1">
+        <object>objects\Level_1_Control_Object</object>
         <objects name="Room 1">
-          <object>objects\Room_1_Control_Object</object>
           <object>objects\L1R1_Player_Detector</object>
           <object>objects\L1R1_Intro_Text</object>
           <object>objects\L1R1_No_Exit_Text</object>
           <object>objects\L1R1_Exit_Text</object>
           <object>objects\L1R1_Exit_Object</object>
           <object>objects\L1R1_Falling_Dark_Blocks</object>
-          <object>objects\L1R1_Grass</object>
-          <object>objects\L1R1_Falling_Dark_Blocks_Detector</object>
         </objects>
       </objects>
     </objects>

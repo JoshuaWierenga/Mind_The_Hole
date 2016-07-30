@@ -34,6 +34,38 @@ contact = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/*for (i = 0; i &lt;= 288; i+=224)
+{
+    for (j = 0; j &lt;= 64; j+=32)
+    {
+        with(instance_position(i, j, Grass_Floor_Object))
+        {
+            
+        }
+    }
+}*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -66,6 +98,8 @@ contact = 0;
         }
     }
 }
+
+
 </string>
           </argument>
         </arguments>
@@ -96,6 +130,8 @@ if (place_meeting(x, y-1, Player_Object) &amp;&amp; contact == 0)
     L1R1_Falling_Dark_Blocks.use_gravity = 1;  
     alarm[0] = 60;
 }
+
+alarm[1] = 80;
 </string>
           </argument>
         </arguments>

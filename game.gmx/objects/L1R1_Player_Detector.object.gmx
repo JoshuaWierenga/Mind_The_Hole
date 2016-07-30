@@ -71,17 +71,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>i = 0;
-for (i = 64; i &gt;= 0; i-=32)
+            <string>for (i = 96; i &lt;= 256; i+=32)
 {
-    for (j = 64; j &lt;= 288; j+=32)
+    for (j = 0; j &lt;= 64; j+=32)
     {
-        i++;
-        Room_1_Control_Object.alarm_5_objs[i] = instance_position(j, i, Grass_Floor_Object);
-        with(Room_1_Control_Object.alarm_5_objs[i])
+        with (instance_position(i, j, Grass_Floor_Object))
         {
-              verspeed = 0;
-              grav = 0.2;
+            use_gravity = 1;
         }
     }
 }
@@ -153,18 +149,13 @@ for (i = 64; i &gt;= 0; i-=32)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Room_1_Control_Object.alarm_2 = 1;
-Room_1_Control_Object.alarm_2_obj = instance_position(800, 32, Grass_Floor_Object);
-Room_1_Control_Object.alarm_2_obj_2 = instance_position(960, 64, Grass_Floor_Object);
-with (Room_1_Control_Object.alarm_2_obj)
+            <string>with (instance_position(800, 32, Grass_Floor_Object))
 {  
-    verspeed = 0;
-    grav = 0.2;   
+    use_gravity = 1;
 }
-with (Room_1_Control_Object.alarm_2_obj_2)
+with (instance_position(960, 64, Grass_Floor_Object))
 {
-    verspeed = 0;
-    grav = 0.2;  
+    use_gravity = 1;
 }
 </string>
           </argument>
@@ -188,12 +179,9 @@ with (Room_1_Control_Object.alarm_2_obj_2)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Room_1_Control_Object.alarm_1 = 1;
-Room_1_Control_Object.alarm_1_obj = instance_position(800, 64, Grass_Floor_Object);
-with (Room_1_Control_Object.alarm_1_obj)
+            <string>with (instance_position(800, 64, Grass_Floor_Object))
 {
-    verspeed = 0;
-    grav = 0.2;
+    use_gravity = 1;
 }
 </string>
           </argument>

@@ -61,10 +61,19 @@ else if (place_meeting(x, y+1, L1R1_Falling_Dark_Blocks_Detector))
 {
     with (L1R1_Falling_Dark_Blocks)
     {
-        use_gravity = 0;
+        //use_gravity = 0;
         instance_change(Dark_Blocks_Object, false);
     }
 }
+
+if (place_meeting(x, y+3, Grass_Floor_Object))
+{
+    with (instance_place(x, y+3, Grass_Floor_Object))
+    {
+        instance_destroy();
+    }
+}
+
 
 if (place_meeting(x, y+10, Gravity_Floor_Object))
 {  
