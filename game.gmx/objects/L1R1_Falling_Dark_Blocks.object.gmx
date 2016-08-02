@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -52,16 +52,15 @@ verspeed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (use_gravity == 1 &amp;&amp; !place_meeting(x, y+1, L1R1_Falling_Dark_Blocks_Detector))
+            <string>if (use_gravity == 1 &amp;&amp; y &lt; 448)
 {
     grav = 0.05;
     Gravity();
 }
-else if (place_meeting(x, y+1, L1R1_Falling_Dark_Blocks_Detector))
+else if (y &gt;= 448)
 {
     with (L1R1_Falling_Dark_Blocks)
     {
-        //use_gravity = 0;
         instance_change(Dark_Blocks_Object, false);
     }
 }
@@ -75,14 +74,14 @@ if (place_meeting(x, y+3, Grass_Floor_Object))
 }
 
 
-if (place_meeting(x, y+10, Gravity_Floor_Object))
+/*if (place_meeting(x, y+10, Gravity_Floor_Object))
 {  
     with (Gravity_Floor_Object) y+=100;
     if (place_meeting(x, y+1, Gravity_Floor_Object).object == 0) 
     {
         //with (gravity_Object) if (object == 0) use_gravity = 0;
     }
-}
+}*/
 </string>
           </argument>
         </arguments>

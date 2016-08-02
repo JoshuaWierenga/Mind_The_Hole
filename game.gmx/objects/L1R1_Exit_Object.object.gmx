@@ -87,14 +87,14 @@ contact = 0;
 {
     for (j = 64; j &lt;= 288; j+=224)
     {
-        make_blocks(j, i, 0, 1, -0.05, Dark_Blocks_Texture, 0);
+        make_blocks(j, i, 0, 1, -0.05, Dark_Blocks_Texture, 1);
     } 
     
     if (i = 1056)
     {
         for (j = 64; j &lt;= 288; j+=32)
         {
-            make_blocks(j, i, 0, 1, -0.05, Dark_Blocks_Texture, 0);
+            make_blocks(j, i, 0, 1, -0.05, Dark_Blocks_Texture, 1);
         }
     }
 }
@@ -124,14 +124,51 @@ contact = 0;
             <kind>1</kind>
             <string>Gravity();
 
-if (place_meeting(x, y-1, Player_Object) &amp;&amp; contact == 0) 
+if (!contact)
 {
-    contact = 1;
-    L1R1_Falling_Dark_Blocks.use_gravity = 1;  
-    alarm[0] = 60;
+    if (place_meeting(x, y-1, Player_Object) &amp;&amp; contact == 0) 
+    {
+        contact = 1;
+        /*for (i = 64; i &lt;= 288; i+=32)
+        {
+            for (j = -608; j &lt;= -128; j+=32)
+        {
+            if (i == 160 &amp;&amp; j &lt; -160) make_blocks(i+16, j, 0, 0, 0.05, Dark_Blocks_Texture, 0);
+            if (j == -128) make_blocks(i, j, 0, 0, 0.05, Dark_Blocks_Texture, 0);
+        }*/
+        for (j = -608; j &lt;= -128; j+=32) make_blocks(176, j, 0, 0, 0.05, Dark_Blocks_Texture, 0);
+        with(Gravity_Floor_Object)
+        {
+            if (object == 0)
+            {
+                use_gravity = 1;
+            }
+        }
+        
+        
+    //}
+        //L1R1_Falling_Dark_Blocks.use_gravity = 1;  
+        alarm[0] = 60;
+    }
+    
+    alarm[1] = 80;
 }
-
-alarm[1] = 80;
+else
+{
+    with(Gravity_Floor_Object)
+    {
+        if (object == 0 &amp;&amp; y &gt;= 448)
+        {            
+            with(Gravity_Floor_Object)
+            {
+                if (object == 0)
+                {
+                    instance_change(Dark_Blocks_Object, false);
+                }
+            }
+        }
+    }
+}
 </string>
           </argument>
         </arguments>
