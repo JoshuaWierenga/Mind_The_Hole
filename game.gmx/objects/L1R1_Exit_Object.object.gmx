@@ -87,16 +87,14 @@ contact = 0;
 {
     for (j = 64; j &lt;= 288; j+=224)
     {
-        //make_blocks(j, i, 0, 1, -0.05, Dark_Blocks_Texture, 1);
-        make_blocks(j, i, 1, 1, 0, -0.05, Dark_Blocks_Texture, 1);
+        make_blocks(j, i, 0, 1, -0.05, Dark_Blocks_Texture, 1);
     } 
     
     if (i = 1056)
     {
         for (j = 64; j &lt;= 288; j+=32)
         {
-            //make_blocks(j, i, 0, 1, -0.05, Dark_Blocks_Texture, 1);
-            make_blocks(j, i, 1, 1, 0, -0.05, Dark_Blocks_Texture, 1);
+            make_blocks(j, i, 0, 1, -0.05, Dark_Blocks_Texture, 1);
         }
     }
 }
@@ -130,27 +128,26 @@ if (place_meeting(x, y-1, Player_Object) &amp;&amp; !contact)
 {
     contact = 1;
         
-    /*for (i = 64; i &lt;= 288; i+=32)
+    for (i = 64; i &lt;= 288; i+=32)
     {        
         make_blocks(i, -96, 0, 0, 0.05, Dark_Blocks_Texture, 0);
     
-    }*/
+    }
         
-    //for (i = -128; i &gt;= -608; i-=32)
-    for (i = 0; i &lt;= 480; i+=32)
+    for (i = -128; i &gt;= -256; i-=32)
     {
-        make_blocks(176, i, 0, 1, 0, 0.05, Dark_Blocks_Texture, 0);
+        make_blocks(176, i, 0, 1, 0.05, Dark_Blocks_Texture, 0);
     }
                 
-    /*with(Gravity_Floor_Object)
+    with(Gravity_Floor_Object)
     {
         if (object == 0) use_gravity = 1;
     }
         
     alarm[0] = 60;
-    alarm[1] = 80;*/
+    alarm[1] = 80;
 }
-else if (contact == 2)
+else if (contact)
 {
     with(Grass_Floor_Object)
     { 

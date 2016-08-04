@@ -8,14 +8,14 @@ move = right_key + left_key;
 horspeed = move * movespeed;
 
 //X movement on gravity_Object
-if (place_meeting(x, y+1, gravity_Object))
+if (place_meeting(x, y+1, Collisions_Object))
 {
     if (up_key) verspeed = -jumpspeed;
 }
     
-if (place_meeting(round(x+horspeed), round(y), gravity_Object))
+if (place_meeting(round(x+horspeed), round(y), Collisions_Object))
 {
-    while(!place_meeting(round(x+sign(horspeed)), round(y), gravity_Object))
+    while(!place_meeting(round(x+sign(horspeed)), round(y), Collisions_Object))
     {
         x += sign(horspeed);
     }

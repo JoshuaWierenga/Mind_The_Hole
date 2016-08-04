@@ -131,7 +131,7 @@
       </objects>
       <object>objects\Player_Object</object>
       <object>objects\Room_Exit_Object</object>
-      <object>objects\gravity_Object</object>
+      <object>objects\Collisions_Object</object>
     </objects>
     <objects name="Map">
       <object>objects\Hole_Detector</object>
