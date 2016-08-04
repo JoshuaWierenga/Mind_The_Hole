@@ -34,7 +34,7 @@ if (instance_place(x+1, y, Player_Object)) Player_Object.x += 1;
     
 for (i = 512; i &lt;= 640; i += 32)
 {
-    make_blocks(1120, i, 0, 0, 0, Floating_Blocks_Texture, 0);   
+    make_blocks(1120, i, 1, 0, 0, 0, Floating_Blocks_Texture, 0);   
 }
     
 instance_destroy();

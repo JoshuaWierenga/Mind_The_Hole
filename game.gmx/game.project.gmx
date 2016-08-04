@@ -127,7 +127,8 @@
         <object>objects\Falling_Blocks_Object</object>
         <object>objects\Dark_Blocks_Object</object>
         <object>objects\Dark_Blocks_Falling_Object</object>
-        <object>objects\Gravity_Floor_Object</object>
+        <object>objects\Gravity_Collisions_Object</object>
+        <object>objects\Gravity_NoCollisions_Object</object>
       </objects>
       <object>objects\Player_Object</object>
       <object>objects\Room_Exit_Object</object>

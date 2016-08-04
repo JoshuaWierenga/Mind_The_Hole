@@ -1,10 +1,13 @@
-///make_blocks(xcord, ycord,collision first, use gravity?, gravity speed, texture, object id)
-block = instance_create(argument0, argument1, Gravity_Floor_Object);
+///make_blocks(xcord, ycord, use collisions?, use gravity?, wait for collision?, gravity speed, texture, object id)
+
+if (argument2) block = instance_create(argument0, argument1, Gravity_Collisions_Object);
+else block = instance_create(argument0, argument1,Gravity_NoCollisions_Object);
+
 with (block)
 {
-    waitforcontact = argument2;
     use_gravity = argument3;
-    grav = argument4;
-    sprite_index = argument5;
-    object = argument6;
+    waitforcontact = argument4;
+    grav = argument5;
+    sprite_index = argument6;
+    object = argument7;
 }
