@@ -29,39 +29,8 @@
 verspeed = 0;
 
 stage = 0;
-stage1_cage = 0;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*for (i = 0; i &lt;= 288; i+=224)
-{
-    for (j = 0; j &lt;= 64; j+=32)
-    {
-        with(instance_position(i, j, Grass_Floor_Object))
-        {
-            
-        }
-    }
-}*/
+stage1_cage_top = 0;
+stage1_cage_sides = 0;
 </string>
           </argument>
         </arguments>
@@ -139,56 +108,76 @@ if (place_meeting(x, y-1, Player_Object) &amp;&amp; stage == 0)
         make_blocks(176, i, 0, 1, 0, 0.05, Dark_Blocks_Texture, 0);
     }
         
-    alarm[0] = 45;
-    alarm[1] = 80;
+    alarm[0] = 40;
 }
 else if (stage == 1)
-{
-    with(Grass_Floor_Object)
-    { 
-        if (instance_position(x, y-2, Gravity_NoCollisions_Object))
+{   
+    //for cage stage 0 means nothing is done 1 means top is finished and 2 and 3 are for each of the sides
+    
+    //If top is not finished
+    if (stage1_cage_top == 0)
+    {
+        //Check if top is hitting grass and if so remove the grass
+        with(Grass_Floor_Object)
+        { 
+            if (instance_position(x, y-2, Gravity_NoCollisions_Object)) instance_destroy();
+        }
+        
+        //Check if top is at y = 448 and if so delete it and replace with objects that have collisions
+        //and no gravity
+        with(Gravity_NoCollisions_Object)
         {
-            instance_destroy();
+            if (object == 0 &amp;&amp; x == 64 &amp;&amp; y &gt;= 448)
+            {            
+                L1R1_Exit_Object.stage1_cage_top++;
+                with(Gravity_NoCollisions_Object)
+                {
+                    if (object == 0)
+                    {
+                        make_blocks(x, y-5, 1, 0, waitforcontact, grav, sprite_index, object);
+                        instance_destroy();
+                    }
+                }
+            }
         }
     }
     
-    with(Floating_Blocks_Object)
-    {
-        if (x == 64 || x == 288)
+    //If sides are not finished
+    if (stage1_cage_sides == 0)
+    {        
+        //Check if sides are hitting the ground and if so make the ground move with the sides
+        with(Floating_Blocks_Object)
         {
-            if (instance_position(x, y+32, Gravity_Collisions_Object))
+            if (x == 64 &amp;&amp; y = 704)
             {
-                use_gravity = 1;
-                grav = -0.05;
-                with(instance_position(x, y-1, Floating_Blocks_Object))
+                if (instance_position(x, y+32, Gravity_Collisions_Object))
                 {
+                    L1R1_Exit_Object.stage1_cage_sides++;
                     use_gravity = 1;
                     grav = -0.05;
+                    with(instance_place(x, y-2, Floating_Blocks_Object))
+                    {
+                        use_gravity = 1;
+                        grav = -0.05;
+                    }
+                    with(instance_place(x+224, y, Floating_Blocks_Object))
+                    {
+                        use_gravity = 1;
+                        grav = -0.05;
+                    }
+                    with(instance_place(x+224, y-2, Floating_Blocks_Object))
+                    {
+                        use_gravity = 1;
+                        grav = -0.05;
+                    }
                 }
-                L1R1_Exit_Object.stage1_cage++;
             }
         }
-    }
-    
-    with(Gravity_NoCollisions_Object)
-    {
-        if (object == 0 &amp;&amp; y &gt;= 448)
-        {            
-            with(Gravity_NoCollisions_Object)
-            {
-                if (object == 0)
-                {
-                    make_blocks(x, y, 1, 0, waitforcontact, grav, sprite_index, object);
-                    instance_destroy();
-                }
-            }
-        }
-    }
-    
-    if (stage1_cage == 2)
-    {
-        stage = 2;
-    }
+    }   
+}
+else if (stage1_cage_top &amp;&amp; stage1_cage_sides)
+{
+    stage = 2;
 }
 </string>
           </argument>
