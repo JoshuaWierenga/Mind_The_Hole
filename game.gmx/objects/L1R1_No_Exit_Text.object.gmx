@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//draw_text(384, 448, "There is no way out of here!");
-draw_text(384, 448, string(L1R1_Exit_Object.stage) + " : " + string(L1R1_Exit_Object.stage1_cage_top) + " : " + string(L1R1_Exit_Object.stage1_cage_sides));
+            <string>draw_text(384, 448, "There is no way out of here!");
 </string>
           </argument>
         </arguments>
