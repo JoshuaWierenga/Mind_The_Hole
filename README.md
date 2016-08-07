@@ -5,4 +5,4 @@ https://mindthehole.wordpress.com/
 https://trello.com/b/xbF2lwCN
 
 ######Testers Chat
-https://gamealphatesting.slack.com/
+https://mindthehole.slack.com/
