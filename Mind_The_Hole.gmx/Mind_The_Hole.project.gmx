@@ -55,13 +55,8 @@
       <object>objects\Control_Object</object>
       <objects name="Tutorial">
         <object>objects\Tutorial_Control_Object</object>
-        <objects name="Room 2">
-          <object>objects\TUTR2_Control_Object</object>
-          <object>objects\TUTR2_Opening_Text</object>
-          <object>objects\TUTR2_Gap_Detector</object>
-          <object>objects\TUTR2_Gap_Text</object>
-        </objects>
         <object>objects\TUTR1_Control_Object</object>
+        <object>objects\TUTR2_Control_Object</object>
         <objects name="Room 3">
           <object>objects\TUTR3_Control_Object</object>
           <object>objects\TUTR3_Opening_Text</object>
