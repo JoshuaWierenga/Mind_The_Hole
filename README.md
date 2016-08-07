@@ -1,8 +1,8 @@
 ######Project website
-https://gamealphatesting.wordpress.com/
+https://mindthehole.wordpress.com/
 
 ######Project management
-https://trello.com/b/xbF2lwCN/game-that-does-not-have-a-name-yet-planning
+https://trello.com/b/xbF2lwCN
 
 ######Testers Chat
 https://gamealphatesting.slack.com/
