@@ -55,19 +55,13 @@
       <object>objects\Control_Object</object>
       <objects name="Tutorial">
         <object>objects\Tutorial_Control_Object</object>
-        <objects name="Room 1">
-          <object>objects\TUTR1_Control_Object</object>
-          <object>objects\TUTR1_First_Arrow</object>
-          <object>objects\TUTR1_Second_Arrow</object>
-          <object>objects\TUTR1_Third_Arrow</object>
-          <object>objects\TUTR1_Intro_Text</object>
-        </objects>
         <objects name="Room 2">
           <object>objects\TUTR2_Control_Object</object>
           <object>objects\TUTR2_Opening_Text</object>
           <object>objects\TUTR2_Gap_Detector</object>
           <object>objects\TUTR2_Gap_Text</object>
         </objects>
+        <object>objects\TUTR1_Control_Object</object>
         <objects name="Room 3">
           <object>objects\TUTR3_Control_Object</object>
           <object>objects\TUTR3_Opening_Text</object>
@@ -133,9 +127,6 @@
       <object>objects\Player_Object</object>
       <object>objects\Room_Exit_Object</object>
       <object>objects\Collisions_Object</object>
-    </objects>
-    <objects name="Map">
-      <object>objects\Hole_Detector</object>
     </objects>
   </objects>
   <rooms name="rooms">
