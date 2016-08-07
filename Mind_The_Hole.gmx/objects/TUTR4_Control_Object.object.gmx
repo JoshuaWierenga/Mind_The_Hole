@@ -2,12 +2,36 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>text = 0;
+contact = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,7 +49,41 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>visible = true;
+            <string>text = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (!contact &amp;&amp; Player_Object.x &lt; 417)
+{
+    contact = 1;
+    alarm[0] = 10;
+    
+    if (Player_Object.y &gt;= 384 &amp;&amp; Player_Object.x &lt; 418) Player_Object.x = 418;
+    
+    for (i = 576; i &lt;= 640; i += 32)
+    {
+        make_blocks(384, i, 1, 0, 0, 0, Floating_Blocks_Texture, 0);   
+    }
+} 
 </string>
           </argument>
         </arguments>
@@ -48,7 +106,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(384, 448, "Sorry about that :)");
+            <string>if (text) draw_text(384, 448, "Sorry about that :)");
 </string>
           </argument>
         </arguments>

@@ -57,14 +57,8 @@
         <object>objects\Tutorial_Control_Object</object>
         <object>objects\TUTR1_Control_Object</object>
         <object>objects\TUTR2_Control_Object</object>
-        <objects name="Room 3">
-          <object>objects\TUTR3_Control_Object</object>
-          <object>objects\TUTR3_Opening_Text</object>
-        </objects>
-        <objects name="Room 4">
-          <object>objects\TUTR4_Wall_Detector</object>
-          <object>objects\TUTR4_Wall_Text</object>
-        </objects>
+        <object>objects\TUTR3_Control_Object</object>
+        <object>objects\TUTR4_Control_Object</object>
         <objects name="Room 5">
           <object>objects\TUTR5_First_Wall_Detector</object>
           <object>objects\TUTR5_Second_Wall_Detector</object>
