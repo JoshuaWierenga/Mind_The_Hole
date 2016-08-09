@@ -59,16 +59,7 @@
         <object>objects\TUTR2_Control_Object</object>
         <object>objects\TUTR3_Control_Object</object>
         <object>objects\TUTR4_Control_Object</object>
-        <objects name="Room 5">
-          <object>objects\TUTR5_First_Wall_Detector</object>
-          <object>objects\TUTR5_Second_Wall_Detector</object>
-          <object>objects\TUTR5_First_Wall_Text</object>
-          <object>objects\TUTR5_Second_Wall_Text</object>
-          <object>objects\TUTR5_No_Exit_Text</object>
-          <object>objects\TUTR5_New_Exit_Text</object>
-          <object>objects\TUTR5_Falling_Detector</object>
-          <object>objects\TUTR5_Falling_Text</object>
-        </objects>
+        <object>objects\TUTR5_Control_Object</object>
         <objects name="End Room">
           <object>objects\TUT_END_Control_Object</object>
           <object>objects\TUT_END_Where_Exit_1_Text</object>
