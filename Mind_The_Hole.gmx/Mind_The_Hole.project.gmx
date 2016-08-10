@@ -60,22 +60,7 @@
         <object>objects\TUTR3_Control_Object</object>
         <object>objects\TUTR4_Control_Object</object>
         <object>objects\TUTR5_Control_Object</object>
-        <objects name="End Room">
-          <object>objects\TUT_END_Control_Object</object>
-          <object>objects\TUT_END_Where_Exit_1_Text</object>
-          <object>objects\TUT_END_Where_Exit_2_Text</object>
-          <object>objects\TUT_END_Where_Exit_3_Text</object>
-          <object>objects\TUT_END_Where_Exit_4_Text</object>
-          <object>objects\TUT_END_Where_Exit_5_Text</object>
-          <object>objects\TUT_END_Stop_Text</object>
-          <object>objects\TUT_END_Exit_Text</object>
-          <object>objects\TUT_END_Hole_Detector</object>
-          <object>objects\TUT_END_Falling_Blocks_Detector</object>
-          <object>objects\TUT_END_Falling_Blocks</object>
-          <object>objects\TUT_END_Ground_Block_Middle</object>
-          <object>objects\TUT_END_Ground_Block_Bottom</object>
-          <object>objects\TUT_END_Exit</object>
-        </objects>
+        <object>objects\TUT_END_Control_Object</object>
       </objects>
       <objects name="Level 1">
         <object>objects\Level_1_Control_Object</object>

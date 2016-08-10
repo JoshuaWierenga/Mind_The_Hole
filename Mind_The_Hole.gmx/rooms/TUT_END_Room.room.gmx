@@ -130,34 +130,26 @@
     <instance objName="Floating_Blocks_Object" x="1120" y="544" name="inst_676FF954" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="1120" y="512" name="inst_AEFE277E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TUT_END_Control_Object" x="128" y="32" name="inst_8428A3B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Where_Exit_1_Text" x="64" y="64" name="inst_64292B98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Where_Exit_2_Text" x="96" y="64" name="inst_4A4FFD2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Where_Exit_3_Text" x="128" y="64" name="inst_3E4BDD18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Where_Exit_4_Text" x="160" y="64" name="inst_626AE05A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Where_Exit_5_Text" x="192" y="64" name="inst_078A3C2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Falling_Blocks" x="832" y="256" name="inst_A54B05D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Ground_Block_Middle" x="864" y="672" name="inst_7FD5B457" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Hole_Detector" x="672" y="704" name="inst_C8E408A1" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Ground_Block_Bottom" x="832" y="704" name="inst_898B5FE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Ground_Block_Bottom" x="864" y="704" name="inst_6884562D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Ground_Block_Bottom" x="896" y="704" name="inst_5308A1DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Ground_Block_Bottom" x="928" y="704" name="inst_0F283090" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Falling_Blocks" x="864" y="256" name="inst_CD307BFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Falling_Blocks" x="896" y="256" name="inst_1C93FF5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Falling_Blocks" x="928" y="256" name="inst_31122B82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Ground_Block_Middle" x="896" y="672" name="inst_261353D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Ground_Block_Middle" x="928" y="672" name="inst_DDD85C0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Falling_Blocks" x="800" y="639" name="inst_0D127181" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Falling_Blocks" x="960" y="639" name="inst_C8B9F581" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Ground_Block_Middle" x="800" y="672" name="inst_F96A9E50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Ground_Block_Middle" x="960" y="672" name="inst_928A5F35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Ground_Block_Middle" x="832" y="672" name="inst_0C52A5A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Exit" x="832" y="724" name="inst_1BCF165A" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Stop_Text" x="224" y="64" name="inst_5E65BF44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Falling_Blocks_Detector" x="864" y="480" name="inst_B5C8EF4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TUT_END_Exit_Text" x="256" y="64" name="inst_48FBC80C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="832" y="724" name="inst_1BCF165A" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="256" y="64" name="inst_48FBC80C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="-64" y="0" name="inst_997762E4" locked="0" code="" scaleX="1" scaleY="22" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="1312" y="0" name="inst_2213174C" locked="0" code="" scaleX="1" scaleY="22" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="800" y="672" name="inst_E9B3DADE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="832" y="672" name="inst_9F7896E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="864" y="672" name="inst_755FDC2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="896" y="672" name="inst_A88CC123" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="928" y="672" name="inst_67DB6CF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="960" y="672" name="inst_EDFA7895" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="832" y="704" name="inst_92C26FF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="864" y="704" name="inst_571BD5F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="896" y="704" name="inst_B3C590A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="928" y="704" name="inst_7C820D05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="864" y="256" name="inst_77BD0CD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="896" y="256" name="inst_E4E1AF90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="928" y="256" name="inst_1D1D6086" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="832" y="256" name="inst_D00C591D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="800" y="640" name="inst_ABB40A62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="960" y="640" name="inst_74CEF015" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

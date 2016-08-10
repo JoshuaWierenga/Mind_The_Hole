@@ -25,11 +25,69 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 120;
+            <string>first_text = 0;
+second_text = 0;
+third_text = 0;
+forth_text = 0;
+fifth_text = 0;
+sixth_text = 0;
+seventh_text = 0;
+
+contact = 0;
+
+alarm[0] = 120;
 alarm[1] = 150;
 alarm[2] = 180;
 alarm[3] = 210;
 alarm[4] = 240;
+
+first_run = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="6">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto_next();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>seventh_text = 1;
 </string>
           </argument>
         </arguments>
@@ -52,7 +110,7 @@ alarm[4] = 240;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>TUT_END_Where_Exit_5_Text.visible = true;
+            <string>fifth_text = 1;
 </string>
           </argument>
         </arguments>
@@ -75,7 +133,7 @@ alarm[4] = 240;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>TUT_END_Where_Exit_4_Text.visible = true;
+            <string>forth_text = 1;
 </string>
           </argument>
         </arguments>
@@ -98,7 +156,7 @@ alarm[4] = 240;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>TUT_END_Where_Exit_3_Text.visible = true;
+            <string>third_text = 1;
 </string>
           </argument>
         </arguments>
@@ -121,7 +179,7 @@ alarm[4] = 240;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>TUT_END_Where_Exit_2_Text.visible = true;
+            <string>second_text = 1;
 </string>
           </argument>
         </arguments>
@@ -144,7 +202,107 @@ alarm[4] = 240;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>TUT_END_Where_Exit_1_Text.visible = true;
+            <string>first_text = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (contact == 6 &amp;&amp; Player_Object.y &lt;= 128) Floating_Blocks_Object.falling = 2;
+
+if (Player_Object.y &gt;= 672 &amp;&amp; Player_Object.x &gt;= 832 &amp;&amp; Player_Object.x &lt; 928 &amp;&amp; Floating_Blocks_Object.falling = 2)
+{
+    Floating_Blocks_Object.falling = 3;
+    Player_Object.persistent = 0;
+    alarm[5] = 15;
+    alarm[6] = 120;
+}
+    
+if (first_run)
+{
+    first_run = 0;
+    Floating_Blocks_Object.falling = 0;
+}
+
+with (Grass_Floor_Object)
+{
+    if (y == 672 &amp;&amp; x &gt;= 800 &amp;&amp; x &lt;= 960 &amp;&amp; place_meeting(x, y-1, Floating_Blocks_Object) &amp;&amp; instance_place(x, y-1, Floating_Blocks_Object).falling)
+    {
+        TUT_END_Control_Object.contact++;
+        instance_destroy();
+    }
+}
+
+with (Floating_Blocks_Object)
+{
+    if (x &gt;= 800 &amp;&amp; x &lt;= 960)
+    {
+        if (place_meeting(x, y-1, Player_Object) || place_meeting(x-1, y, Player_Object) || place_meeting(x+1, y, Player_Object))
+        { 
+            if (falling == 0) 
+            {   
+                falling = 1;
+            }
+            else if (falling == 2)
+            {
+                with (Grass_Floor_Object)
+                {
+                    if (y == 704 &amp;&amp; x &gt;= 832 &amp;&amp; x &lt;= 929) instance_destroy();
+                }
+            }
+        }
+        
+        if (falling &gt;= 1) Gravity();
+        
+        if (y &gt;= 480 &amp;&amp; y &lt;= 512) TUT_END_Control_Object.sixth_text = 1;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (first_text) draw_text(1024, 448, "How");
+if (second_text) draw_text(1065, 448, "will");
+if (third_text) draw_text(1100, 448, "you");
+if (forth_text) draw_text(1132, 448, "get");
+if (fifth_text) draw_text(1170, 448, "out?");
+if (sixth_text) draw_text(736, 464, "What do you think your doing?");
+if (seventh_text) draw_text(768, 640, "NO WHY ARE YOU DOING THIS!");
 </string>
           </argument>
         </arguments>
