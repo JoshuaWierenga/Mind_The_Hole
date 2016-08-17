@@ -130,8 +130,6 @@
     <instance objName="Floating_Blocks_Object" x="1120" y="544" name="inst_676FF954" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="1120" y="512" name="inst_AEFE277E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TUT_END_Control_Object" x="128" y="32" name="inst_8428A3B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="832" y="724" name="inst_1BCF165A" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="256" y="64" name="inst_48FBC80C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="-64" y="0" name="inst_997762E4" locked="0" code="" scaleX="1" scaleY="22" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="1312" y="0" name="inst_2213174C" locked="0" code="" scaleX="1" scaleY="22" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="800" y="672" name="inst_E9B3DADE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
