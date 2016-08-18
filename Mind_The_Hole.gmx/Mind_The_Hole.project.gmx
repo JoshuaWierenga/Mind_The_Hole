@@ -6,6 +6,11 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="Menu">
+      <sprite>sprites\New_Game_Texture</sprite>
+      <sprite>sprites\Name_Texture</sprite>
+      <sprite>sprites\Continue_Texture</sprite>
+    </sprites>
     <sprites name="Levels">
       <sprites name="Level 1">
         <sprites name="Room 1">
@@ -81,9 +86,10 @@
       <object>objects\Room_Exit_Object</object>
       <object>objects\Collisions_Object</object>
     </objects>
+    <object>objects\menu_Object</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\L1R1_Room</room>
+    <room>rooms\Menu</room>
     <rooms name="Levels">
       <rooms name="Tutorial">
         <room>rooms\TUTR1_Room</room>
@@ -92,6 +98,9 @@
         <room>rooms\TUTR4_Room</room>
         <room>rooms\TUTR5_Room</room>
         <room>rooms\TUT_END_Room</room>
+      </rooms>
+      <rooms name="Level 1">
+        <room>rooms\L1R1_Room</room>
       </rooms>
     </rooms>
     <room>rooms\WIN_END</room>
