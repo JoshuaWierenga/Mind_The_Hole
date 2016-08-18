@@ -131,13 +131,13 @@
     <instance objName="Grass_Floor_Object" x="768" y="672" name="inst_513E6A7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="736" y="704" name="inst_FB8F4246" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="1152" y="672" name="inst_04209A91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="-64" y="0" name="inst_969D4C7F" locked="0" code="" scaleX="1" scaleY="22" colour="4294967295" rotation="0"/>
+    <instance objName="Floating_Blocks_Object" x="1312" y="0" name="inst_2B34358F" locked="0" code="" scaleX="1" scaleY="22" colour="4294967295" rotation="0"/>
     <instance objName="Room_Exit_Object" x="1120" y="667" name="inst_BAF67728" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Player_Object" x="64" y="608" name="inst_572894FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Control_Object" x="32" y="32" name="inst_FA23CFF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Tutorial_Control_Object" x="64" y="32" name="inst_D9EBD8C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TUTR1_Control_Object" x="96" y="32" name="inst_92127DFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floating_Blocks_Object" x="-64" y="0" name="inst_969D4C7F" locked="0" code="" scaleX="1" scaleY="22" colour="4294967295" rotation="0"/>
-    <instance objName="Floating_Blocks_Object" x="1312" y="0" name="inst_2B34358F" locked="0" code="" scaleX="1" scaleY="22" colour="4294967295" rotation="0"/>
+    <instance objName="Player_Object" x="64" y="608" name="inst_572894FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

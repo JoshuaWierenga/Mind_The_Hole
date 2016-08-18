@@ -4,10 +4,67 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto(1);
+alarm[0] = 10;
+//time = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Control_Object.draw_gui = false;
+with (Player_Object) instance_destroy();
+with (Tutorial_Control_Object) instance_destroy();
+with (Room_Exit_Object) instance_destroy();
+if (room == 1) with (TUTR1_Control_Object) instance_destroy();
+/*else if (room == 2) with (TUTR2_Control_Object) instance_destroy();
+else if (room == 3) with (TUTR3_Control_Object) instance_destroy();
+else if (room == 4) with (TUTR4_Control_Object) instance_destroy();
+else if (room == 5) with (TUTR5_Control_Object) instance_destroy();
+else if (room == 6) with (TUT_END_Control_Object) instance_destroy();*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,9 +82,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check(vk_f1))
+            <string>/*time++;
+
+if (time == 600) 
 {
-    room_goto_next();   
+    if (room &lt;= 6) transition(room+1,1);
+    else transition(1, 1);
+    time = 0;
+    alarm[0] = 1;
+}*/
+
+if (keyboard_check(vk_f1))
+{
+    persistent = 0;
+    room_goto(1);   
+    transition(1, 1);
 }
 </string>
           </argument>

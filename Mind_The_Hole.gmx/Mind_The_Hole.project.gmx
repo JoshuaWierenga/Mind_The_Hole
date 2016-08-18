@@ -3,7 +3,9 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Transition System</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="Menu">
@@ -49,6 +51,7 @@
       <script>scripts\Health.gml</script>
     </scripts>
     <script>scripts\make_blocks.gml</script>
+    <script>scripts\transition.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Levels">
@@ -86,7 +89,8 @@
       <object>objects\Room_Exit_Object</object>
       <object>objects\Collisions_Object</object>
     </objects>
-    <object>objects\menu_Object</object>
+    <object>objects\Menu_Object</object>
+    <object>objects\Transition_Object</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>

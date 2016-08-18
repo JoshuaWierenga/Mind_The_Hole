@@ -35,7 +35,7 @@ movespeed = 5.75;
 
 //Sprites
 image_speed = 0;
-player_level = 0;
+player_level = Control_Object.player_level;
 
 //Health
 hurt = 0;
@@ -168,23 +168,10 @@ if hp &lt; 1 room_restart();
             <kind>1</kind>
             <string>///Stop Movement
 Control_Object.allow_move = false;
+transition(room+1,1);
 </string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>222</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_next_room</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
   </events>
