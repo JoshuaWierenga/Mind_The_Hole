@@ -66,7 +66,6 @@
         <object>objects\TUT_END_Control_Object</object>
       </objects>
       <objects name="Level 1">
-        <object>objects\Level_1_Control_Object</object>
         <object>objects\L1R1_Control_Object</object>
       </objects>
     </objects>

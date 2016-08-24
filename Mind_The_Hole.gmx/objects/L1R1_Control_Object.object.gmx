@@ -64,11 +64,14 @@ alarm[5] = 710;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (Player_Object)
+            <string>if (Control_Object.playing)
 {
-    hp -= 2;
-    hurt = 1;
-    alarm[0] = 30;
+    with (Player_Object)
+    {
+        hp -= 2;
+        hurt = 1;
+        alarm[0] = 30;
+    }
 }
 </string>
           </argument>
@@ -116,23 +119,26 @@ floorfinished = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>make_blocks(128,-32,1, 1, 0, 0.3, Room_Exit_Texture, 0);
-
-with(Gravity_Collisions_Object)
+            <string>if (Control_Object.playing)
 {
-    if (object == 0)
+    make_blocks(128,-32,1, 1, 0, 0.3, Room_Exit_Texture, 0);
+    
+    with(Gravity_Collisions_Object)
     {
-        image_xscale = 4;
-    }
-}
-
-for (i = 96; i &lt;= 256; i+=32)
-{
-    for (j = 0; j &lt;= 64; j+=32)
-    {
-        with (instance_position(i, j, Grass_Floor_Object))
+        if (object == 0)
         {
-            use_gravity = 1;
+            image_xscale = 4;
+        }
+    }
+    
+    for (i = 96; i &lt;= 256; i+=32)
+    {
+        for (j = 0; j &lt;= 64; j+=32)
+        {
+            with (instance_position(i, j, Grass_Floor_Object))
+            {
+                use_gravity = 1;
+            }
         }
     }
 }
@@ -204,13 +210,16 @@ for (i = 96; i &lt;= 256; i+=32)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (instance_position(800, 32, Grass_Floor_Object))
-{  
-    use_gravity = 1;
-}
-with (instance_position(960, 64, Grass_Floor_Object))
+            <string>if (Control_Object.playing)
 {
-    use_gravity = 1;
+    with (instance_position(800, 32, Grass_Floor_Object))
+    {  
+        use_gravity = 1;
+    }
+    with (instance_position(960, 64, Grass_Floor_Object))
+    {
+        use_gravity = 1;
+    }
 }
 </string>
           </argument>
@@ -234,9 +243,12 @@ with (instance_position(960, 64, Grass_Floor_Object))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (instance_position(800, 64, Grass_Floor_Object))
+            <string>if (Control_Object.playing)
 {
-    use_gravity = 1;
+    with (instance_position(800, 64, Grass_Floor_Object))
+    {
+        use_gravity = 1;
+    }
 }
 </string>
           </argument>
@@ -260,110 +272,113 @@ with (instance_position(960, 64, Grass_Floor_Object))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (contact == 0 &amp;&amp; Player_Object.y &gt;= 256)
+            <string>if (Control_Object.playing)
 {
-    contact = 1;
-    alarm[6] = 10;
-}
-
-with(Gravity_Collisions_Object)
-{
-    if (object == 0)
+    if (contact == 0 &amp;&amp; Player_Object.y &gt;= 256)
     {
-        Gravity();
-    }
-}
-
-if (Player_Object.x &gt;= 128 &amp;&amp; Player_Object.x &lt;= 256 &amp;&amp; Player_Object.y &gt;= 503  &amp;&amp; floorfinished &amp;&amp; stage == 0) 
-{
-    stage = 1;
-        
-    for (i = 64; i &lt;= 288; i+=32)
-    {        
-        make_blocks(i, -96, 0, 1, 0, 0.05, Dark_Blocks_Texture, 1);
-    }
-        
-    for (i = -128; i &gt;= -576; i-=32)
-    {
-        make_blocks(176, i, 0, 1, 0, 0.05, Dark_Blocks_Texture, 1);
+        contact = 1;
+        alarm[6] = 10;
     }
     
-    for (i = 64; i &lt;= 288; i+=32)
+    with(Gravity_Collisions_Object)
     {
-        for (j = 832; j &lt;= 1056; j+=32)
-        {   
-            if (i == 64 || i == 288) make_blocks(i, j, 1, 1, 0, -0.05, Dark_Blocks_Texture, 2);
-    
-            if (j = 1056) make_blocks(i, j, 1, 1, 0, -0.05, Dark_Blocks_Texture, 2);
+        if (object == 0)
+        {
+            Gravity();
         }
     }
-}
-
-else if (stage == 1)
-        {   
-            //if cage stage 0 means nothing is done 1 means top is finished and 2 and 3 are for each of the sides
+    
+    if (Player_Object.x &gt;= 128 &amp;&amp; Player_Object.x &lt;= 256 &amp;&amp; Player_Object.y &gt;= 503  &amp;&amp; floorfinished &amp;&amp; stage == 0) 
+    {
+        stage = 1;
             
-            //If top is not finished
-            if (cage_top == 0)
-            {
-                //Check if top is hitting grass and if so remove the grass
-                with(Grass_Floor_Object)
-                { 
-                    if (instance_position(x, y-2, Gravity_NoCollisions_Object)) instance_destroy();
-                }
+        for (i = 64; i &lt;= 288; i+=32)
+        {        
+            make_blocks(i, -96, 0, 1, 0, 0.05, Dark_Blocks_Texture, 1);
+        }
+            
+        for (i = -128; i &gt;= -576; i-=32)
+        {
+            make_blocks(176, i, 0, 1, 0, 0.05, Dark_Blocks_Texture, 1);
+        }
+        
+        for (i = 64; i &lt;= 288; i+=32)
+        {
+            for (j = 832; j &lt;= 1056; j+=32)
+            {   
+                if (i == 64 || i == 288) make_blocks(i, j, 1, 1, 0, -0.05, Dark_Blocks_Texture, 2);
+        
+                if (j = 1056) make_blocks(i, j, 1, 1, 0, -0.05, Dark_Blocks_Texture, 2);
+            }
+        }
+    }
+    
+    else if (stage == 1)
+            {   
+                //if cage stage 0 means nothing is done 1 means top is finished and 2 and 3 are for each of the sides
                 
-                //Check if top is at y = 448 and if so delete it and replace with objects that have collisions
-                //and no gravity
-                with(Gravity_NoCollisions_Object)
+                //If top is not finished
+                if (cage_top == 0)
                 {
-                    if (object == 1 &amp;&amp; x == 64 &amp;&amp; y &gt;= 448)
-                    {            
-                        L1R1_Control_Object.cage_top++;
-                        with(Gravity_NoCollisions_Object)
-                        {
-                            if (object == 1)
+                    //Check if top is hitting grass and if so remove the grass
+                    with(Grass_Floor_Object)
+                    { 
+                        if (instance_position(x, y-2, Gravity_NoCollisions_Object)) instance_destroy();
+                    }
+                    
+                    //Check if top is at y = 448 and if so delete it and replace with objects that have collisions
+                    //and no gravity
+                    with(Gravity_NoCollisions_Object)
+                    {
+                        if (object == 1 &amp;&amp; x == 64 &amp;&amp; y &gt;= 448)
+                        {            
+                            L1R1_Control_Object.cage_top++;
+                            with(Gravity_NoCollisions_Object)
                             {
-                                make_blocks(x, y-5, 1, 0, waitforcontact, grav, sprite_index, object);
-                                instance_destroy();
+                                if (object == 1)
+                                {
+                                    make_blocks(x, y-5, 1, 0, waitforcontact, grav, sprite_index, object);
+                                    instance_destroy();
+                                }
                             }
                         }
                     }
                 }
             }
-        }
-
-if (cage_sides == 0)
-{        
-    //Check if sides are hitting the ground and if so make the ground move with the sides
-    with(Floating_Blocks_Object)
-    {
-        if (x == 64 &amp;&amp; y = 704 &amp;&amp; instance_position(x, y+32, Gravity_Collisions_Object))
+    
+    if (cage_sides == 0)
+    {        
+        //Check if sides are hitting the ground and if so make the ground move with the sides
+        with(Floating_Blocks_Object)
         {
-            L1R1_Control_Object.cage_sides++;
-            use_gravity = 1;
-            grav = -0.05;
-            with(instance_place(x, y-2, Floating_Blocks_Object))
+            if (x == 64 &amp;&amp; y = 704 &amp;&amp; instance_position(x, y+32, Gravity_Collisions_Object))
             {
+                L1R1_Control_Object.cage_sides++;
                 use_gravity = 1;
                 grav = -0.05;
-            }
-            with(instance_place(x+224, y, Floating_Blocks_Object))
-            {
-                use_gravity = 1;
-                grav = -0.05;
-            }
-            with(instance_place(x+224, y-2, Floating_Blocks_Object))
-            {
-                use_gravity = 1;
-                grav = -0.05;
+                with(instance_place(x, y-2, Floating_Blocks_Object))
+                {
+                    use_gravity = 1;
+                    grav = -0.05;
+                }
+                with(instance_place(x+224, y, Floating_Blocks_Object))
+                {
+                    use_gravity = 1;
+                    grav = -0.05;
+                }
+                with(instance_place(x+224, y-2, Floating_Blocks_Object))
+                {
+                    use_gravity = 1;
+                    grav = -0.05;
+                }
             }
         }
+    }   
+    
+    if (cage_top &amp;&amp; cage_sides)
+    {
+        stage = 2;
     }
-}   
-
-if (cage_top &amp;&amp; cage_sides)
-{
-    stage = 2;
 }
 </string>
           </argument>
@@ -387,9 +402,12 @@ if (cage_top &amp;&amp; cage_sides)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (first_text) draw_text(736, 448, "NOW LOOK AT WHAT YOU HAVE DONE!!");
-if (second_text) draw_text(384, 448, "There is no way out of here!");
-if (third_text) draw_text(136, 544, "NOOOOOOOOO!");
+            <string>if (Control_Object.draw_gui)
+{
+    if (first_text) draw_text(736, 448, "NOW LOOK AT WHAT YOU HAVE DONE!!");
+    if (second_text) draw_text(384, 448, "There is no way out of here!");
+    if (third_text) draw_text(136, 544, "NOOOOOOOOO!");
+}
 </string>
           </argument>
         </arguments>

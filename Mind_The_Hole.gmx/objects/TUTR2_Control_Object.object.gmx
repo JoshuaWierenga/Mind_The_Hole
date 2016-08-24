@@ -74,7 +74,7 @@ alarm[0] = 15;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!second_text &amp;&amp; Player_Object.x &lt; 832) second_text = 1;
+            <string>if (Control_Object.playing &amp;&amp; !second_text &amp;&amp; Player_Object.x &lt; 832) second_text = 1;
 </string>
           </argument>
         </arguments>
@@ -97,8 +97,11 @@ alarm[0] = 15;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (first_text) draw_text(1024, 448, "Simple?");
-if (second_text) draw_text(704, 448, "Mind the gap");
+            <string>if (Control_Object.draw_gui)
+{
+    if (first_text) draw_text(1024, 448, "Simple?");
+    if (second_text) draw_text(704, 448, "Mind the gap");
+}
 </string>
           </argument>
         </arguments>

@@ -48,16 +48,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (Player_Object)
+            <string>if (Control_Object.playing)
 {
-    if (verspeed &gt; 99.80)
-    {
-        verspeed = 99.80;
-    }
-    
-    if (room_get_name(room) != "TUTR1_Room" &amp;&amp; x &gt;= 671 &amp;&amp; x &lt;= 736 &amp;&amp; y &gt;= 704)
-    {
-        Player_Object.y = 0;
+    with (Player_Object)
+    {   
+        if (room_get_name(room) != "TUTR1_Room" &amp;&amp; x &gt;= 671 &amp;&amp; x &lt;= 736 &amp;&amp; y &gt;= 704)
+        {
+            Player_Object.y = 0;
+        }
     }
 }
 </string>

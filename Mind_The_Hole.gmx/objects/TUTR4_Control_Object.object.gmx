@@ -72,7 +72,7 @@ contact = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!contact &amp;&amp; Player_Object.x &lt; 417)
+            <string>if (Control_Object.playing &amp;&amp; !contact &amp;&amp; Player_Object.x &lt; 417)
 {
     contact = 1;
     alarm[0] = 10;
@@ -106,7 +106,7 @@ contact = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (text) draw_text(384, 448, "Sorry about that :)");
+            <string>if (Control_Object.draw_gui &amp;&amp; text) draw_text(384, 448, "Sorry about that :)");
 </string>
           </argument>
         </arguments>

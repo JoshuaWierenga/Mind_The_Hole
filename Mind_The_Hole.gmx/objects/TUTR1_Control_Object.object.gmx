@@ -148,10 +148,13 @@ alarm[3] = 192.5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (first_arrow) draw_sprite_ext(Arrow_Texture, 0, 800, 352, 1, 1, 45, -1, 255);
-if (second_arrow) draw_sprite_ext(Arrow_Texture, 0, 1120, 224, 1, 1, 0, -1, 255);
-if (third_arrow) draw_sprite_ext(Arrow_Texture, 0, 704, 672, 1, 1, 90, -1, 255);
-if (text) draw_text(650, 332, "Just get to the exit! :)");
+            <string>if (Control_Object.draw_gui)
+{
+    if (first_arrow) draw_sprite_ext(Arrow_Texture, 0, 800, 352, 1, 1, 45, -1, 255);
+    if (second_arrow) draw_sprite_ext(Arrow_Texture, 0, 1120, 224, 1, 1, 0, -1, 255);
+    if (third_arrow) draw_sprite_ext(Arrow_Texture, 0, 704, 672, 1, 1, 90, -1, 255);
+    if (text) draw_text(650, 332, "Just get to the exit! :)");
+}
 </string>
           </argument>
         </arguments>
