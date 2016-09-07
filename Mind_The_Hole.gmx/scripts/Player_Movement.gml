@@ -8,7 +8,7 @@ move = right_key + left_key;
 horspeed = move * movespeed;
 
 //X movement on gravity_Object
-if (place_meeting(x, y+1, Collisions_Object))
+if (place_meeting(x, y+32, Collisions_Object))
 {
     if (up_key) verspeed = -jumpspeed;
 }
