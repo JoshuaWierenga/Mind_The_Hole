@@ -81,7 +81,7 @@ contact = 0;
     
     for (i = 576; i &lt;= 640; i += 32)
     {
-        make_blocks(384, i, 1, 0, 0, 0, Floating_Blocks_Texture, 0);   
+        make_objects(384, i, 1, 0, 0, 0, Floating_Blocks_Texture, 0);   
     }
 } 
 </string>

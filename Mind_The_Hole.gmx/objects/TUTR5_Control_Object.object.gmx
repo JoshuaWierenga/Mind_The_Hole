@@ -170,7 +170,7 @@ contact = 3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (Control_Object)
+            <string>if (Control_Object.playing)
 {
     if (!contact &amp;&amp; Player_Object.x &gt; 351)
     {
@@ -181,7 +181,7 @@ contact = 3;
         
         for (i = 480; i &lt;= 512; i += 32)
         {
-            make_blocks(416, i, 1, 0, 0, 0, Floating_Blocks_Texture, 0);
+            make_objects(416, i, 1, 0, 0, 0, Floating_Blocks_Texture, 0);
         }
     }
     else if (contact == 1 &amp;&amp; Player_Object.x &gt; 1055)
@@ -195,7 +195,7 @@ contact = 3;
         
         for (i = 512; i &lt;= 640; i += 32)
         {
-            make_blocks(1120, i, 1, 0, 0, 0, Floating_Blocks_Texture, 1);   
+            make_objects(1120, i, 1, 0, 0, 0, Floating_Blocks_Texture, 1);   
         }
     }
     
@@ -208,7 +208,7 @@ contact = 3;
         
         for (i = 832; i &lt;= 928; i += 32)
         {
-            make_blocks(i, 256, 1, 0, 0, 0, Floating_Blocks_Texture, 2);   
+            make_objects(i, 256, 1, 0, 0, 0, Floating_Blocks_Texture, 2);   
         }
     }
 }
