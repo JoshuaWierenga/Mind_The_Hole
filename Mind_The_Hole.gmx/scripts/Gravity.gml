@@ -1,8 +1,8 @@
 verspeed += grav;
 
-if (place_meeting(round(x), round(y+verspeed), Collisions_Object))
+if (place_meeting(round(x), round(y+verspeed), argument0))
 {
-    while(!place_meeting(round(x), round(y+verspeed), Collisions_Object))
+    while(!place_meeting(round(x), round(y+verspeed), argument0))
     {
         x += sign(verspeed);
     }

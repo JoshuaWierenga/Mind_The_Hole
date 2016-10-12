@@ -49,7 +49,7 @@ verspeed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Gravity();
+            <string>Gravity(Collisions_Object);
 </string>
           </argument>
         </arguments>

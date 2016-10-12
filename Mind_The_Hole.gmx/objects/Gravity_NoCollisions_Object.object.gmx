@@ -50,7 +50,7 @@
             <kind>1</kind>
             <string>if (use_gravity == 1)
 {
-    Gravity();
+    Gravity(Collisions_Object);
 }
 </string>
           </argument>

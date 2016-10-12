@@ -113,7 +113,7 @@ draw_gui = true;
 
 display_set_gui_size(1280, 720);
 
-if (draw_gui = 1)
+if (draw_gui == 1)
 {
     Arrows();
     Health();

@@ -271,7 +271,7 @@ first_run = 1;
                 }
             }
             
-            if (falling &gt;= 1) Gravity();
+            if (falling &gt;= 1) Gravity(Collisions_Object);
             
             if (y &gt;= 480 &amp;&amp; y &lt;= 512) TUT_END_Control_Object.sixth_text = 1;
         }

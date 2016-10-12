@@ -28,4 +28,4 @@ if (Control_Object.allow_move)
 }
 
 //Y movement on gravity_Object
-Gravity();
+Gravity(Collisions_Object);
