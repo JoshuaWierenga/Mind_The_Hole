@@ -27,8 +27,32 @@
             <kind>1</kind>
             <string>first_text = 0;
 second_text = 0;
+third_text = 0;
 
 alarm[0] = 15;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>third_text = 1;
 </string>
           </argument>
         </arguments>
@@ -74,7 +98,11 @@ alarm[0] = 15;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (Control_Object.playing &amp;&amp; !second_text &amp;&amp; Player_Object.x &lt; 832) second_text = 1;
+            <string>if (Control_Object.playing &amp;&amp; !second_text &amp;&amp; Player_Object.x &lt; 832) 
+{
+    second_text = 1;
+    alarm[1] = 30;
+}
 </string>
           </argument>
         </arguments>
@@ -101,6 +129,7 @@ alarm[0] = 15;
 {
     if (first_text) draw_text(1024, 448, "Simple?");
     if (second_text) draw_text(704, 448, "Mind the gap");
+    if (third_text) draw_text(736, 384, "Try tapping the screen to cross it!");
 }
 </string>
           </argument>
