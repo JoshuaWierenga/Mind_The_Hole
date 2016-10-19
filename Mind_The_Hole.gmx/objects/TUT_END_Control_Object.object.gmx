@@ -302,11 +302,11 @@ first_run = 1;
             <string>if (Control_Object.draw_gui)
 {
     if (first_text) draw_text(1024, 448, "How");
-    if (second_text) draw_text(1065, 448, "will");
-    if (third_text) draw_text(1100, 448, "you");
-    if (forth_text) draw_text(1132, 448, "get");
-    if (fifth_text) draw_text(1170, 448, "out?");
-    if (sixth_text) draw_text(736, 464, "What do you think your doing?");
+    if (second_text) draw_text(1061, 448, "will");
+    if (third_text) draw_text(1089, 448, "you");
+    if (forth_text) draw_text(1119, 448, "get");
+    if (fifth_text) draw_text(1146, 448, "out?");
+    if (sixth_text) draw_text(738, 464, "What do you think your doing?");
     if (seventh_text) draw_text(768, 640, "NO WHY ARE YOU DOING THIS!");
 }
 </string>
