@@ -71,6 +71,7 @@
       <objects name="Level 1">
         <object>objects\L1R1_Control_Object</object>
       </objects>
+      <object>objects\WIN_END_Control_Object</object>
     </objects>
     <objects name="Objects">
       <objects name="Floors">
@@ -105,8 +106,8 @@
         <room>rooms\TUTR5_Room</room>
         <room>rooms\TUT_END_Room</room>
       </rooms>
-      <room>rooms\WIN_END</room>
     </rooms>
+    <room>rooms\WIN_END</room>
     <rooms name="Level 1">
       <room>rooms\L1R1_Room</room>
     </rooms>

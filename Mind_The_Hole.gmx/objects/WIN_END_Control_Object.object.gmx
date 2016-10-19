@@ -26,6 +26,30 @@
           <argument>
             <kind>1</kind>
             <string>Control_Object.player_level = 3;
+leavingRoom = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto(0);
 </string>
           </argument>
         </arguments>
@@ -52,12 +76,41 @@
 {
     with (Player_Object)
     {   
-        if (room_get_name(room) != "TUTR1_Room" &amp;&amp; x &gt;= 671 &amp;&amp; x &lt;= 736 &amp;&amp; y &gt;= 704)
+        if (WIN_END_Control_Object.leavingRoom == 0 &amp;&amp; x &gt;= 800 &amp;&amp; x &lt;= 927 &amp;&amp; y &gt;= 224 &amp;&amp; y &lt;= 256)
+        {
+            WIN_END_Control_Object.leavingRoom = 1;
+            persistent = 0;
+            WIN_END_Control_Object.alarm[0] = 30;
+        }
+        else if (y &gt;= 704)
         {
             y = 0;
         }
     }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text(224, 800, "Return to Menu");
 </string>
           </argument>
         </arguments>
