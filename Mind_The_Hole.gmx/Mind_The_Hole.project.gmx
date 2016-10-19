@@ -53,6 +53,9 @@
     <script>scripts\make_objects.gml</script>
     <script>scripts\transition.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font</font>
+  </fonts>
   <objects name="objects">
     <objects name="Levels">
       <object>objects\Control_Object</object>
