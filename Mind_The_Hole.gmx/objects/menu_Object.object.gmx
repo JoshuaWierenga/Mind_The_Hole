@@ -108,6 +108,7 @@ if (instance_exists(Room_Exit_Object)) with (Room_Exit_Object) instance_destroy(
 
 draw_sprite(Name_Texture, 0, 158, 183);
 draw_sprite(New_Game_Texture, 0, 534, 495);
+draw_text(1210,0, string(GM_version));
 //draw_sprite(New_Game_Texture, 0, 210, 495);
 //draw_sprite(Continue_Texture, 0, 864, 495);
 

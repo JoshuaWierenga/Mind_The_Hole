@@ -110,7 +110,8 @@ leavingRoom = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(224, 800, "Return to Menu");
+            <string>draw_text(806, 302, "Return to Menu");
+//draw_text(224, 800, "Return to Menu");
 </string>
           </argument>
         </arguments>
