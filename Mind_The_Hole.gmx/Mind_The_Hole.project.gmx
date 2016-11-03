@@ -14,9 +14,16 @@
       <sprite>sprites\Continue_Texture</sprite>
     </sprites>
     <sprites name="Levels">
-      <sprites name="Level 1">
+      <sprites name="Tutorial">
         <sprites name="Room 1">
           <sprite>sprites\Arrow_Texture</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="Level 1">
+        <sprites name="Room 1">
+          <sprite>sprites\Room_Exit</sprite>
+          <sprite>sprites\Cage_Top</sprite>
+          <sprite>sprites\Cage_Bottom</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -70,6 +77,11 @@
       </objects>
       <objects name="Level 1">
         <object>objects\L1R1_Control_Object</object>
+        <objects name="Room 1">
+          <object>objects\L1R1_Room_Exit_Object</object>
+          <object>objects\Cage_Top_Object</object>
+          <object>objects\Cage_Buttom_Object</object>
+        </objects>
       </objects>
       <object>objects\WIN_END_Control_Object</object>
     </objects>
@@ -96,6 +108,9 @@
     <object>objects\Transition_Object</object>
   </objects>
   <rooms name="rooms">
+    <rooms name="Level 1">
+      <room>rooms\L1R1_Room</room>
+    </rooms>
     <room>rooms\Menu</room>
     <rooms name="Levels">
       <rooms name="Tutorial">
@@ -108,9 +123,6 @@
       </rooms>
     </rooms>
     <room>rooms\WIN_END</room>
-    <rooms name="Level 1">
-      <room>rooms\L1R1_Room</room>
-    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
