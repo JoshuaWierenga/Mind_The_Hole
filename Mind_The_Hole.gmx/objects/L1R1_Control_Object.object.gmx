@@ -242,7 +242,7 @@ alarm[5] = 410;
     {
         started_cage = 1;
         instance_create(64, -384, Cage_Top_Object);
-        instance_create(64, 400, Cage_Buttom_Object);
+        instance_create(64, 752, Cage_Buttom_Object);
     }  
 }
 </string>

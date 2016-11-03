@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>grav = 0.2;
 verspeed = 0;
-use_gravity = 1;;
+use_gravity = 1;
 
 with(instance_position(64, 0, Grass_Floor_Object))
 {
