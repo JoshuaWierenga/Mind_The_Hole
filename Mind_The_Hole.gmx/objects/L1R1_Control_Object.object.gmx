@@ -238,7 +238,7 @@ alarm[5] = 410;
         }
     }
     
-    if (exit_fallen == 1 &amp;&amp; started_cage == 0 &amp;&amp; round(Player_Object.y) == 505 &amp;&amp; x &gt;= 64 &amp;&amp; x &lt;= 255)
+    if (exit_fallen == 1 &amp;&amp; started_cage == 0 &amp;&amp; round(Player_Object.y) == 505 &amp;&amp; Player_Object.x &gt;= 64 &amp;&amp; Player_Object.x &lt;= 255)
     {
         started_cage = 1;
         with(instance_position(192, -608, L1R1_Cage_Top_Object))
