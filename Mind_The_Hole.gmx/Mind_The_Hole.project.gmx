@@ -79,8 +79,8 @@
         <object>objects\L1R1_Control_Object</object>
         <objects name="Room 1">
           <object>objects\L1R1_Room_Exit_Object</object>
+          <object>objects\Cage_Bottom_Object</object>
           <object>objects\Cage_Top_Object</object>
-          <object>objects\Cage_Buttom_Object</object>
         </objects>
       </objects>
       <object>objects\WIN_END_Control_Object</object>

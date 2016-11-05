@@ -27,20 +27,7 @@
             <kind>1</kind>
             <string>grav = 0.2;
 verspeed = 0;
-use_gravity = 1;
-
-with(instance_position(64, 0, Grass_Floor_Object))
-{
-    instance_destroy();
-}
-
-with(instance_position(288, 0, Grass_Floor_Object))
-{
-    instance_destroy();
-}
-
-alarm[0] = 20;
-alarm[1] = 40;
+use_gravity = 0;
 </string>
           </argument>
         </arguments>

@@ -216,10 +216,6 @@
     <instance objName="Floating_Blocks_Object" x="192" y="704" name="inst_5E4D11BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="224" y="704" name="inst_F6ED2C6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="256" y="704" name="inst_D9AC27D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floating_Blocks_Object" x="64" y="672" name="inst_D98390F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floating_Blocks_Object" x="64" y="704" name="inst_DA575B9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floating_Blocks_Object" x="288" y="672" name="inst_692AD4B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floating_Blocks_Object" x="288" y="704" name="inst_013908EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Falling_Blocks_Object" x="832" y="0" name="inst_33ED570D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Falling_Blocks_Object" x="928" y="64" name="inst_902C7F4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Falling_Blocks_Object" x="864" y="128" name="inst_3E28EE42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -232,6 +228,8 @@
     <instance objName="L1R1_Control_Object" x="96" y="32" name="inst_26210ADB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Player_Object" x="864" y="64" name="inst_B3F0C3EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Room_Exit_Object" x="96" y="-8" name="inst_45F59980" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Cage_Top_Object" x="64" y="-384" name="inst_82C4A609" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Cage_Bottom_Object" x="64" y="672" name="inst_8EB18569" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

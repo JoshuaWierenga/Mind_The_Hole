@@ -241,8 +241,27 @@ alarm[5] = 410;
     if (exit_fallen == 1 &amp;&amp; started_cage == 0 &amp;&amp; round(Player_Object.y) == 505 &amp;&amp; x &gt;= 64 &amp;&amp; x &lt;= 255)
     {
         started_cage = 1;
-        instance_create(64, -384, Cage_Top_Object);
-        instance_create(64, 752, Cage_Buttom_Object);
+        with(instance_position(192, -384, Cage_Top_Object))
+        { 
+            use_gravity = 1;
+            alarm[0] = 20;
+            alarm[1] = 40;
+        }
+        
+        with(instance_position(64, 0, Grass_Floor_Object))
+        {
+            instance_destroy();
+        }
+        
+        with(instance_position(288, 0, Grass_Floor_Object))
+        {
+            instance_destroy();
+        }
+        
+        with(instance_position(64, 736, Cage_Bottom_Object))
+        {
+            use_gravity = 1;
+        }
     }  
 }
 </string>
