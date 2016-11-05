@@ -114,7 +114,7 @@ with(instance_position(288, 32, Grass_Floor_Object))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (use_gravity) Gravity(Menu_Object);
+            <string>if (use_gravity) Gravity(Collisions_Object);
 
 if (y &gt;= -38 &amp;&amp; use_gravity == 1)
 {
