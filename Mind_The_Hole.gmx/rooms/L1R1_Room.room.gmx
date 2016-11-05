@@ -2,7 +2,7 @@
 <room>
   <caption></caption>
   <width>1280</width>
-  <height>976</height>
+  <height>720</height>
   <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
@@ -126,14 +126,12 @@
     <instance objName="Grass_Floor_Object" x="960" y="0" name="inst_2AB64B03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="800" y="32" name="inst_0DFE2A55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="960" y="64" name="inst_C290087D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Grass_Floor_Object" x="352" y="0" name="inst_FF13DBB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="64" y="0" name="inst_D9ABBB56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="64" y="32" name="inst_58EF9500" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="64" y="64" name="inst_0ED61F85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="288" y="64" name="inst_45EF9057" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="288" y="32" name="inst_30687564" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="288" y="0" name="inst_A1DE789C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Grass_Floor_Object" x="320" y="0" name="inst_808B3834" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="320" y="32" name="inst_0774CF2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="320" y="64" name="inst_C6D0A895" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="928" y="640" name="inst_CDD7C95D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -228,8 +226,9 @@
     <instance objName="L1R1_Control_Object" x="96" y="32" name="inst_26210ADB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Player_Object" x="864" y="64" name="inst_B3F0C3EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Room_Exit_Object" x="96" y="-8" name="inst_45F59980" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Cage_Top_Object" x="64" y="-608" name="inst_82C4A609" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Cage_Bottom_Object" x="64" y="672" name="inst_8EB18569" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Grass_Floor_Object" x="320" y="0" name="inst_255DD83B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Cage_Top_Object" x="64" y="-608" name="inst_E64468CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

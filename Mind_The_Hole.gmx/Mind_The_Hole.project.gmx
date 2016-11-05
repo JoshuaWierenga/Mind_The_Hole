@@ -24,6 +24,8 @@
           <sprite>sprites\L1R1_Room_Exit</sprite>
           <sprite>sprites\L1R1_Cage_Top</sprite>
           <sprite>sprites\L1R1_Cage_Bottom</sprite>
+          <sprite>sprites\L1R1_Cage_Holder</sprite>
+          <sprite>sprites\L1R1_Cage_Body</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -79,8 +81,11 @@
         <object>objects\L1R1_Control_Object</object>
         <objects name="Room 1">
           <object>objects\L1R1_Room_Exit_Object</object>
-          <object>objects\L1R1_Cage_Bottom_Object</object>
           <object>objects\L1R1_Cage_Top_Object</object>
+          <object>objects\L1R1_Cage_Bottom_Object</object>
+          <object>objects\L1R1_Cage_Holder_Object</object>
+          <object>objects\L1R1_Cage_Body_Object</object>
+          <object>objects\L1R1_Falling</object>
         </objects>
       </objects>
       <object>objects\WIN_END_Control_Object</object>
@@ -107,6 +112,7 @@
     <object>objects\Menu_Object</object>
     <object>objects\Transition_Object</object>
   </objects>
+  <timelines name="timelines"/>
   <rooms name="rooms">
     <rooms name="Level 1">
       <room>rooms\L1R1_Room</room>

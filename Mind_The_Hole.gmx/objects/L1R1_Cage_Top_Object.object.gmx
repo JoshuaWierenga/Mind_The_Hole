@@ -116,10 +116,11 @@ with(instance_position(288, 32, Grass_Floor_Object))
             <kind>1</kind>
             <string>if (use_gravity) Gravity(Collisions_Object);
 
-if (y &gt;= -38 &amp;&amp; use_gravity == 1)
+if (y &gt;= -38 &amp;&amp; use_gravity == 1 &amp;&amp; L1R1_Control_Object.cage_finished == 0)
 {
     use_gravity = 0;
-    y += 6;
+    y += 3;
+    L1R1_Control_Object.cage_finished = 1;
 }
 </string>
           </argument>

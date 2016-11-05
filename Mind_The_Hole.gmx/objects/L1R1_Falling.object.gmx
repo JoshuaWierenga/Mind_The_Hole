@@ -25,52 +25,25 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>first_text = 0;
-second_text = 0;
-third_text = 0;
+            <string>//6
+make_objects(288, -32, 1, 1, 0, 0.2, Grass_Floor_Texture, 0);
 
-player_fallen = 0;
+with(instance_position(320, 64, Grass_Floor_Object))
+{
+    use_gravity = 1;
+}
 
-exit_fallen = 0;
-started_cage = 0;
-cage_finished = 0;
-started_falling = 0;
-start_cage_fall = 0;
-cage_replaced = 0;
+alarm[0] = 20;
+alarm[1] = 80;
 
+alarm[2] = 40;
 
-inside = false;
-checkPos = true;
+alarm[3] = 80;
 
-alarm[0] = 15;
-alarm[1] = 45;
-alarm[2] = 75;
-alarm[3] = 200;
-alarm[4] = 300;
-alarm[5] = 410;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="7">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>instance_create(0, 0, L1R1_Falling);
+alarm[4] = 240;
+
+alarm[5] = 370;
+alarm[6] = 300;
 </string>
           </argument>
         </arguments>
@@ -93,13 +66,7 @@ alarm[5] = 410;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//1
-make_objects(64, -32, 1, 1, 0, 0.2, Grass_Floor_Texture, 0);
-//3
-make_objects(128, -32, 1, 1, 0, 0.2, Grass_Floor_Texture, 0);
-//4
-make_objects(224, -32, 1, 1, 0, 0.2, Grass_Floor_Texture, 0);
-alarm[7] = 40;
+            <string>L1R1_Control_Object.start_cage_fall = 1;
 </string>
           </argument>
         </arguments>
@@ -122,7 +89,17 @@ alarm[7] = 40;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>third_text = 1;
+            <string>for (i = 0; i &lt;= room_width; i += 32)
+{
+     for (j = 0; j &lt;= 64; j += 32)
+    {
+        with(instance_position(i, j, Grass_Floor_Object))
+        {
+            use_gravity = 1;
+        }
+    }
+}
+
 </string>
           </argument>
         </arguments>
@@ -145,12 +122,24 @@ alarm[7] = 40;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (Control_Object.playing)
-{   
-    with(L1R1_Room_Exit_Object)
-    {
-        use_gravity = 1;
-    }
+            <string>//8
+make_objects(128, -32, 1, 1, 0, 0.2, Floating_Blocks_Texture, 0);
+//9
+make_objects(256, -32, 1, 1, 0, 0.2, Grass_Floor_Texture, 0);
+
+with(instance_position(320, 0, Grass_Floor_Object))
+{
+    use_gravity = 1;
+}
+
+with(instance_position(32, 32, Grass_Floor_Object))
+{
+    use_gravity = 1;
+}
+
+with(instance_position(448, 64, Grass_Floor_Object))
+{
+    use_gravity = 1;
 }
 </string>
           </argument>
@@ -174,7 +163,8 @@ alarm[7] = 40;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>second_text = 1;
+            <string>//10
+make_objects(64, -32, 1, 1, 0, 0.2, Floating_Blocks_Texture, 0);
 </string>
           </argument>
         </arguments>
@@ -197,7 +187,8 @@ alarm[7] = 40;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>first_text = 1;
+            <string>//7
+make_objects(64, -32, 1, 1, 0, 0.2, Grass_Floor_Texture, 0);
 </string>
           </argument>
         </arguments>
@@ -220,16 +211,17 @@ alarm[7] = 40;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (Control_Object.playing)
+            <string>//5
+make_objects(256, -32, 1, 1, 0, 0.2, Floating_Blocks_Texture, 0);
+
+with(instance_position(32, 64, Grass_Floor_Object))
 {
-    with (instance_position(800, 32, Grass_Floor_Object))
-    {  
-        use_gravity = 1;
-    }
-    with (instance_position(960, 64, Grass_Floor_Object))
-    {
-        use_gravity = 1;
-    }
+    use_gravity = 1;
+}
+
+with(instance_position(320, 32, Grass_Floor_Object))
+{
+    use_gravity = 1;
 }
 </string>
           </argument>
@@ -247,146 +239,14 @@ alarm[7] = 40;
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>L1R1_Falling</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (Control_Object.playing)
-{
-    with (instance_position(800, 64, Grass_Floor_Object))
-    {
-        use_gravity = 1;
-    }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (Control_Object.playing)
-{
-    if (player_fallen == 0 &amp;&amp; round(Player_Object.y) &gt;= 481)
-    {
-        player_fallen = 1;
-        with (Player_Object)
-        {
-            hp -= 2;
-            hurt = 1;
-            alarm[0] = 30;
-        }
-    }
-    
-    if (exit_fallen == 1 &amp;&amp; started_cage == 0 &amp;&amp; round(Player_Object.y) == 505 &amp;&amp; Player_Object.x &gt;= 64 &amp;&amp; Player_Object.x &lt;= 255)
-    {
-        started_cage = 1;
-        with(instance_position(192, -608, L1R1_Cage_Top_Object))
-        { 
-            use_gravity = 1;
-            alarm[0] = 20;
-            alarm[1] = 40;
-        }
-        
-        with(instance_position(64, 0, Grass_Floor_Object))
-        {
-            instance_destroy();
-        }
-        
-        with(instance_position(288, 0, Grass_Floor_Object))
-        {
-            instance_destroy();
-        }
-        
-        with(instance_position(65, 737, L1R1_Cage_Bottom_Object))
-        {
-            use_gravity = 1;
-        }
-    }
-    
-    if (cage_finished == 1 &amp;&amp; started_falling == 0)
-    {
-        started_falling = 1;    
-        alarm[6] = 30;
-    }  
-    
-    if (start_cage_fall == 1 &amp;&amp; cage_replaced == 0)
-    {
-        cage_replaced = 1;
-        
-        for (i = 65; i &lt;= 289; i += 32)
-        {
-            for (j = 353; j &lt;= 705; j += 32)
-            {
-
-                if (!place_meeting(i, j, Player_Object))
-                {
-                    with(instance_position(i, j, all))
-                    {
-                        instance_destroy();
-                    }
-                }
-            }
-        }
-        
-        instance_create(176, -32.125, L1R1_Cage_Holder_Object);
-        with(instance_create(64, 256, L1R1_Cage_Body_Object))
-        {
-            use_gravity = 1;
-        }
-        Player_Object.y -= 6;
-    }
-    
-    if (cage_replaced == 1)
-    {
-        Player_Object.y += 1;
-    }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (Control_Object.draw_gui)
-{
-    if (first_text) draw_text(736, 448, "NOW LOOK AT WHAT YOU HAVE DONE!!");
-    if (second_text) draw_text(384, 448, "There is no way out of here! ");
-    if (third_text) draw_text(136, 544, "NOOOOOOOOO!");
-}
+            <string>//2
+make_objects(96, -32, 1, 1, 0, 0.2, Floating_Blocks_Texture, 0);
 </string>
           </argument>
         </arguments>
