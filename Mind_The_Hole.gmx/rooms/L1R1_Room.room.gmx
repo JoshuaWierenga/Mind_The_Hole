@@ -228,8 +228,8 @@
     <instance objName="L1R1_Control_Object" x="96" y="32" name="inst_26210ADB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Player_Object" x="864" y="64" name="inst_B3F0C3EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R1_Room_Exit_Object" x="96" y="-8" name="inst_45F59980" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Cage_Top_Object" x="64" y="-384" name="inst_82C4A609" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Cage_Bottom_Object" x="64" y="672" name="inst_8EB18569" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Cage_Top_Object" x="64" y="-608" name="inst_82C4A609" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="L1R1_Cage_Bottom_Object" x="64" y="672" name="inst_8EB18569" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

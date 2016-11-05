@@ -241,7 +241,7 @@ alarm[5] = 410;
     if (exit_fallen == 1 &amp;&amp; started_cage == 0 &amp;&amp; round(Player_Object.y) == 505 &amp;&amp; x &gt;= 64 &amp;&amp; x &lt;= 255)
     {
         started_cage = 1;
-        with(instance_position(192, -384, Cage_Top_Object))
+        with(instance_position(192, -608, L1R1_Cage_Top_Object))
         { 
             use_gravity = 1;
             alarm[0] = 20;
@@ -258,7 +258,7 @@ alarm[5] = 410;
             instance_destroy();
         }
         
-        with(instance_position(64, 736, Cage_Bottom_Object))
+        with(instance_position(65, 737, L1R1_Cage_Bottom_Object))
         {
             use_gravity = 1;
         }
@@ -293,7 +293,7 @@ alarm[5] = 410;
     if (third_text) draw_text(136, 544, "NOOOOOOOOO!");
 } 
 
-draw_text(100, 100, string(round(L1R1_Room_Exit_Object.y)) + " : " + string(started_cage) + " : " + string(Player_Object.x) + " : " + string(round(Player_Object.y)));
+draw_text(100, 100, string(round(L1R1_Cage_Top_Object.y)) + " : " + string(started_cage) + " : " + string(Player_Object.x) + " : " + string(round(Player_Object.y)));
 </string>
           </argument>
         </arguments>
