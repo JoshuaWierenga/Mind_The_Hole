@@ -39,8 +39,7 @@ start_cage_fall = 0;
 cage_replaced = 0;
 time_falling = 0;
 
-inside = false;
-checkPos = true;
+player_inside_cage = false;
 
 alarm[0] = 15;
 alarm[1] = 45;
@@ -351,17 +350,30 @@ alarm[7] = 40;
         {
             use_gravity = 1;
         }
-        Player_Object.y -= 6;
+        player_inside_cage = Player_Object.x &gt;= 96 &amp;&amp; Player_Object.x &lt;= 256 &amp;&amp; Player_Object.y &gt;= 480;
+        
+        if (player_inside_cage) Player_Object.y -= 6;
+        Control_Object.allow_player_jump = false;
     }
     
     if (cage_replaced == 1)
     {
         time_falling++;
-        Player_Object.y += 1;
+        if (player_inside_cage) Player_Object.y += 1;
     }
     
     if (time_falling == 80)
     {
+        if (player_inside_cage)
+        {
+            Player_Object.player_level = 2;
+        }
+        else
+        {
+            Player_Object.x = 128;
+            Player_Object.y = -64;
+            Player_Object.player_level = 3;
+        }
         transition(room+1,0, 120, c_white);
     }
 }

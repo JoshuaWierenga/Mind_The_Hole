@@ -10,7 +10,7 @@ horspeed = move * movespeed;
 //X movement on gravity_Object
 if (place_meeting(x, y+32, Collisions_Object))
 {
-    if (up_key) verspeed = -jumpspeed;
+    if (up_key && Control_Object.allow_player_jump) verspeed = -jumpspeed;
 }
     
 if (place_meeting(round(x+horspeed), round(y), Collisions_Object))
