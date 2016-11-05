@@ -391,7 +391,7 @@ alarm[7] = 40;
 {
     if (first_text) draw_text(736, 448, "NOW LOOK AT WHAT YOU HAVE DONE!!");
     if (second_text) draw_text(384, 448, "There is no way out of here! ");
-    if (third_text) draw_text(136, 544, "NOOOOOOOOO!");
+    if (third_text) draw_text(126, 544, "NOOOOOOOOO!");
 }
 </string>
           </argument>
