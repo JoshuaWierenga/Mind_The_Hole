@@ -330,6 +330,8 @@ alarm[7] = 40;
     {
         cage_replaced = 1;
         
+        Control_Object.allow_player_jump = false;
+        
         for (i = 65; i &lt;= 289; i += 32)
         {
             for (j = 353; j &lt;= 705; j += 32)
@@ -351,15 +353,12 @@ alarm[7] = 40;
             use_gravity = 1;
         }
         player_inside_cage = Player_Object.x &gt;= 96 &amp;&amp; Player_Object.x &lt;= 256 &amp;&amp; Player_Object.y &gt;= 480;
-        
-        if (player_inside_cage) Player_Object.y -= 6;
-        Control_Object.allow_player_jump = false;
     }
     
     if (cage_replaced == 1)
     {
         time_falling++;
-        if (player_inside_cage) Player_Object.y += 1;
+        if (player_inside_cage) Player_Object.y += 2;
     }
     
     if (time_falling == 80)
