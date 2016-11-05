@@ -112,11 +112,7 @@
     <object>objects\Menu_Object</object>
     <object>objects\Transition_Object</object>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
-    <rooms name="Level 1">
-      <room>rooms\L1R1_Room</room>
-    </rooms>
     <room>rooms\Menu</room>
     <rooms name="Levels">
       <rooms name="Tutorial">
@@ -126,6 +122,9 @@
         <room>rooms\TUTR4_Room</room>
         <room>rooms\TUTR5_Room</room>
         <room>rooms\TUT_END_Room</room>
+      </rooms>
+      <rooms name="Level 1">
+        <room>rooms\L1R1_Room</room>
       </rooms>
     </rooms>
     <room>rooms\WIN_END</room>

@@ -37,7 +37,7 @@ cage_finished = 0;
 started_falling = 0;
 start_cage_fall = 0;
 cage_replaced = 0;
-
+time_falling = 0;
 
 inside = false;
 checkPos = true;
@@ -336,7 +336,7 @@ alarm[7] = 40;
             for (j = 353; j &lt;= 705; j += 32)
             {
 
-                if (!place_meeting(i, j, Player_Object))
+                if (instance_position(i, j, all) != inst_B3F0C3EF)
                 {
                     with(instance_position(i, j, all))
                     {
@@ -356,7 +356,13 @@ alarm[7] = 40;
     
     if (cage_replaced == 1)
     {
+        time_falling++;
         Player_Object.y += 1;
+    }
+    
+    if (time_falling == 80)
+    {
+        transition(room+1,0, 120, c_white);
     }
 }
 </string>

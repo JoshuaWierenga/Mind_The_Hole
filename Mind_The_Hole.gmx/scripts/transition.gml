@@ -1,4 +1,4 @@
-///room_goto_transition(room,transition,[steps],[col],[jam]);
+///transition(room,transition,[steps],[col],[jam]);
 with(instance_create(0,0,Transition_Object)) {
  next_room = argument[0]; //The room we want to go to.
  kind = argument[1]; //The transition kind we want to use.
