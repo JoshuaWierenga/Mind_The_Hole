@@ -9,14 +9,14 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="Menu">
-      <sprite>sprites\New_Game_Texture</sprite>
-      <sprite>sprites\Name_Texture</sprite>
-      <sprite>sprites\Continue_Texture</sprite>
+      <sprite>sprites\New_Game</sprite>
+      <sprite>sprites\Game_Name</sprite>
+      <sprite>sprites\Continue</sprite>
     </sprites>
     <sprites name="Levels">
       <sprites name="Tutorial">
         <sprites name="Room 1">
-          <sprite>sprites\Arrow_Texture</sprite>
+          <sprite>sprites\TUTR1_Arrow</sprite>
         </sprites>
       </sprites>
       <sprites name="Level 1">
@@ -31,21 +31,21 @@
     </sprites>
     <sprites name="Objects">
       <sprites name="Floors">
-        <sprite>sprites\Floating_Blocks_Texture</sprite>
         <sprites name="Grass">
-          <sprite>sprites\Grass_Floor_Texture</sprite>
-          <sprite>sprites\Grass_Left_Floor_Texture</sprite>
-          <sprite>sprites\Grass_Right_Floor_Texture</sprite>
+          <sprite>sprites\Grass</sprite>
+          <sprite>sprites\Grass_Left_Slope</sprite>
+          <sprite>sprites\Grass_Right_Slope</sprite>
         </sprites>
-        <sprite>sprites\Dark_Blocks_Texture</sprite>
+        <sprite>sprites\Light_Gray</sprite>
+        <sprite>sprites\Dark_Gray</sprite>
       </sprites>
-      <sprite>sprites\Player_Texture</sprite>
-      <sprite>sprites\Room_Exit_Texture</sprite>
       <sprites name="GUI">
         <sprite>sprites\Left_Arrow_Texture</sprite>
         <sprite>sprites\Right_Arrow_Texture</sprite>
         <sprite>sprites\Health_Bar_Texture</sprite>
       </sprites>
+      <sprite>sprites\Player_Texture</sprite>
+      <sprite>sprites\Room_Exit</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
