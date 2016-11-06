@@ -52,13 +52,13 @@
     <option_android_mopub_ads>0</option_android_mopub_ads>
     <option_android_orient_landscape>True</option_android_orient_landscape>
     <option_android_orient_landscape_flipped>True</option_android_orient_landscape_flipped>
-    <option_android_orient_portrait>True</option_android_orient_portrait>
-    <option_android_orient_portrait_flipped>True</option_android_orient_portrait_flipped>
+    <option_android_orient_portrait>False</option_android_orient_portrait>
+    <option_android_orient_portrait_flipped>False</option_android_orient_portrait_flipped>
     <option_android_orientation>2</option_android_orientation>
     <option_android_ouya_icon>Configs\Default\android\icons\ouyaIcon.png</option_android_ouya_icon>
-    <option_android_package_company>companyname</option_android_package_company>
+    <option_android_package_company>joshuawierenga</option_android_package_company>
     <option_android_package_domain>com</option_android_package_domain>
-    <option_android_package_product>game</option_android_package_product>
+    <option_android_package_product>mindthehole</option_android_package_product>
     <option_android_permission_flags>0</option_android_permission_flags>
     <option_android_portrait_splash_png>Configs\Default\android\portrait_splash.png</option_android_portrait_splash_png>
     <option_android_push_enable>0</option_android_push_enable>
@@ -502,8 +502,8 @@
     <option_win8_native_cpu>x86</option_win8_native_cpu>
     <option_win8_package_display_name>Mind the hole</option_win8_package_display_name>
     <option_win8_package_name>mindthehole</option_win8_package_name>
-    <option_win8_portrait_allowed>-1</option_win8_portrait_allowed>
-    <option_win8_portrait_flipped_allowed>-1</option_win8_portrait_flipped_allowed>
+    <option_win8_portrait_allowed>0</option_win8_portrait_allowed>
+    <option_win8_portrait_flipped_allowed>0</option_win8_portrait_flipped_allowed>
     <option_win8_publisher_display_name>Joshua Wierenga</option_win8_publisher_display_name>
     <option_win8_revision_version>73</option_win8_revision_version>
     <option_win8_scaling_stretch>false</option_win8_scaling_stretch>
@@ -531,8 +531,8 @@
     <option_winUAP_native_cpu>x86</option_winUAP_native_cpu>
     <option_winUAP_package_display_name>Mind The Hole</option_winUAP_package_display_name>
     <option_winUAP_package_name>mindthehole</option_winUAP_package_name>
-    <option_winUAP_portrait_allowed>-1</option_winUAP_portrait_allowed>
-    <option_winUAP_portrait_flipped_allowed>-1</option_winUAP_portrait_flipped_allowed>
+    <option_winUAP_portrait_allowed>0</option_winUAP_portrait_allowed>
+    <option_winUAP_portrait_flipped_allowed>0</option_winUAP_portrait_flipped_allowed>
     <option_winUAP_publisher_display_name>Joshua Wierenga</option_winUAP_publisher_display_name>
     <option_winUAP_revision_version>73</option_winUAP_revision_version>
     <option_winUAP_scaling_stretch>false</option_winUAP_scaling_stretch>
