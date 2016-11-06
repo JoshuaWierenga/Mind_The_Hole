@@ -8,10 +8,15 @@
   </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprites name="Menu">
-      <sprite>sprites\New_Game</sprite>
-      <sprite>sprites\Game_Name</sprite>
-      <sprite>sprites\Continue</sprite>
+    <sprites name="GUI">
+      <sprites name="Menu">
+        <sprite>sprites\New_Game</sprite>
+        <sprite>sprites\Game_Name</sprite>
+        <sprite>sprites\Continue</sprite>
+      </sprites>
+      <sprite>sprites\Health_Bar</sprite>
+      <sprite>sprites\Left_Arrow</sprite>
+      <sprite>sprites\Right_Arrow</sprite>
     </sprites>
     <sprites name="Levels">
       <sprites name="Tutorial">
@@ -38,11 +43,6 @@
         </sprites>
         <sprite>sprites\Light_Gray</sprite>
         <sprite>sprites\Dark_Gray</sprite>
-      </sprites>
-      <sprites name="GUI">
-        <sprite>sprites\Left_Arrow_Texture</sprite>
-        <sprite>sprites\Right_Arrow_Texture</sprite>
-        <sprite>sprites\Health_Bar_Texture</sprite>
       </sprites>
       <sprite>sprites\Player_Texture</sprite>
       <sprite>sprites\Room_Exit</sprite>
