@@ -31,8 +31,8 @@ allow_player_jump = false;
 alarm[0] = 10;
 
 playing = 1;
-
 draw_gui = true;
+osphone = os_type == os_ios || os_type == os_android;
 
 draw_set_font(font);
 </string>
@@ -119,7 +119,10 @@ display_set_gui_size(1280, 720);
 
 if (draw_gui == 1)
 {
-    Arrows();
+    if (osphone)
+    {
+            Arrows();
+    }
     Health();
 }
 </string>
