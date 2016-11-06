@@ -138,10 +138,10 @@ hurt = 0;
           <argument>
             <kind>1</kind>
             <string>//Sprites
-if (player_level != 0)
+if (player_level != Control_Object.player_level)
 {
+    player_level = Control_Object.player_level;
     image_index = player_level;
-    player_level = 0;
 }
 
 //Health
