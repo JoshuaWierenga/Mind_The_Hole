@@ -93,11 +93,11 @@ alarm[5] = 410;
           <argument>
             <kind>1</kind>
             <string>//1
-make_objects(64, -32, 1, 1, 0, 0.2, Grass_Floor_Texture, 0);
+make_objects(64, -32, 1, 1, 0, 0.2, Grass, 0);
 //3
-make_objects(128, -32, 1, 1, 0, 0.2, Grass_Floor_Texture, 0);
+make_objects(128, -32, 1, 1, 0, 0.2, Grass, 0);
 //4
-make_objects(224, -32, 1, 1, 0, 0.2, Grass_Floor_Texture, 0);
+make_objects(224, -32, 1, 1, 0, 0.2, Grass, 0);
 alarm[7] = 40;
 </string>
           </argument>
@@ -332,9 +332,9 @@ alarm[7] = 40;
         
         Control_Object.allow_player_jump = false;
         
-        for (i = 65; i &lt;= 289; i += 32)
+        for (i = 66; i &lt;= 290; i += 32)
         {
-            for (j = 353; j &lt;= 705; j += 32)
+            for (j = 354; j &lt;= 706; j += 32)
             {
 
                 if (instance_position(i, j, all) != inst_B3F0C3EF)

@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>//6
-make_objects(288, -32, 1, 1, 0, 0.2, Grass_Floor_Texture, 0);
+make_objects(288, -32, 1, 1, 0, 0.2, Grass, 0);
 
 with(instance_position(320, 64, Grass_Floor_Object))
 {
@@ -123,9 +123,9 @@ alarm[6] = 300;
           <argument>
             <kind>1</kind>
             <string>//8
-make_objects(128, -32, 1, 1, 0, 0.2, Floating_Blocks_Texture, 0);
+make_objects(128, -32, 1, 1, 0, 0.2, Light_Gray, 0);
 //9
-make_objects(256, -32, 1, 1, 0, 0.2, Grass_Floor_Texture, 0);
+make_objects(256, -32, 1, 1, 0, 0.2, Grass, 0);
 
 with(instance_position(320, 0, Grass_Floor_Object))
 {
@@ -164,7 +164,7 @@ with(instance_position(448, 64, Grass_Floor_Object))
           <argument>
             <kind>1</kind>
             <string>//10
-make_objects(64, -32, 1, 1, 0, 0.2, Floating_Blocks_Texture, 0);
+make_objects(64, -32, 1, 1, 0, 0.2, Light_Gray, 0);
 </string>
           </argument>
         </arguments>
@@ -188,7 +188,7 @@ make_objects(64, -32, 1, 1, 0, 0.2, Floating_Blocks_Texture, 0);
           <argument>
             <kind>1</kind>
             <string>//7
-make_objects(64, -32, 1, 1, 0, 0.2, Grass_Floor_Texture, 0);
+make_objects(64, -32, 1, 1, 0, 0.2, Grass, 0);
 </string>
           </argument>
         </arguments>
@@ -212,7 +212,7 @@ make_objects(64, -32, 1, 1, 0, 0.2, Grass_Floor_Texture, 0);
           <argument>
             <kind>1</kind>
             <string>//5
-make_objects(256, -32, 1, 1, 0, 0.2, Floating_Blocks_Texture, 0);
+make_objects(256, -32, 1, 1, 0, 0.2, Light_Gray, 0);
 
 with(instance_position(32, 64, Grass_Floor_Object))
 {
@@ -246,7 +246,7 @@ with(instance_position(320, 32, Grass_Floor_Object))
           <argument>
             <kind>1</kind>
             <string>//2
-make_objects(96, -32, 1, 1, 0, 0.2, Floating_Blocks_Texture, 0);
+make_objects(96, -32, 1, 1, 0, 0.2, Light_Gray, 0);
 </string>
           </argument>
         </arguments>
