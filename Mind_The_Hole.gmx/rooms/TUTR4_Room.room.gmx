@@ -131,7 +131,7 @@
     <instance objName="Floating_Blocks_Object" x="416" y="544" name="inst_945C801F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="-64" y="0" name="inst_7D937244" locked="0" code="" scaleX="1" scaleY="22" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="1312" y="0" name="inst_ADCD5DF7" locked="0" code="" scaleX="1" scaleY="22" colour="4294967295" rotation="0"/>
-    <instance objName="Room_Exit_Object" x="0" y="667" name="inst_D5D23685" locked="0" code="" scaleX="4.12903213500977" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Room_Exit_Object" x="0" y="667" name="inst_D5D23685" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Control_Object" x="64" y="32" name="inst_7C8CCF89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Tutorial_Control_Object" x="96" y="32" name="inst_0E4A71B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TUTR4_Control_Object" x="128" y="32" name="inst_A9ADFBA0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

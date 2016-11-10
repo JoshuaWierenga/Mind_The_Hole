@@ -28,6 +28,7 @@
             <string>///Player Vars
 //Movement
 grav = 0.2;
+use_gravivty = 1;
 horspeed = 0;
 verspeed = 0;
 jumpspeed = 7.4;

@@ -107,10 +107,10 @@
       </objects>
       <object>objects\Player_Object</object>
       <object>objects\Room_Exit_Object</object>
-      <object>objects\Collisions_Object</object>
     </objects>
     <object>objects\Menu_Object</object>
     <object>objects\Transition_Object</object>
+    <object>objects\Collisions_Object</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>

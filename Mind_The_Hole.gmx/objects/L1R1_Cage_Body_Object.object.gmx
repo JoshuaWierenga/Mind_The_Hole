@@ -27,7 +27,6 @@
             <kind>1</kind>
             <string>grav = 0.2;
 verspeed = 0;
-use_gravity = 0;
 </string>
           </argument>
         </arguments>
@@ -50,7 +49,7 @@ use_gravity = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (use_gravity) Gravity(Room_Exit_Object);
+            <string>Gravity(Room_Exit_Object);
 </string>
           </argument>
         </arguments>

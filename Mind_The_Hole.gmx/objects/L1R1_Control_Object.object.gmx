@@ -348,17 +348,14 @@ alarm[7] = 40;
         }
         
         instance_create(176, -32.125, L1R1_Cage_Holder_Object);
-        with(instance_create(64, 256, L1R1_Cage_Body_Object))
-        {
-            use_gravity = 1;
-        }
+        instance_create(64, 256, L1R1_Cage_Body_Object);
         player_inside_cage = Player_Object.x &gt;= 96 &amp;&amp; Player_Object.x &lt;= 256 &amp;&amp; Player_Object.y &gt;= 480;
     }
     
     if (cage_replaced == 1)
     {
         time_falling++;
-        if (player_inside_cage) Player_Object.y += 2;
+        if (player_inside_cage) Player_Object.y += 3;
     }
     
     if (time_falling == 80)
