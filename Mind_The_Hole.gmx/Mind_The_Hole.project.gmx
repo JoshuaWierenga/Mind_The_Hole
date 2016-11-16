@@ -32,6 +32,9 @@
           <sprite>sprites\L1R1_Cage_Holder</sprite>
           <sprite>sprites\L1R1_Cage_Body</sprite>
         </sprites>
+        <sprites name="Room 2">
+          <sprite>sprites\L1R2_Cage_Top_Broken</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Objects">
@@ -79,13 +82,17 @@
       </objects>
       <objects name="Level 1">
         <object>objects\L1R1_Control_Object</object>
-        <objects name="Room 1">
+        <objects name="L1R1_Objects">
           <object>objects\L1R1_Room_Exit_Object</object>
           <object>objects\L1R1_Cage_Top_Object</object>
           <object>objects\L1R1_Cage_Bottom_Object</object>
           <object>objects\L1R1_Cage_Holder_Object</object>
           <object>objects\L1R1_Cage_Body_Object</object>
           <object>objects\L1R1_Falling</object>
+        </objects>
+        <object>objects\L1R2_Control_Object</object>
+        <objects name="L1R2_Objects">
+          <object>objects\L1R2_Cage_Top_Broken_Object</object>
         </objects>
       </objects>
       <object>objects\WIN_END_Control_Object</object>
@@ -113,6 +120,10 @@
     <object>objects\Collisions_Object</object>
   </objects>
   <rooms name="rooms">
+    <rooms name="Level 1">
+      <room>rooms\L1R1_Room</room>
+      <room>rooms\L1R2_Room</room>
+    </rooms>
     <room>rooms\Menu</room>
     <rooms name="Levels">
       <rooms name="Tutorial">
@@ -123,12 +134,8 @@
         <room>rooms\TUTR5_Room</room>
         <room>rooms\TUT_END_Room</room>
       </rooms>
-      <rooms name="Level 1">
-        <room>rooms\L1R1_Room</room>
-      </rooms>
     </rooms>
     <room>rooms\WIN_END</room>
-    <room>rooms\L1R2_Room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

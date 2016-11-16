@@ -38,6 +38,7 @@ started_falling = 0;
 start_cage_fall = 0;
 cage_replaced = 0;
 time_falling = 0;
+waiting_for_player = 0;
 
 player_inside_cage = false;
 
@@ -283,12 +284,12 @@ alarm[7] = 40;
             <kind>1</kind>
             <string>if (Control_Object.playing)
 {
-    if (player_fallen == 0 &amp;&amp; round(Player_Object.y) &gt;= 481)
+    if (player_fallen == 0 &amp;&amp; round(Player_Object.y) &gt;= 480)
     {
         player_fallen = 1;
         with (Player_Object)
         {
-            hp -= 2;
+            hp -= 1;
             hurt = 1;
             alarm[0] = 30;
         }
@@ -328,9 +329,12 @@ alarm[7] = 40;
     
     if (start_cage_fall == 1 &amp;&amp; cage_replaced == 0)
     {
+        
+        player_inside_cage = Player_Object.x &gt;= 96 &amp;&amp; Player_Object.x &lt;= 256 &amp;&amp; Player_Object.y &gt;= 480;
+    
         cage_replaced = 1;
         
-        Control_Object.allow_player_jump = false;
+        if (player_inside_cage) Control_Object.allow_player_jump = false;
         
         for (i = 66; i &lt;= 290; i += 32)
         {
@@ -349,7 +353,6 @@ alarm[7] = 40;
         
         instance_create(176, -32.125, L1R1_Cage_Holder_Object);
         instance_create(64, 256, L1R1_Cage_Body_Object);
-        player_inside_cage = Player_Object.x &gt;= 96 &amp;&amp; Player_Object.x &lt;= 256 &amp;&amp; Player_Object.y &gt;= 480;
     }
     
     if (cage_replaced == 1)
@@ -362,15 +365,25 @@ alarm[7] = 40;
     {
         if (player_inside_cage)
         {
-            Player_Object.player_level = 2;
+            with (Player_Object)
+            {
+                persistent = 0;
+            }
+            transition(9,0, 120, c_white);
         }
         else
         {
-            Player_Object.x = 128;
-            Player_Object.y = -64;
-            Player_Object.player_level = 3;
+           waiting_for_player = 1; 
         }
-        transition(room+1,0, 120, c_white);
+    }
+    
+    if (waiting_for_player)
+    {
+        if (Player_Object.y &gt;= 672)
+        {   
+            Player_Object.y = 0;
+            transition(room+1,0);
+        }
     }
 }
 </string>

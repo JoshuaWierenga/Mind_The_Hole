@@ -42,31 +42,7 @@ alarm[3] = 80;
 
 alarm[4] = 240;
 
-alarm[5] = 370;
-alarm[6] = 300;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="6">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>L1R1_Control_Object.start_cage_fall = 1;
+alarm[5] = 300;
 </string>
           </argument>
         </arguments>
@@ -89,17 +65,7 @@ alarm[6] = 300;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>for (i = 0; i &lt;= room_width; i += 32)
-{
-     for (j = 0; j &lt;= 64; j += 32)
-    {
-        with(instance_position(i, j, Grass_Floor_Object))
-        {
-            use_gravity = 1;
-        }
-    }
-}
-
+            <string>L1R1_Control_Object.start_cage_fall = 1;
 </string>
           </argument>
         </arguments>
