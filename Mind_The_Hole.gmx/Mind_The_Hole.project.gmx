@@ -113,7 +113,6 @@
     <object>objects\Collisions_Object</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\L1R1_Room</room>
     <room>rooms\Menu</room>
     <rooms name="Levels">
       <rooms name="Tutorial">
@@ -125,10 +124,11 @@
         <room>rooms\TUT_END_Room</room>
       </rooms>
       <rooms name="Level 1">
-        <room>rooms\L1R2_Room</room>
+        <room>rooms\L1R1_Room</room>
       </rooms>
     </rooms>
     <room>rooms\WIN_END</room>
+    <room>rooms\L1R2_Room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

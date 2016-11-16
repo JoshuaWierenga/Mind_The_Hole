@@ -203,7 +203,6 @@
     <instance objName="Floating_Blocks_Object" x="0" y="672" name="inst_A922D8D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Control_Object" x="32" y="32" name="inst_646556A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="320" y="0" name="inst_255DD83B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="L1R1_Cage_Top_Object" x="64" y="-608" name="inst_E64468CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="832" y="640" name="inst_45F09641" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="832" y="608" name="inst_F492AB83" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Grass_Floor_Object" x="864" y="640" name="inst_72CDCDF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
