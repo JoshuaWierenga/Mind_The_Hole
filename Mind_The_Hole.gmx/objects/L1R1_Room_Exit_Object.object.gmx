@@ -52,7 +52,7 @@ use_gravity = 0;
             <kind>1</kind>
             <string>if (use_gravity) Gravity(Collisions_Object);
 
-if (round(y) == 569 &amp;&amp; L1R1_Control_Object.exit_fallen == 0)
+if (round(y) == 568 &amp;&amp; L1R1_Control_Object.exit_fallen == 0)
 {
     L1R1_Control_Object.exit_fallen = 1;
 }
