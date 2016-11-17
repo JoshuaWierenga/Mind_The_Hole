@@ -72,16 +72,18 @@ contact = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (Control_Object.playing &amp;&amp; !contact &amp;&amp; Player_Object.x &lt; 417)
+            <string>if (Control_Object.playing &amp;&amp; !contact &amp;&amp; Player_Object.x &lt; 448)
 {
     contact = 1;
     alarm[0] = 10;
     
-    if (Player_Object.y &gt;= 384 &amp;&amp; Player_Object.x &lt; 418) Player_Object.x = 418;
-    
-    for (i = 576; i &lt;= 640; i += 32)
+    for (i = 672; i &lt;= 800; i += 32)
     {
-        make_objects(384, i, 1, 0, 0, 0, Light_Gray, 0);   
+        with (instance_position(384, i, all))
+        {
+            grav = -0.4;
+            use_gravity = 1;
+        }
     }
 } 
 </string>

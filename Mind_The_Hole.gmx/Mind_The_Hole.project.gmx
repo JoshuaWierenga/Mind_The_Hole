@@ -79,6 +79,9 @@
         <object>objects\TUTR3_Control_Object</object>
         <object>objects\TUTR4_Control_Object</object>
         <object>objects\TUTR5_Control_Object</object>
+        <objects name="TUTR5_Objects">
+          <object>objects\TUTR5_Exit_Blocker_Object</object>
+        </objects>
         <object>objects\TUT_END_Control_Object</object>
       </objects>
       <objects name="Level 1">
