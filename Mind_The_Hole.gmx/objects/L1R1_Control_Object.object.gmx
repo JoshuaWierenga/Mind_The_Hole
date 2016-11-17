@@ -287,12 +287,9 @@ alarm[7] = 40;
     if (player_fallen == 0 &amp;&amp; round(Player_Object.y) &gt;= 480)
     {
         player_fallen = 1;
-        with (Player_Object)
-        {
-            hp -= 1;
-            hurt = 1;
-            alarm[0] = 30;
-        }
+        Player_Object.hp -= 1;
+        Player_Object.hurt = 1;
+        Player_Object.alarm[0] = 30;
     }
     
     if (exit_fallen == 1 &amp;&amp; started_cage == 0 &amp;&amp; round(Player_Object.y) == 504 &amp;&amp; Player_Object.x &gt;= 64 &amp;&amp; Player_Object.x &lt;= 255)
@@ -365,10 +362,8 @@ alarm[7] = 40;
     {
         if (player_inside_cage)
         {
-            with (Player_Object)
-            {
-                persistent = 0;
-            }
+            Player_Object.persistent = 0;
+            
             transition(9,0, 120, c_white);
         }
         else

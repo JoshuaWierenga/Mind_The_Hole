@@ -25,7 +25,96 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_fallen = 0;
+            <string>first_text = 0;
+second_text = 0;
+
+player_fallen = 0;
+
+cage_removal_started = 0;
+cage_grabbed = 0;
+floor_replacement_started = 0;
+floor_replacement_finished = 0;
+floor_finished = 0;
+roof_started = 0;
+roof_finished = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>roof_started = 1;
+
+instance_create(64, -800, L1R2_Floor_Dropper_Object);
+
+L1R2_Floor_Dropper_Object.use_gravity = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+instance_create(64, -64, Room_Exit_Object);
+
+Room_Exit_Object.use_gravity = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>floor_replacement_started = 1;
+
+L1R2_Floor_Dropper_Object.use_gravity = 1;
 </string>
           </argument>
         </arguments>
@@ -50,23 +139,123 @@
             <kind>1</kind>
             <string>if (Control_Object.playing)
 {
-    if (player_fallen == 0 &amp;&amp; round(Player_Object.y) &gt;= 352)
+    if (player_fallen == 0 &amp;&amp; Player_Object.y &gt;= 352)
     {
         player_fallen = 1;
-        with (Player_Object)
+        Player_Object.hp -= 1;
+        Player_Object.hurt = 1;
+        Player_Object.alarm[0] = 30;
+    }
+    
+    if (Player_Object.x &gt;= 896 &amp;&amp; cage_removal_started == 0)
+    {
+        cage_removal_started = 1;
+        make_objects(176, 736, 1, 1, 0, -0.05, Dark_Gray, 0);
+        make_objects(176, 768, 1, 1, 0, -0.05, Dark_Gray, 0);
+        make_objects(176, 800, 1, 1, 0, -0.05, Dark_Gray, 0);
+        first_text = 1;
+    }
+    
+    if (cage_removal_started == 1 &amp;&amp; cage_grabbed == 0)
+    {
+        with (Gravity_Collisions_Object)
         {
-            hp -= 1;
-            hurt = 1;
-            alarm[0] = 30;
+            if (object == 0 &amp;&amp; round(y) == 640)
+            {
+                L1R2_Control_Object.cage_grabbed = 1;
+                
+                with (Gravity_Collisions_Object)
+                {
+                    if (object == 0)
+                    {
+                        instance_destroy();
+                    }
+                } 
+                
+                L1R2_Cage_Top_Broken_Object.use_gravity = 1;
+                L1R2_Cage_Top_Broken_Object.image_index = 1;    
+                         
+                L1R2_Control_Object.alarm[0] = 45;   
+            }
         }
     }
     
-    if (round(Player_Object.x) &gt;= 896)
+    if (floor_replacement_started == 1 &amp;&amp; floor_replacement_finished == 0 &amp;&amp; L1R2_Floor_Dropper_Object.y &gt;= -1)
     {
-        make_objects(176, 736, 1, 1, 0, -0.2, Dark_Gray, 0);
-        make_objects(176, 768, 1, 1, 0, -0.2, Dark_Gray, 0);
-        make_objects(176, 800, 1, 1, 0, -0.2, Dark_Gray, 0);
+        floor_replacement_finished = 1;
+    
+        L1R2_Floor_Dropper_Object.grav = -0.2;
+        L1R2_Floor_Dropper_Object.image_index = 1;
+        
+        for (i = 64; i &lt;= 288; i += 32)
+        {
+            for (j = 672; j &lt;= 704; j += 32)
+            {
+                instance_create(i, j, Floating_Blocks_Object);
+            }
+        }
     }
+    
+    if (floor_replacement_finished == 1 &amp;&amp; floor_finished == 0 &amp;&amp; L1R2_Floor_Dropper_Object.y &lt;= -736)
+    {
+        floor_finished = 1;
+        
+        with (L1R2_Floor_Dropper_Object)
+        {
+            instance_destroy();
+        }
+        
+        alarm[1] = 30;
+        alarm[2] = 60;
+        
+        second_text = 1;
+    }
+    
+    
+    if (roof_started == 1 &amp;&amp; roof_finished == 0 &amp;&amp; L1R2_Floor_Dropper_Object.y &gt;= -673)
+    {
+        roof_finished = 1;
+        
+        with (L1R2_Floor_Dropper_Object)
+        {
+            instance_destroy();
+        }
+        
+        for (i = 64; i &lt;= 288; i += 32)
+        {
+            for (j = 0; j &lt;= 32; j += 32)
+            {
+                instance_create(i, j, Floating_Blocks_Object);
+            }
+        }
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (Control_Object.draw_gui)
+{
+    if (first_text) draw_text(800, 448, "That's more than enough of that!");
+    if (second_text) draw_text(384, 448, "Now to just get you out of here");
 }
 </string>
           </argument>

@@ -25,9 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>use_gravity = 0;
-grav = 0.2;
+            <string>image_speed = 0;
+
+grav = 0.025;
 verspeed = 0;
+use_gravity = 0;
 </string>
           </argument>
         </arguments>

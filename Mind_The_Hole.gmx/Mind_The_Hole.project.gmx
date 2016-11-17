@@ -34,6 +34,7 @@
         </sprites>
         <sprites name="Room 2">
           <sprite>sprites\L1R2_Cage_Top_Broken</sprite>
+          <sprite>sprites\L1R2_Floor_Dropper</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -93,6 +94,7 @@
         <object>objects\L1R2_Control_Object</object>
         <objects name="L1R2_Objects">
           <object>objects\L1R2_Cage_Top_Broken_Object</object>
+          <object>objects\L1R2_Floor_Dropper_Object</object>
         </objects>
       </objects>
       <object>objects\WIN_END_Control_Object</object>
@@ -120,10 +122,6 @@
     <object>objects\Collisions_Object</object>
   </objects>
   <rooms name="rooms">
-    <rooms name="Level 1">
-      <room>rooms\L1R1_Room</room>
-      <room>rooms\L1R2_Room</room>
-    </rooms>
     <room>rooms\Menu</room>
     <rooms name="Levels">
       <rooms name="Tutorial">
@@ -133,6 +131,10 @@
         <room>rooms\TUTR4_Room</room>
         <room>rooms\TUTR5_Room</room>
         <room>rooms\TUT_END_Room</room>
+      </rooms>
+      <rooms name="Level 1">
+        <room>rooms\L1R1_Room</room>
+        <room>rooms\L1R2_Room</room>
       </rooms>
     </rooms>
     <room>rooms\WIN_END</room>
