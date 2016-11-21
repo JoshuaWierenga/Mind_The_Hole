@@ -5,6 +5,7 @@
   </Configs>
   <NewExtensions>
     <extension index="0">extensions\Transition System</extension>
+    <extension index="1">extensions\Pause Extension</extension>
   </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
@@ -55,13 +56,17 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <scripts name="GUI">
+      <script>scripts\Arrows.gml</script>
+      <script>scripts\Health.gml</script>
+    </scripts>
     <scripts name="Movement">
       <script>scripts\Player_Movement.gml</script>
       <script>scripts\Gravity.gml</script>
     </scripts>
-    <scripts name="GUI">
-      <script>scripts\Arrows.gml</script>
-      <script>scripts\Health.gml</script>
+    <scripts name="Pause">
+      <script>scripts\game_pause.gml</script>
+      <script>scripts\game_resume.gml</script>
     </scripts>
     <script>scripts\make_objects.gml</script>
     <script>scripts\transition.gml</script>
@@ -71,7 +76,6 @@
   </fonts>
   <objects name="objects">
     <objects name="Levels">
-      <object>objects\Control_Object</object>
       <objects name="Tutorial">
         <object>objects\Tutorial_Control_Object</object>
         <object>objects\TUTR1_Control_Object</object>
@@ -99,6 +103,18 @@
       </objects>
       <object>objects\WIN_END_Control_Object</object>
     </objects>
+    <objects name="Parent Objects">
+      <object>objects\Gravity_Collisions_Object</object>
+      <object>objects\Gravity_NoCollisions_Object</object>
+      <object>objects\no_Pause_Object</object>
+    </objects>
+    <objects name="Control Objects">
+      <object>objects\Collisions_Object</object>
+      <object>objects\Control_Object</object>
+      <object>objects\Menu_Object</object>
+      <object>objects\Transition_Object</object>
+      <object>objects\Pause_Object</object>
+    </objects>
     <objects name="Objects">
       <objects name="Floors">
         <objects name="Grass">
@@ -111,15 +127,10 @@
         <object>objects\Falling_Blocks_Object</object>
         <object>objects\Dark_Blocks_Object</object>
         <object>objects\Dark_Blocks_Falling_Object</object>
-        <object>objects\Gravity_Collisions_Object</object>
-        <object>objects\Gravity_NoCollisions_Object</object>
       </objects>
       <object>objects\Player_Object</object>
       <object>objects\Room_Exit_Object</object>
     </objects>
-    <object>objects\Menu_Object</object>
-    <object>objects\Transition_Object</object>
-    <object>objects\Collisions_Object</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>
