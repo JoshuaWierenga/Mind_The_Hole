@@ -57,8 +57,10 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="GUI">
-      <script>scripts\Arrows.gml</script>
+      <script>scripts\Touch_Arrows.gml</script>
       <script>scripts\Health.gml</script>
+      <script>scripts\Pause_Menu.gml</script>
+      <script>scripts\Touch_Controls.gml</script>
     </scripts>
     <scripts name="Movement">
       <script>scripts\Player_Movement.gml</script>
