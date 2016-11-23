@@ -70,6 +70,10 @@
       <script>scripts\game_pause.gml</script>
       <script>scripts\game_resume.gml</script>
     </scripts>
+    <scripts name="Saving">
+      <script>scripts\Save_Game.gml</script>
+      <script>scripts\Load_Game.gml</script>
+    </scripts>
     <script>scripts\make_objects.gml</script>
     <script>scripts\transition.gml</script>
   </scripts>
