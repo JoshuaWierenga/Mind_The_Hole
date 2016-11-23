@@ -100,7 +100,7 @@ alarm[0] = 30;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (Control_Object.draw_gui &amp;&amp; text) draw_text(224, 448, "Jump around if you want!");
+            <string>if (Game_GUI_Object.draw_gui &amp;&amp; text) draw_text(224, 448, "Jump around if you want!");
 </string>
           </argument>
         </arguments>

@@ -107,7 +107,7 @@ if (keyboard_check_released(vk_enter) || keyboard_check_released(vk_space))
         }
         case 1:
         {
-            Control_Object.osphone = !Control_Object.osphone;
+            Game_GUI_Object.use_touch_controls = !Game_GUI_Object.use_touch_controls;
             instance_destroy();
             break;
         }

@@ -25,8 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>randomize();
-room_goto(irandom_range(1, 6));
+            <string>display_set_gui_size(1280, 720);
+newgame_button = virtual_key_add(534, 495, 230, 35, vk_enter);
+
+randomize();
+room_goto(irandom_range(1, 7));
 alarm[0] = 1;
 </string>
           </argument>
@@ -50,10 +53,26 @@ alarm[0] = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Control_Object.playing = false;
-Control_Object.draw_gui = false;
-if (instance_exists(Player_Object)) with (Player_Object) instance_destroy();
-if (instance_exists(Room_Exit_Object)) with (Room_Exit_Object) instance_destroy();
+            <string>if (instance_exists(Control_Object))
+{
+    Control_Object.playing = 0;
+}
+
+if (instance_exists(Game_GUI_Object))
+{
+    Game_GUI_Object.draw_gui = 0;
+    Game_GUI_Object.use_touch_controls = 0;
+}
+
+if (instance_exists(Player_Object)) 
+{
+    with (Player_Object) instance_destroy();
+}
+
+if (instance_exists(Room_Exit_Object)) 
+{
+    with (Room_Exit_Object) instance_destroy();
+}
 </string>
           </argument>
         </arguments>
@@ -76,7 +95,7 @@ if (instance_exists(Room_Exit_Object)) with (Room_Exit_Object) instance_destroy(
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check(vk_f1))
+            <string>if (keyboard_check(vk_enter))
 {
     persistent = 0;
     room_goto(1);   
@@ -104,15 +123,11 @@ if (instance_exists(Room_Exit_Object)) with (Room_Exit_Object) instance_destroy(
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>display_set_gui_size(1280, 720);
-
-draw_sprite(Game_Name, 0, 158, 183);
+            <string>draw_sprite(Game_Name, 0, 158, 183);
 draw_sprite(New_Game, 0, 534, 495);
 draw_text(1210,0, string(GM_version));
 //draw_sprite(New_Game_Texture, 0, 210, 495);
 //draw_sprite(Continue_Texture, 0, 864, 495);
-
-newgame_button = virtual_key_add(534, 495, 230, 35, vk_f1);
 </string>
           </argument>
         </arguments>
