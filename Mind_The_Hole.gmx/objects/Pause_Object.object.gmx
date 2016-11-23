@@ -34,7 +34,7 @@ pause_BG = -1;
 game_pause();
 
 menu[0] = "Continue";
-menu[1] = "Show Touch Buttons";
+menu[1] = "Toggle Touch Buttons";
 menu[2] = "Return to Menu";
 
 space = 32;
@@ -61,7 +61,8 @@ menupos = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_resume();
+            <string>Control_Object.paused = 0;
+game_resume();
 </string>
           </argument>
         </arguments>
@@ -106,12 +107,14 @@ if (keyboard_check_released(vk_enter) || keyboard_check_released(vk_space))
         }
         case 1:
         {
-            Control_Object.osphone = 1;
+            Control_Object.osphone = !Control_Object.osphone;
             instance_destroy();
             break;
         }
         case 2:
         {
+            Control_Object.pausequit = 1;
+            instance_destroy();
             break;
         }
         default: 
@@ -119,6 +122,11 @@ if (keyboard_check_released(vk_enter) || keyboard_check_released(vk_space))
             break;
         }
     }
+}
+
+if (keyboard_check_pressed(vk_escape))
+{
+    instance_destroy();
 }
 </string>
           </argument>
