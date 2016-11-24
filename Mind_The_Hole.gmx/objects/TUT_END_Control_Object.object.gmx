@@ -306,7 +306,7 @@ first_run = 1;
     if (third_text) draw_text(1089, 448, "you");
     if (forth_text) draw_text(1119, 448, "get");
     if (fifth_text) draw_text(1146, 448, "out?");
-    if (sixth_text) draw_text(738, 464, "What do you think your doing?");
+    if (sixth_text) draw_text(738, 464, "What do you think you're doing?");
     if (seventh_text) draw_text(768, 640, "NO WHY ARE YOU DOING THIS!");
 }
 </string>

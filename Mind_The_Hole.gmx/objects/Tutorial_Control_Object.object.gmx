@@ -54,7 +54,10 @@
     {   
         if (y &gt;= 704)
         {
-            y = 0;
+            if (x &lt;= 768 || x &gt;= 992)
+            {
+                y = 0;
+            }
         }
         
         if (x &lt;= -62 &amp;&amp; keyboard_check(vk_left))

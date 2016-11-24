@@ -30,15 +30,6 @@ second_text = 0;
 third_text = 0;
 
 alarm[0] = 15;
-
-for (i = 672; i &lt;= 736; i += 32)
-{
-    with (instance_position(i, 704, Grass_Floor_Object))
-    {
-        use_gravity = 1;
-        grav = 1;
-    }
-}
 </string>
           </argument>
         </arguments>
