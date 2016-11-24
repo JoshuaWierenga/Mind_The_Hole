@@ -115,9 +115,12 @@
       <object>objects\no_Pause_Object</object>
     </objects>
     <objects name="Control Objects">
+      <objects name="GUI">
+        <object>objects\Menu_Object</object>
+        <object>objects\Game_GUI_Object</object>
+      </objects>
       <object>objects\Collisions_Object</object>
       <object>objects\Control_Object</object>
-      <object>objects\Menu_Object</object>
       <object>objects\Transition_Object</object>
       <object>objects\Pause_Object</object>
     </objects>

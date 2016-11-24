@@ -25,40 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_level = 0;
-allow_move = false;
-allow_player_jump = false;
-alarm[0] = 10;
+            <string>draw_gui = 1;
+use_touch_controls = Control_Object.osphone;
+pause_temp_health = 0;
+pause_temp_level = 0;
 
-playing = 1;
-paused = 0;
-pausequit = 0;
 
-osphone = os_type == os_ios || os_type == os_android;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>allow_move = true;
-allow_player_jump = true;
+display_set_gui_size(1280, 720);
+draw_set_font(font);
+
+Touch_Controls();
 </string>
           </argument>
         </arguments>
@@ -81,21 +57,44 @@ allow_player_jump = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (playing &amp;&amp; !paused)
+            <string>if (keyboard_check_pressed(vk_escape) &amp;&amp; Control_Object.paused == 0 &amp;&amp; Control_Object.playing)
 {
-    with(Player_Object) 
+    pause_temp_health = Player_Object.hp;
+    pause_temp_level = Player_Object.image_index;
+
+    Control_Object.paused = 1;
+    instance_create(0, 0, Pause_Object);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (draw_gui == 1)
+{
+    if (use_touch_controls)
     {
-        if (verspeed &gt; 99.80)
-        {
-            verspeed = 99.80;
-        }
+        Touch_Arrows();
     }
-        
-    if (pausequit)
-    {
-        Player_Object.persistent = 0;
-        room_goto(0);
-    }
+    
+    Health(Control_Object.paused);
 }
 </string>
           </argument>

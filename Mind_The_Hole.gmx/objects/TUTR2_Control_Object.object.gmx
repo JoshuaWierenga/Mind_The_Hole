@@ -125,7 +125,7 @@ alarm[0] = 15;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (Control_Object.draw_gui)
+            <string>if (Game_GUI_Object.draw_gui)
 {
     if (first_text) draw_text(1024, 448, "Simple?");
     if (second_text) draw_text(704, 448, "Mind the hole");
