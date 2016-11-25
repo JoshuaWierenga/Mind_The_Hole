@@ -33,9 +33,31 @@ pause_BG = -1;
 
 game_pause();
 
-menu[0] = "Continue";
-menu[1] = "Toggle Touch Buttons";
-menu[2] = "Return to Menu";
+menutotal = 0;
+
+if (instance_exists(Control_Object) &amp;&amp; Control_Object.playing == 1)
+{
+    menu[menutotal] = "Continue";
+    menutotal++;
+    
+    if(!Control_Object.osphone)
+    {
+        menu[menutotal] = "Toggle Fullscreen";
+        menutotal++;
+        
+        menu[menutotal] = "Toggle Touch Buttons";
+        menutotal++;
+    }
+    
+    menu[menutotal] = "Return to Menu";
+    menutotal++;
+}
+
+if (!Control_Object.osphone)
+{
+    menu[menutotal] = "Quit Game";
+    menutotal++;
+}
 
 space = 32;
 menupos = 0;
@@ -98,22 +120,34 @@ if (move != 0)
 
 if (keyboard_check_released(vk_enter) || keyboard_check_released(vk_space))
 {
-    switch (menupos)
+    switch (menu[menupos])
     {
-        case 0:
+        case "Continue":
         {
             instance_destroy();
             break;
         }
-        case 1:
+        case "Toggle Fullscreen":
+        {
+            window_set_fullscreen(!window_get_fullscreen());
+            instance_destroy();
+            break;
+        }        
+        case "Toggle Touch Buttons":
         {
             Game_GUI_Object.use_touch_controls = !Game_GUI_Object.use_touch_controls;
             instance_destroy();
             break;
         }
-        case 2:
+        case "Return to Menu":
         {
             Control_Object.pausequit = 1;
+            instance_destroy();
+            break;
+        }
+        case "Quit Game":
+        {
+            game_end();
             instance_destroy();
             break;
         }
