@@ -26,7 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>display_set_gui_size(1280, 720);
-newgame_button = virtual_key_add(534, 495, 230, 35, vk_enter);
 
 randomize();
 room_goto(irandom_range(1, 7));
@@ -73,6 +72,8 @@ if (instance_exists(Room_Exit_Object))
 {
     with (Room_Exit_Object) instance_destroy();
 }
+
+//newgame_button = virtual_key_add(534, 495, 230, 35, vk_enter);
 </string>
           </argument>
         </arguments>
@@ -95,7 +96,7 @@ if (instance_exists(Room_Exit_Object))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check(vk_enter))
+            <string>if (keyboard_check(vk_enter) || mouse_check_button(mb_left))
 {
     persistent = 0;
     room_goto(1);   

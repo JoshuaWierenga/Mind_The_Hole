@@ -63,6 +63,7 @@ Touch_Controls();
     pause_temp_level = Player_Object.image_index;
 
     Control_Object.paused = 1;
+    virtual_key_delete(pause);
     instance_create(0, 0, Pause_Object);
 }
 </string>

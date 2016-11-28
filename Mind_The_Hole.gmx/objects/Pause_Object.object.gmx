@@ -33,34 +33,33 @@ pause_BG = -1;
 
 game_pause();
 
-menutotal = 0;
+menu_total = 0;
+menu_pos = 0;
+space = 32;
 
 if (instance_exists(Control_Object) &amp;&amp; Control_Object.playing == 1)
 {
-    menu[menutotal] = "Continue";
-    menutotal++;
+    menu[menu_total] = "Continue";
+    menu_total++;
     
     if(!Control_Object.osphone)
     {
-        menu[menutotal] = "Toggle Fullscreen";
-        menutotal++;
+        menu[menu_total] = "Toggle Fullscreen";
+        menu_total++;
         
-        menu[menutotal] = "Toggle Touch Buttons";
-        menutotal++;
+        menu[menu_total] = "Toggle Touch Buttons";
+        menu_total++;
     }
     
-    menu[menutotal] = "Return to Menu";
-    menutotal++;
+    menu[menu_total] = "Return to Menu";
+    menu_total++;
 }
 
 if (!Control_Object.osphone)
 {
-    menu[menutotal] = "Quit Game";
-    menutotal++;
+    menu[menu_total] = "Quit Game";
+    menu_total++;
 }
-
-space = 32;
-menupos = 0;
 </string>
           </argument>
         </arguments>
@@ -108,19 +107,25 @@ game_resume();
           <argument>
             <kind>1</kind>
             <string>move = 0;
+
 move -= max(keyboard_check_pressed(vk_up), 0);
 move += max(keyboard_check_pressed(vk_down), 0);
 
+if (mouse_check_button_pressed(mb_left) &amp;&amp; mouse_x &gt; room_width/2 - 80 &amp;&amp; mouse_x &lt; room_width/2 + 80 &amp;&amp; mouse_y &gt;= 240 &amp;&amp; mouse_y &lt;= 240 + (space * menu_total))
+{
+    menu_pos = round((mouse_y - 256)/space);
+}
+    
 if (move != 0)
 {
-    menupos += move;
-    if (menupos &lt; 0) menupos = array_length_1d(menu) - 1;
-    if (menupos &gt; array_length_1d(menu) - 1) menupos = 0;
+    menu_pos += move;
+    if (menu_pos &lt; 0) menu_pos = array_length_1d(menu) - 1;
+    if (menu_pos &gt; array_length_1d(menu) - 1) menu_pos = 0;
 }
 
-if (keyboard_check_released(vk_enter) || keyboard_check_released(vk_space))
+if (keyboard_check_released(vk_enter) || mouse_check_button_pressed(mb_left))
 {
-    switch (menu[menupos])
+    switch (menu[menu_pos])
     {
         case "Continue":
         {
@@ -188,6 +193,8 @@ if (keyboard_check_pressed(vk_escape))
 if(background_exists(pause_BG)) {
     draw_background(pause_BG,0,0);
 }
+
+draw_text(100, 100, menu[menu_pos]);
 </string>
           </argument>
         </arguments>
@@ -210,7 +217,7 @@ if(background_exists(pause_BG)) {
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Pause_Menu</script>
+            <script>Text_Menu</script>
           </argument>
           <argument>
             <kind>0</kind>

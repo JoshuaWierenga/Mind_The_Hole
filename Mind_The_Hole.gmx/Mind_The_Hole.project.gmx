@@ -59,7 +59,7 @@
     <scripts name="GUI">
       <script>scripts\Touch_Arrows.gml</script>
       <script>scripts\Health.gml</script>
-      <script>scripts\Pause_Menu.gml</script>
+      <script>scripts\Text_Menu.gml</script>
       <script>scripts\Touch_Controls.gml</script>
     </scripts>
     <scripts name="Movement">
