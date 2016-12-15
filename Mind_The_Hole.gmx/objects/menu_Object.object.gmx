@@ -25,7 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>display_set_gui_size(1280, 720);
+            <string>selector_distance = 88;
+
+display_set_gui_size(1280, 720);
+
+menu_total = 0;
+menu_pos = 0;
+space = 32;
+
+menu[menu_total] = "Start Game";
+menu_total++;
 
 randomize();
 room_goto(irandom_range(1, 7));
@@ -55,6 +64,12 @@ alarm[0] = 1;
             <string>if (instance_exists(Control_Object))
 {
     Control_Object.playing = 0;
+    
+    if (!Control_Object.osphone)
+    {
+        menu[menu_total] = "Quit Game";
+        menu_total++;
+    }
 }
 
 if (instance_exists(Game_GUI_Object))
@@ -96,11 +111,55 @@ if (instance_exists(Room_Exit_Object))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check(vk_enter) || mouse_check_button(mb_left))
+            <string>move = 0;
+mouse_used = 0;
+
+move -= max(keyboard_check_pressed(vk_up), 0);
+move += max(keyboard_check_pressed(vk_down), 0);
+
+
+
+//if ( mouse_y &lt;= room_height*0.75 - 16 + (space * menu_total))
+if (mouse_check_button_pressed(mb_left)
+    &amp;&amp; mouse_x &gt;= room_width*0.75 - 80 &amp;&amp; mouse_x &lt;= room_width*0.75 + 80
+    &amp;&amp; mouse_y &gt;= room_height*0.75 - 16 &amp;&amp; mouse_y &lt;= room_height*0.75 - 16 + (space * menu_total))
 {
-    persistent = 0;
-    room_goto(1);   
-    transition(1, 1);
+    mouse_used = 1;
+    menu_pos = round((mouse_y - (room_height*0.75))/space);
+}
+
+if (move != 0)
+{
+    menu_pos += move;
+    if (menu_pos &lt; 0) menu_pos = array_length_1d(menu) - 1;
+    if (menu_pos &gt; array_length_1d(menu) - 1) menu_pos = 0;
+}
+
+if (keyboard_check_released(vk_enter) || mouse_used)
+{
+    mouse_used = 0;
+    switch (menu[menu_pos])
+    {
+        case "Start Game":
+        {
+            persistent = 0;
+            //room_goto(1);   
+            transition(1, 1);
+            break;
+        }
+        
+        case "Quit Game":
+        {
+            game_end();
+            instance_destroy();
+            break;
+        }
+        
+        default: 
+        {
+            break;
+        }
+    }
 }
 </string>
           </argument>
@@ -125,10 +184,8 @@ if (instance_exists(Room_Exit_Object))
           <argument>
             <kind>1</kind>
             <string>draw_sprite(Game_Name, 0, 158, 183);
-draw_sprite(New_Game, 0, 534, 495);
 draw_text(1210,0, string(GM_version));
-//draw_sprite(New_Game_Texture, 0, 210, 495);
-//draw_sprite(Continue_Texture, 0, 864, 495);
+Text_Menu(room_width*0.75, room_height*0.75, selector_distance);
 </string>
           </argument>
         </arguments>

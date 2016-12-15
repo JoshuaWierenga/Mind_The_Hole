@@ -10,11 +10,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="GUI">
-      <sprites name="Menu">
-        <sprite>sprites\New_Game</sprite>
-        <sprite>sprites\Game_Name</sprite>
-        <sprite>sprites\Continue</sprite>
-      </sprites>
+      <sprite>sprites\Game_Name</sprite>
       <sprite>sprites\Health_Bar</sprite>
       <sprite>sprites\Left_Arrow</sprite>
       <sprite>sprites\Right_Arrow</sprite>
@@ -118,11 +114,11 @@
       <objects name="GUI">
         <object>objects\Menu_Object</object>
         <object>objects\Game_GUI_Object</object>
+        <object>objects\Pause_Object</object>
       </objects>
       <object>objects\Collisions_Object</object>
       <object>objects\Control_Object</object>
       <object>objects\Transition_Object</object>
-      <object>objects\Pause_Object</object>
     </objects>
     <objects name="Objects">
       <objects name="Floors">
