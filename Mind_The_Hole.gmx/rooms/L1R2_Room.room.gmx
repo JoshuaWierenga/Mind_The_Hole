@@ -185,6 +185,7 @@
     <instance objName="L1R2_Cage_Top_Broken_Object" x="64" y="416" name="inst_0B10E511" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="L1R2_Floor_Dropper_Object" x="64" y="-800" name="inst_1A111BCA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Game_GUI_Object" x="64" y="64" name="inst_835690E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Player_Object" x="160" y="-32" name="inst_61F371A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

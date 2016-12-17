@@ -108,6 +108,7 @@ surface_free(surface_to);
 for(i=0;i&lt;8;i++){
  background_visible[i] = back_vis[i];
 }
+draw_set_colour(c_black);
 </string>
           </argument>
         </arguments>

@@ -139,6 +139,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>
+    <room>rooms\Menu_Transition_Room</room>
     <rooms name="Levels">
       <rooms name="Tutorial">
         <room>rooms\TUTR1_Room</room>

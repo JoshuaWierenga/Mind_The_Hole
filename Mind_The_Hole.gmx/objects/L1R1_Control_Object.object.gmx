@@ -364,7 +364,7 @@ alarm[7] = 40;
         {
             Player_Object.persistent = 0;
             
-            transition(9,0, 120, c_white);
+            transition(10,0, 120, c_white);
         }
         else
         {

@@ -27,6 +27,11 @@
             <kind>1</kind>
             <string>///Player Vars
 //Position
+if (!instance_exists(Menu_Object))
+{
+    Save_Game(room);
+}
+
 if (global.playercheckpos)
 {
     x = global.playerx;
@@ -232,7 +237,6 @@ if hp &lt; 1 room_restart();
 {
     roomFinished = 1;
     alarm[1] = 8;
-    Save_Game();
 }
 </string>
           </argument>
