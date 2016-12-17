@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>Collisions_Object</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -26,6 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>///Player Vars
+//Position
+if (global.playercheckpos)
+{
+    x = global.playerx;
+    y = global.playery;
+}
+
+
 //Movement
 grav = 0.2;
 use_gravivty = 1;
@@ -90,6 +98,9 @@ roomFinished = 0;
             <kind>1</kind>
             <string>///Stop Movement
 Control_Object.allow_move = false;
+global.playercheckpos = true;
+global.playerx = x;
+global.playery = y;
 transition(room+1,1);
 alarm[2] = 30;
 </string>
@@ -221,6 +232,7 @@ if hp &lt; 1 room_restart();
 {
     roomFinished = 1;
     alarm[1] = 8;
+    Save_Game();
 }
 </string>
           </argument>

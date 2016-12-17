@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>selector_distance = 88;
+            <string>global.playercheckpos = false;
+global.playerx = 0;
+global.playery = 0;
+
+selector_distance = 88;
 
 display_set_gui_size(1280, 720);
 
@@ -34,6 +38,9 @@ menu_pos = 0;
 space = 32;
 
 menu[menu_total] = "Start Game";
+menu_total++;
+
+menu[menu_total] = "Continue";
 menu_total++;
 
 randomize();
@@ -143,8 +150,16 @@ if (keyboard_check_released(vk_enter) || mouse_used)
         case "Start Game":
         {
             persistent = 0;
-            //room_goto(1);   
             transition(1, 1);
+            break;
+        }
+        
+        case "Continue":
+        {
+            persistent = 0;
+            current_game = Load_Game();
+            show_message(current_game);
+            //transition(current_game, 1);
             break;
         }
         

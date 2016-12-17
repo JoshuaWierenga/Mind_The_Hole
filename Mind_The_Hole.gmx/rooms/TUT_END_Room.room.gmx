@@ -147,6 +147,7 @@
     <instance objName="Floating_Blocks_Object" x="800" y="640" name="inst_45B243D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating_Blocks_Object" x="960" y="640" name="inst_1AF8A046" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Game_GUI_Object" x="96" y="32" name="inst_DB4FF5FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Player_Object" x="1184" y="608" name="inst_3521DBF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
